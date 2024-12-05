@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>MQ 安装配置 | Wow56 个人知识库</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/flaglogo.png">
+    <link rel="manifest" href="/flaglogo.png">
+    <link rel="apple-touch-icon" href="/flaglogo.png">
+    <meta name="description" content="Never stop learning">
+    
+    <link rel="preload" href="/assets/css/0.styles.e868eccd.css" as="style"><link rel="preload" href="/assets/js/app.784a7c32.js" as="script"><link rel="preload" href="/assets/js/2.b941f13f.js" as="script"><link rel="preload" href="/assets/js/43.f98c2c17.js" as="script"><link rel="prefetch" href="/assets/js/10.ed434692.js"><link rel="prefetch" href="/assets/js/100.8718cb02.js"><link rel="prefetch" href="/assets/js/101.86365f5a.js"><link rel="prefetch" href="/assets/js/102.6c31727f.js"><link rel="prefetch" href="/assets/js/103.7114c249.js"><link rel="prefetch" href="/assets/js/104.6dee0cb9.js"><link rel="prefetch" href="/assets/js/105.3892d850.js"><link rel="prefetch" href="/assets/js/106.12311262.js"><link rel="prefetch" href="/assets/js/107.f971f92c.js"><link rel="prefetch" href="/assets/js/108.73b6df74.js"><link rel="prefetch" href="/assets/js/109.662cb586.js"><link rel="prefetch" href="/assets/js/11.18082d10.js"><link rel="prefetch" href="/assets/js/110.bb258777.js"><link rel="prefetch" href="/assets/js/111.562106e3.js"><link rel="prefetch" href="/assets/js/112.034d5d3c.js"><link rel="prefetch" href="/assets/js/113.dfe180a9.js"><link rel="prefetch" href="/assets/js/114.1c98f7f5.js"><link rel="prefetch" href="/assets/js/115.196e0dbf.js"><link rel="prefetch" href="/assets/js/116.c354893f.js"><link rel="prefetch" href="/assets/js/117.d5f25876.js"><link rel="prefetch" href="/assets/js/118.d90ac926.js"><link rel="prefetch" href="/assets/js/119.82810b30.js"><link rel="prefetch" href="/assets/js/12.ef850184.js"><link rel="prefetch" href="/assets/js/120.d8e74f1f.js"><link rel="prefetch" href="/assets/js/121.cdb1030e.js"><link rel="prefetch" href="/assets/js/122.27c5164c.js"><link rel="prefetch" href="/assets/js/123.e1fa0d13.js"><link rel="prefetch" href="/assets/js/124.6ffa34a1.js"><link rel="prefetch" href="/assets/js/125.79145292.js"><link rel="prefetch" href="/assets/js/13.2884eba2.js"><link rel="prefetch" href="/assets/js/14.04b9051f.js"><link rel="prefetch" href="/assets/js/15.1a2dc73c.js"><link rel="prefetch" href="/assets/js/16.c1e6733a.js"><link rel="prefetch" href="/assets/js/17.ebe839d1.js"><link rel="prefetch" href="/assets/js/18.8a20a735.js"><link rel="prefetch" href="/assets/js/19.811b9886.js"><link rel="prefetch" href="/assets/js/20.2348b551.js"><link rel="prefetch" href="/assets/js/21.d34d0db2.js"><link rel="prefetch" href="/assets/js/22.17c85ebe.js"><link rel="prefetch" href="/assets/js/23.be1fe772.js"><link rel="prefetch" href="/assets/js/24.1ed44ad1.js"><link rel="prefetch" href="/assets/js/25.11ee00fc.js"><link rel="prefetch" href="/assets/js/26.ea172d27.js"><link rel="prefetch" href="/assets/js/27.ec9fb7bc.js"><link rel="prefetch" href="/assets/js/28.5ad61472.js"><link rel="prefetch" href="/assets/js/29.8c6bc3a1.js"><link rel="prefetch" href="/assets/js/3.3a4a6cd9.js"><link rel="prefetch" href="/assets/js/30.af54f805.js"><link rel="prefetch" href="/assets/js/31.e4d8d3d4.js"><link rel="prefetch" href="/assets/js/32.0285a34c.js"><link rel="prefetch" href="/assets/js/33.1a86ea60.js"><link rel="prefetch" href="/assets/js/34.9813fa32.js"><link rel="prefetch" href="/assets/js/35.cdc44ff9.js"><link rel="prefetch" href="/assets/js/36.e3461f0c.js"><link rel="prefetch" href="/assets/js/37.a1588ced.js"><link rel="prefetch" href="/assets/js/38.06c1d6a0.js"><link rel="prefetch" href="/assets/js/39.93c18045.js"><link rel="prefetch" href="/assets/js/4.6af1fd6e.js"><link rel="prefetch" href="/assets/js/40.ab61926c.js"><link rel="prefetch" href="/assets/js/41.ce1f1dd6.js"><link rel="prefetch" href="/assets/js/42.d5474732.js"><link rel="prefetch" href="/assets/js/44.885f93a7.js"><link rel="prefetch" href="/assets/js/45.c42ce858.js"><link rel="prefetch" href="/assets/js/46.4c8c2443.js"><link rel="prefetch" href="/assets/js/47.e50be52d.js"><link rel="prefetch" href="/assets/js/48.6e202267.js"><link rel="prefetch" href="/assets/js/49.b6c00bf7.js"><link rel="prefetch" href="/assets/js/5.83294da8.js"><link rel="prefetch" href="/assets/js/50.c2b5cfc7.js"><link rel="prefetch" href="/assets/js/51.328f10e8.js"><link rel="prefetch" href="/assets/js/52.308f1769.js"><link rel="prefetch" href="/assets/js/53.638a7027.js"><link rel="prefetch" href="/assets/js/54.d6291e16.js"><link rel="prefetch" href="/assets/js/55.1a4c8036.js"><link rel="prefetch" href="/assets/js/56.59f8b31b.js"><link rel="prefetch" href="/assets/js/57.24faeb01.js"><link rel="prefetch" href="/assets/js/58.2ea82151.js"><link rel="prefetch" href="/assets/js/59.9e3467e1.js"><link rel="prefetch" href="/assets/js/6.044e60ad.js"><link rel="prefetch" href="/assets/js/60.01e3730f.js"><link rel="prefetch" href="/assets/js/61.29358ea4.js"><link rel="prefetch" href="/assets/js/62.85aff389.js"><link rel="prefetch" href="/assets/js/63.9a09348b.js"><link rel="prefetch" href="/assets/js/64.1c60f84b.js"><link rel="prefetch" href="/assets/js/65.8df6c388.js"><link rel="prefetch" href="/assets/js/66.abb63787.js"><link rel="prefetch" href="/assets/js/67.9dc7d60a.js"><link rel="prefetch" href="/assets/js/68.048bc7a2.js"><link rel="prefetch" href="/assets/js/69.b03f66f5.js"><link rel="prefetch" href="/assets/js/7.3ce9297b.js"><link rel="prefetch" href="/assets/js/70.fc35f797.js"><link rel="prefetch" href="/assets/js/71.e547f9f2.js"><link rel="prefetch" href="/assets/js/72.60dccd26.js"><link rel="prefetch" href="/assets/js/73.5a7f4b3a.js"><link rel="prefetch" href="/assets/js/74.0d725345.js"><link rel="prefetch" href="/assets/js/75.9e658fad.js"><link rel="prefetch" href="/assets/js/76.d1c6ceb0.js"><link rel="prefetch" href="/assets/js/77.0d6a196c.js"><link rel="prefetch" href="/assets/js/78.e214cf83.js"><link rel="prefetch" href="/assets/js/79.22bbb695.js"><link rel="prefetch" href="/assets/js/8.486eec16.js"><link rel="prefetch" href="/assets/js/80.dd76b937.js"><link rel="prefetch" href="/assets/js/81.4c90abec.js"><link rel="prefetch" href="/assets/js/82.53f293d0.js"><link rel="prefetch" href="/assets/js/83.266a341f.js"><link rel="prefetch" href="/assets/js/84.48957175.js"><link rel="prefetch" href="/assets/js/85.269abf3b.js"><link rel="prefetch" href="/assets/js/86.5282cb83.js"><link rel="prefetch" href="/assets/js/87.0d1bdba8.js"><link rel="prefetch" href="/assets/js/88.e50fafa8.js"><link rel="prefetch" href="/assets/js/89.1ad9b8f9.js"><link rel="prefetch" href="/assets/js/9.f7746ff6.js"><link rel="prefetch" href="/assets/js/90.19765429.js"><link rel="prefetch" href="/assets/js/91.b2b4f256.js"><link rel="prefetch" href="/assets/js/92.7faa58bb.js"><link rel="prefetch" href="/assets/js/93.a971e459.js"><link rel="prefetch" href="/assets/js/94.e649a4b9.js"><link rel="prefetch" href="/assets/js/95.59a8d754.js"><link rel="prefetch" href="/assets/js/96.faaa8ba5.js"><link rel="prefetch" href="/assets/js/97.8eba8d5a.js"><link rel="prefetch" href="/assets/js/98.67d89404.js"><link rel="prefetch" href="/assets/js/99.0464b589.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e868eccd.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/flaglogo.png" alt="Wow56 个人知识库" class="logo"> <span class="site-name can-hide">Wow56 个人知识库</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/base/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="语言/语法" class="dropdown-title"><span class="title">语言/语法</span> <span class="arrow down"></span></button> <button type="button" aria-label="语言/语法" class="mobile-dropdown-title"><span class="title">语言/语法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lang/java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/lang/go/" class="nav-link">
+  Go
+</a></li><li class="dropdown-item"><!----> <a href="/lang/php/" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/lang/js/" class="nav-link">
+  Java Script
+</a></li><li class="dropdown-item"><!----> <a href="/lang/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/lang/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/lang/regex/" class="nav-link">
+  Regex
+</a></li><li class="dropdown-item"><!----> <a href="/lang/script/" class="nav-link">
+  脚本 Script
+</a></li><li class="dropdown-item"><!----> <a href="/lang/markdown/" class="nav-link">
+  Markdown
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架/类库" class="dropdown-title"><span class="title">框架/类库</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架/类库" class="mobile-dropdown-title"><span class="title">框架/类库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          应用程序
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/spring/" class="nav-link">
+  Spring 生态
+</a></li><li class="dropdown-subitem"><a href="/framework/vue/" class="nav-link">
+  Vue
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/gis/" class="nav-link">
+  Web GIS
+</a></li><li class="dropdown-subitem"><a href="/framework/echarts/" class="nav-link">
+  ECahrts
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          关系型
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/mysql/" class="nav-link">
+  MySQL
+</a></li></ul></li><li class="dropdown-item"><h4>
+          非关系型
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/mongodb/" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-subitem"><a href="/db/redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/db/es/" class="nav-link">
+  Elasticsearch
+</a></li></ul></li><li class="dropdown-item"><h4>
+          持久层框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/mybatis/" class="nav-link">
+  MyBatis
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="应用技术" class="dropdown-title"><span class="title">应用技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="应用技术" class="mobile-dropdown-title"><span class="title">应用技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/applied-tech/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/svn/" class="nav-link">
+  SVN
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/maven/" class="nav-link">
+  Maven
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/nginx/" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/mq/" class="nav-link router-link-active">
+  MQ
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/k8s/" class="nav-link">
+  Kubernetes
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/cas/" class="nav-link">
+  CAS
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/workflow/" class="nav-link">
+  Workflow
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机素养" class="dropdown-title"><span class="title">计算机素养</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机素养" class="mobile-dropdown-title"><span class="title">计算机素养</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/computer-literacy/linux/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/computer-literacy/network/" class="nav-link">
+  网络
+</a></li><li class="dropdown-item"><!----> <a href="/computer-literacy/security/" class="nav-link">
+  安全
+</a></li><li class="dropdown-item"><!----> <a href="/computer-literacy/data-structure/" class="nav-link">
+  数据结构
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发常识" class="dropdown-title"><span class="title">开发常识</span> <span class="arrow down"></span></button> <button type="button" aria-label="开发常识" class="mobile-dropdown-title"><span class="title">开发常识</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/common-sense/common/common_sense.html" class="nav-link">
+  常识
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/ide-settings/" class="nav-link">
+  IDE 开发环境配置
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/log/" class="nav-link">
+  Log
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/test/" class="nav-link">
+  Test
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/swagger/" class="nav-link">
+  Swagger
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分享" class="dropdown-title"><span class="title">分享</span> <span class="arrow down"></span></button> <button type="button" aria-label="分享" class="mobile-dropdown-title"><span class="title">分享</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/share/faq/" class="nav-link">
+  FAQ
+</a></li><li class="dropdown-item"><!----> <a href="/share/recommend/" class="nav-link">
+  推荐
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="阅读" class="dropdown-title"><span class="title">阅读</span> <span class="arrow down"></span></button> <button type="button" aria-label="阅读" class="mobile-dropdown-title"><span class="title">阅读</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/read/effective_java.html" class="nav-link">
+  Effective Java
+</a></li><li class="dropdown-item"><!----> <a href="/read/clean_code.html" class="nav-link">
+  代码整洁之道
+</a></li><li class="dropdown-item"><!----> <a href="/read/coding_style.html" class="nav-link">
+  Coding Style
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/wow56/wow56.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/base/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="语言/语法" class="dropdown-title"><span class="title">语言/语法</span> <span class="arrow down"></span></button> <button type="button" aria-label="语言/语法" class="mobile-dropdown-title"><span class="title">语言/语法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lang/java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/lang/go/" class="nav-link">
+  Go
+</a></li><li class="dropdown-item"><!----> <a href="/lang/php/" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/lang/js/" class="nav-link">
+  Java Script
+</a></li><li class="dropdown-item"><!----> <a href="/lang/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/lang/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/lang/regex/" class="nav-link">
+  Regex
+</a></li><li class="dropdown-item"><!----> <a href="/lang/script/" class="nav-link">
+  脚本 Script
+</a></li><li class="dropdown-item"><!----> <a href="/lang/markdown/" class="nav-link">
+  Markdown
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架/类库" class="dropdown-title"><span class="title">框架/类库</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架/类库" class="mobile-dropdown-title"><span class="title">框架/类库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          应用程序
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/spring/" class="nav-link">
+  Spring 生态
+</a></li><li class="dropdown-subitem"><a href="/framework/vue/" class="nav-link">
+  Vue
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/gis/" class="nav-link">
+  Web GIS
+</a></li><li class="dropdown-subitem"><a href="/framework/echarts/" class="nav-link">
+  ECahrts
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          关系型
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/mysql/" class="nav-link">
+  MySQL
+</a></li></ul></li><li class="dropdown-item"><h4>
+          非关系型
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/mongodb/" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-subitem"><a href="/db/redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/db/es/" class="nav-link">
+  Elasticsearch
+</a></li></ul></li><li class="dropdown-item"><h4>
+          持久层框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/mybatis/" class="nav-link">
+  MyBatis
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="应用技术" class="dropdown-title"><span class="title">应用技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="应用技术" class="mobile-dropdown-title"><span class="title">应用技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/applied-tech/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/svn/" class="nav-link">
+  SVN
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/maven/" class="nav-link">
+  Maven
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/nginx/" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/mq/" class="nav-link router-link-active">
+  MQ
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/k8s/" class="nav-link">
+  Kubernetes
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/cas/" class="nav-link">
+  CAS
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/workflow/" class="nav-link">
+  Workflow
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机素养" class="dropdown-title"><span class="title">计算机素养</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机素养" class="mobile-dropdown-title"><span class="title">计算机素养</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/computer-literacy/linux/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/computer-literacy/network/" class="nav-link">
+  网络
+</a></li><li class="dropdown-item"><!----> <a href="/computer-literacy/security/" class="nav-link">
+  安全
+</a></li><li class="dropdown-item"><!----> <a href="/computer-literacy/data-structure/" class="nav-link">
+  数据结构
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发常识" class="dropdown-title"><span class="title">开发常识</span> <span class="arrow down"></span></button> <button type="button" aria-label="开发常识" class="mobile-dropdown-title"><span class="title">开发常识</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/common-sense/common/common_sense.html" class="nav-link">
+  常识
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/ide-settings/" class="nav-link">
+  IDE 开发环境配置
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/log/" class="nav-link">
+  Log
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/test/" class="nav-link">
+  Test
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/swagger/" class="nav-link">
+  Swagger
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分享" class="dropdown-title"><span class="title">分享</span> <span class="arrow down"></span></button> <button type="button" aria-label="分享" class="mobile-dropdown-title"><span class="title">分享</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/share/faq/" class="nav-link">
+  FAQ
+</a></li><li class="dropdown-item"><!----> <a href="/share/recommend/" class="nav-link">
+  推荐
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="阅读" class="dropdown-title"><span class="title">阅读</span> <span class="arrow down"></span></button> <button type="button" aria-label="阅读" class="mobile-dropdown-title"><span class="title">阅读</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/read/effective_java.html" class="nav-link">
+  Effective Java
+</a></li><li class="dropdown-item"><!----> <a href="/read/clean_code.html" class="nav-link">
+  代码整洁之道
+</a></li><li class="dropdown-item"><!----> <a href="/read/coding_style.html" class="nav-link">
+  Coding Style
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/wow56/wow56.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/applied-tech/mq/" aria-current="page" class="sidebar-link">MQ 总览</a></li><li><a href="/applied-tech/mq/kafka.html" class="sidebar-link">Kafka</a></li><li><a href="/applied-tech/mq/rocket_mq.html" class="sidebar-link">RocketMQ</a></li><li><a href="/applied-tech/mq/mq_install.html" aria-current="page" class="active sidebar-link">MQ 安装配置</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/applied-tech/mq/mq_install.html#参考文档" class="sidebar-link">参考文档</a></li><li class="sidebar-sub-header"><a href="/applied-tech/mq/mq_install.html#安装-kafka" class="sidebar-link">安装 Kafka</a></li><li class="sidebar-sub-header"><a href="/applied-tech/mq/mq_install.html#安装-rocketmq" class="sidebar-link">安装 RocketMQ</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/applied-tech/mq/mq_install.html#docker-安装" class="sidebar-link">Docker 安装</a></li></ul></li><li class="sidebar-sub-header"><a href="/applied-tech/mq/mq_install.html#讨论区" class="sidebar-link">讨论区</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="mq-安装配置"><a href="#mq-安装配置" class="header-anchor">#</a> MQ 安装配置</h1> <h2 id="参考文档"><a href="#参考文档" class="header-anchor">#</a> 参考文档</h2> <h2 id="安装-kafka"><a href="#安装-kafka" class="header-anchor">#</a> 安装 Kafka</h2> <p>// TODO</p> <h2 id="安装-rocketmq"><a href="#安装-rocketmq" class="header-anchor">#</a> 安装 RocketMQ</h2> <h3 id="docker-安装"><a href="#docker-安装" class="header-anchor">#</a> Docker 安装</h3> <blockquote><p>还不会 Docker？<a href="/applied-tech/docker/">Docker 是啥</a></p></blockquote> <h2 id="讨论区"><a href="#讨论区" class="header-anchor">#</a> 讨论区</h2> <blockquote><p>由于评论过多会影响页面最下方的导航，故将评论区做默认折叠处理。</p></blockquote> <details class="custom-block details"><summary>点击查看评论区内容，渴望您的宝贵建议~</summary> <!----></details></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">12/19/2023, 5:04:08 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/applied-tech/mq/rocket_mq.html" class="prev">
+        RocketMQ
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.784a7c32.js" defer></script><script src="/assets/js/2.b941f13f.js" defer></script><script src="/assets/js/43.f98c2c17.js" defer></script>
+  </body>
+</html>
