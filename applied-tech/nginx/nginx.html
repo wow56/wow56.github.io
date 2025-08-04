@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Nginx | Wow56 个人知识库</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/flaglogo.png">
+    <link rel="manifest" href="/flaglogo.png">
+    <link rel="apple-touch-icon" href="/flaglogo.png">
+    <meta name="description" content="Never stop learning">
+    
+    <link rel="preload" href="/assets/css/0.styles.b25eaea0.css" as="style"><link rel="preload" href="/assets/js/app.5780eb53.js" as="script"><link rel="preload" href="/assets/js/2.e1f1d232.js" as="script"><link rel="preload" href="/assets/js/46.917a9a8a.js" as="script"><link rel="prefetch" href="/assets/js/10.921c058c.js"><link rel="prefetch" href="/assets/js/100.678efb16.js"><link rel="prefetch" href="/assets/js/101.6fd33b9c.js"><link rel="prefetch" href="/assets/js/102.dfa6e733.js"><link rel="prefetch" href="/assets/js/103.4b74461a.js"><link rel="prefetch" href="/assets/js/104.603354fe.js"><link rel="prefetch" href="/assets/js/105.9da719c4.js"><link rel="prefetch" href="/assets/js/106.6aa24318.js"><link rel="prefetch" href="/assets/js/107.5ea57319.js"><link rel="prefetch" href="/assets/js/108.37ded6f2.js"><link rel="prefetch" href="/assets/js/109.adc40804.js"><link rel="prefetch" href="/assets/js/11.00deed7e.js"><link rel="prefetch" href="/assets/js/110.f1791c33.js"><link rel="prefetch" href="/assets/js/111.bff2cea6.js"><link rel="prefetch" href="/assets/js/112.4eb7e8b1.js"><link rel="prefetch" href="/assets/js/113.4ca0e39f.js"><link rel="prefetch" href="/assets/js/114.03d070d7.js"><link rel="prefetch" href="/assets/js/115.a007d470.js"><link rel="prefetch" href="/assets/js/116.027c798b.js"><link rel="prefetch" href="/assets/js/117.6eaa95a7.js"><link rel="prefetch" href="/assets/js/118.3468f2af.js"><link rel="prefetch" href="/assets/js/119.94c060f2.js"><link rel="prefetch" href="/assets/js/12.e7e7feff.js"><link rel="prefetch" href="/assets/js/120.2639e06f.js"><link rel="prefetch" href="/assets/js/121.1ee7e578.js"><link rel="prefetch" href="/assets/js/122.d1f0654b.js"><link rel="prefetch" href="/assets/js/123.52d57be3.js"><link rel="prefetch" href="/assets/js/124.d515f509.js"><link rel="prefetch" href="/assets/js/125.c783db82.js"><link rel="prefetch" href="/assets/js/126.08d41fac.js"><link rel="prefetch" href="/assets/js/127.5ab5b3c5.js"><link rel="prefetch" href="/assets/js/13.c0e1c39d.js"><link rel="prefetch" href="/assets/js/14.4be8face.js"><link rel="prefetch" href="/assets/js/15.b235fe5f.js"><link rel="prefetch" href="/assets/js/16.a62bd2ec.js"><link rel="prefetch" href="/assets/js/17.d3fa5b5a.js"><link rel="prefetch" href="/assets/js/18.04056df6.js"><link rel="prefetch" href="/assets/js/19.e0daa831.js"><link rel="prefetch" href="/assets/js/20.aae5efb2.js"><link rel="prefetch" href="/assets/js/21.51bfd139.js"><link rel="prefetch" href="/assets/js/22.d92aecaf.js"><link rel="prefetch" href="/assets/js/23.fd2079a6.js"><link rel="prefetch" href="/assets/js/24.7cadaa30.js"><link rel="prefetch" href="/assets/js/25.38c9c1a4.js"><link rel="prefetch" href="/assets/js/26.1c8277a8.js"><link rel="prefetch" href="/assets/js/27.1e495f81.js"><link rel="prefetch" href="/assets/js/28.7ef5af76.js"><link rel="prefetch" href="/assets/js/29.9031cb92.js"><link rel="prefetch" href="/assets/js/3.93a08b3b.js"><link rel="prefetch" href="/assets/js/30.1b61bbf8.js"><link rel="prefetch" href="/assets/js/31.f8cbfd44.js"><link rel="prefetch" href="/assets/js/32.0632cb94.js"><link rel="prefetch" href="/assets/js/33.a46a0b3d.js"><link rel="prefetch" href="/assets/js/34.fba531e6.js"><link rel="prefetch" href="/assets/js/35.db1fd348.js"><link rel="prefetch" href="/assets/js/36.9e6108c6.js"><link rel="prefetch" href="/assets/js/37.35fca0f6.js"><link rel="prefetch" href="/assets/js/38.ac22df93.js"><link rel="prefetch" href="/assets/js/39.7cce2902.js"><link rel="prefetch" href="/assets/js/4.e30be376.js"><link rel="prefetch" href="/assets/js/40.3560e650.js"><link rel="prefetch" href="/assets/js/41.d4632345.js"><link rel="prefetch" href="/assets/js/42.adce46c5.js"><link rel="prefetch" href="/assets/js/43.d2ff2a7e.js"><link rel="prefetch" href="/assets/js/44.d3f6ac6e.js"><link rel="prefetch" href="/assets/js/45.1e3b049e.js"><link rel="prefetch" href="/assets/js/47.5a73f25d.js"><link rel="prefetch" href="/assets/js/48.3b970b0a.js"><link rel="prefetch" href="/assets/js/49.dc6fd937.js"><link rel="prefetch" href="/assets/js/5.9411f932.js"><link rel="prefetch" href="/assets/js/50.109fdeb5.js"><link rel="prefetch" href="/assets/js/51.5ec4fc4b.js"><link rel="prefetch" href="/assets/js/52.0c03ff96.js"><link rel="prefetch" href="/assets/js/53.e91a6f48.js"><link rel="prefetch" href="/assets/js/54.7f886adb.js"><link rel="prefetch" href="/assets/js/55.2747b24f.js"><link rel="prefetch" href="/assets/js/56.a78db785.js"><link rel="prefetch" href="/assets/js/57.517d420c.js"><link rel="prefetch" href="/assets/js/58.0429f17c.js"><link rel="prefetch" href="/assets/js/59.9d68455f.js"><link rel="prefetch" href="/assets/js/6.3e126bb5.js"><link rel="prefetch" href="/assets/js/60.7cc000dc.js"><link rel="prefetch" href="/assets/js/61.8eaec827.js"><link rel="prefetch" href="/assets/js/62.9eb7a7b3.js"><link rel="prefetch" href="/assets/js/63.35e36177.js"><link rel="prefetch" href="/assets/js/64.6282d042.js"><link rel="prefetch" href="/assets/js/65.58ed4699.js"><link rel="prefetch" href="/assets/js/66.971cb02f.js"><link rel="prefetch" href="/assets/js/67.0a93b287.js"><link rel="prefetch" href="/assets/js/68.a7b05e3b.js"><link rel="prefetch" href="/assets/js/69.6572830f.js"><link rel="prefetch" href="/assets/js/7.de70efc4.js"><link rel="prefetch" href="/assets/js/70.168da9d9.js"><link rel="prefetch" href="/assets/js/71.d57d693b.js"><link rel="prefetch" href="/assets/js/72.91fa5cd3.js"><link rel="prefetch" href="/assets/js/73.7de2d2b8.js"><link rel="prefetch" href="/assets/js/74.acd298e4.js"><link rel="prefetch" href="/assets/js/75.62e67874.js"><link rel="prefetch" href="/assets/js/76.f2b96539.js"><link rel="prefetch" href="/assets/js/77.4255efc8.js"><link rel="prefetch" href="/assets/js/78.114300ba.js"><link rel="prefetch" href="/assets/js/79.d14a2756.js"><link rel="prefetch" href="/assets/js/8.1ec756ec.js"><link rel="prefetch" href="/assets/js/80.3fd73e00.js"><link rel="prefetch" href="/assets/js/81.71ebdbf4.js"><link rel="prefetch" href="/assets/js/82.0a5b5bb1.js"><link rel="prefetch" href="/assets/js/83.a23907a9.js"><link rel="prefetch" href="/assets/js/84.8c2bc996.js"><link rel="prefetch" href="/assets/js/85.ed1b9552.js"><link rel="prefetch" href="/assets/js/86.49d44a86.js"><link rel="prefetch" href="/assets/js/87.33153d90.js"><link rel="prefetch" href="/assets/js/88.a021dc21.js"><link rel="prefetch" href="/assets/js/89.b80b10c6.js"><link rel="prefetch" href="/assets/js/9.24d5e519.js"><link rel="prefetch" href="/assets/js/90.a059a06c.js"><link rel="prefetch" href="/assets/js/91.0c2e07a8.js"><link rel="prefetch" href="/assets/js/92.0460267f.js"><link rel="prefetch" href="/assets/js/93.630cc9b9.js"><link rel="prefetch" href="/assets/js/94.64e96711.js"><link rel="prefetch" href="/assets/js/95.cc7ee0e1.js"><link rel="prefetch" href="/assets/js/96.43f96f85.js"><link rel="prefetch" href="/assets/js/97.73dc1af0.js"><link rel="prefetch" href="/assets/js/98.10b4ffee.js"><link rel="prefetch" href="/assets/js/99.e6bfc1cd.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b25eaea0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/flaglogo.png" alt="Wow56 个人知识库" class="logo"> <span class="site-name can-hide">Wow56 个人知识库</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/base/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="语言/语法" class="dropdown-title"><span class="title">语言/语法</span> <span class="arrow down"></span></button> <button type="button" aria-label="语言/语法" class="mobile-dropdown-title"><span class="title">语言/语法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lang/java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/lang/go/" class="nav-link">
+  Go
+</a></li><li class="dropdown-item"><!----> <a href="/lang/php/" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/lang/js/" class="nav-link">
+  Java Script
+</a></li><li class="dropdown-item"><!----> <a href="/lang/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/lang/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/lang/regex/" class="nav-link">
+  Regex
+</a></li><li class="dropdown-item"><!----> <a href="/lang/script/" class="nav-link">
+  脚本 Script
+</a></li><li class="dropdown-item"><!----> <a href="/lang/markdown/" class="nav-link">
+  Markdown
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架/类库" class="dropdown-title"><span class="title">框架/类库</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架/类库" class="mobile-dropdown-title"><span class="title">框架/类库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          应用程序
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/spring/" class="nav-link">
+  Spring 生态
+</a></li><li class="dropdown-subitem"><a href="/framework/vue/" class="nav-link">
+  Vue
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/gis/" class="nav-link">
+  Web GIS
+</a></li><li class="dropdown-subitem"><a href="/framework/echarts/" class="nav-link">
+  ECahrts
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          关系型
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/mysql/" class="nav-link">
+  MySQL
+</a></li></ul></li><li class="dropdown-item"><h4>
+          非关系型
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/mongodb/" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-subitem"><a href="/db/redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/db/es/" class="nav-link">
+  Elasticsearch
+</a></li></ul></li><li class="dropdown-item"><h4>
+          持久层框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/mybatis/" class="nav-link">
+  MyBatis
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="应用技术" class="dropdown-title"><span class="title">应用技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="应用技术" class="mobile-dropdown-title"><span class="title">应用技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/applied-tech/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/svn/" class="nav-link">
+  SVN
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/maven/" class="nav-link">
+  Maven
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/nginx/" class="nav-link router-link-active">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/mq/" class="nav-link">
+  MQ
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/k8s/" class="nav-link">
+  Kubernetes
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/cas/" class="nav-link">
+  CAS
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/workflow/" class="nav-link">
+  Workflow
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机素养" class="dropdown-title"><span class="title">计算机素养</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机素养" class="mobile-dropdown-title"><span class="title">计算机素养</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/computer-literacy/linux/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/computer-literacy/network/" class="nav-link">
+  网络
+</a></li><li class="dropdown-item"><!----> <a href="/computer-literacy/security/" class="nav-link">
+  安全
+</a></li><li class="dropdown-item"><!----> <a href="/computer-literacy/data-structure/" class="nav-link">
+  数据结构
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发常识" class="dropdown-title"><span class="title">开发常识</span> <span class="arrow down"></span></button> <button type="button" aria-label="开发常识" class="mobile-dropdown-title"><span class="title">开发常识</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/common-sense/common/common_sense.html" class="nav-link">
+  常识
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/ide-settings/" class="nav-link">
+  IDE 开发环境配置
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/log/" class="nav-link">
+  Log
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/test/" class="nav-link">
+  Test
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/swagger/" class="nav-link">
+  Swagger
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分享" class="dropdown-title"><span class="title">分享</span> <span class="arrow down"></span></button> <button type="button" aria-label="分享" class="mobile-dropdown-title"><span class="title">分享</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/share/faq/" class="nav-link">
+  FAQ
+</a></li><li class="dropdown-item"><!----> <a href="/share/recommend/" class="nav-link">
+  推荐
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="阅读" class="dropdown-title"><span class="title">阅读</span> <span class="arrow down"></span></button> <button type="button" aria-label="阅读" class="mobile-dropdown-title"><span class="title">阅读</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/read/effective_java.html" class="nav-link">
+  Effective Java
+</a></li><li class="dropdown-item"><!----> <a href="/read/clean_code.html" class="nav-link">
+  代码整洁之道
+</a></li><li class="dropdown-item"><!----> <a href="/read/coding_style.html" class="nav-link">
+  Coding Style
+</a></li><li class="dropdown-item"><!----> <a href="/read/gx.html" class="nav-link">
+  高项笔记
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/wow56/wow56.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/base/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="语言/语法" class="dropdown-title"><span class="title">语言/语法</span> <span class="arrow down"></span></button> <button type="button" aria-label="语言/语法" class="mobile-dropdown-title"><span class="title">语言/语法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lang/java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/lang/go/" class="nav-link">
+  Go
+</a></li><li class="dropdown-item"><!----> <a href="/lang/php/" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/lang/js/" class="nav-link">
+  Java Script
+</a></li><li class="dropdown-item"><!----> <a href="/lang/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/lang/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/lang/regex/" class="nav-link">
+  Regex
+</a></li><li class="dropdown-item"><!----> <a href="/lang/script/" class="nav-link">
+  脚本 Script
+</a></li><li class="dropdown-item"><!----> <a href="/lang/markdown/" class="nav-link">
+  Markdown
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架/类库" class="dropdown-title"><span class="title">框架/类库</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架/类库" class="mobile-dropdown-title"><span class="title">框架/类库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          应用程序
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/spring/" class="nav-link">
+  Spring 生态
+</a></li><li class="dropdown-subitem"><a href="/framework/vue/" class="nav-link">
+  Vue
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/gis/" class="nav-link">
+  Web GIS
+</a></li><li class="dropdown-subitem"><a href="/framework/echarts/" class="nav-link">
+  ECahrts
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          关系型
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/mysql/" class="nav-link">
+  MySQL
+</a></li></ul></li><li class="dropdown-item"><h4>
+          非关系型
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/mongodb/" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-subitem"><a href="/db/redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/db/es/" class="nav-link">
+  Elasticsearch
+</a></li></ul></li><li class="dropdown-item"><h4>
+          持久层框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/mybatis/" class="nav-link">
+  MyBatis
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="应用技术" class="dropdown-title"><span class="title">应用技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="应用技术" class="mobile-dropdown-title"><span class="title">应用技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/applied-tech/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/svn/" class="nav-link">
+  SVN
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/maven/" class="nav-link">
+  Maven
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/nginx/" class="nav-link router-link-active">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/mq/" class="nav-link">
+  MQ
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/k8s/" class="nav-link">
+  Kubernetes
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/cas/" class="nav-link">
+  CAS
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/workflow/" class="nav-link">
+  Workflow
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机素养" class="dropdown-title"><span class="title">计算机素养</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机素养" class="mobile-dropdown-title"><span class="title">计算机素养</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/computer-literacy/linux/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/computer-literacy/network/" class="nav-link">
+  网络
+</a></li><li class="dropdown-item"><!----> <a href="/computer-literacy/security/" class="nav-link">
+  安全
+</a></li><li class="dropdown-item"><!----> <a href="/computer-literacy/data-structure/" class="nav-link">
+  数据结构
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发常识" class="dropdown-title"><span class="title">开发常识</span> <span class="arrow down"></span></button> <button type="button" aria-label="开发常识" class="mobile-dropdown-title"><span class="title">开发常识</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/common-sense/common/common_sense.html" class="nav-link">
+  常识
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/ide-settings/" class="nav-link">
+  IDE 开发环境配置
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/log/" class="nav-link">
+  Log
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/test/" class="nav-link">
+  Test
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/swagger/" class="nav-link">
+  Swagger
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分享" class="dropdown-title"><span class="title">分享</span> <span class="arrow down"></span></button> <button type="button" aria-label="分享" class="mobile-dropdown-title"><span class="title">分享</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/share/faq/" class="nav-link">
+  FAQ
+</a></li><li class="dropdown-item"><!----> <a href="/share/recommend/" class="nav-link">
+  推荐
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="阅读" class="dropdown-title"><span class="title">阅读</span> <span class="arrow down"></span></button> <button type="button" aria-label="阅读" class="mobile-dropdown-title"><span class="title">阅读</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/read/effective_java.html" class="nav-link">
+  Effective Java
+</a></li><li class="dropdown-item"><!----> <a href="/read/clean_code.html" class="nav-link">
+  代码整洁之道
+</a></li><li class="dropdown-item"><!----> <a href="/read/coding_style.html" class="nav-link">
+  Coding Style
+</a></li><li class="dropdown-item"><!----> <a href="/read/gx.html" class="nav-link">
+  高项笔记
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/wow56/wow56.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/applied-tech/nginx/" aria-current="page" class="sidebar-link">Nginx 总览</a></li><li><a href="/applied-tech/nginx/nginx.html" aria-current="page" class="active sidebar-link">Nginx</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/applied-tech/nginx/nginx.html#参考文档" class="sidebar-link">参考文档</a></li><li class="sidebar-sub-header"><a href="/applied-tech/nginx/nginx.html#请求流程" class="sidebar-link">请求流程</a></li><li class="sidebar-sub-header"><a href="/applied-tech/nginx/nginx.html#常用命令" class="sidebar-link">常用命令</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/applied-tech/nginx/nginx.html#启动" class="sidebar-link">启动</a></li><li class="sidebar-sub-header"><a href="/applied-tech/nginx/nginx.html#关闭" class="sidebar-link">关闭</a></li><li class="sidebar-sub-header"><a href="/applied-tech/nginx/nginx.html#重新加载" class="sidebar-link">重新加载</a></li><li class="sidebar-sub-header"><a href="/applied-tech/nginx/nginx.html#其他" class="sidebar-link">其他</a></li></ul></li><li class="sidebar-sub-header"><a href="/applied-tech/nginx/nginx.html#日志" class="sidebar-link">日志</a></li><li class="sidebar-sub-header"><a href="/applied-tech/nginx/nginx.html#负载均衡策略" class="sidebar-link">负载均衡策略</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/applied-tech/nginx/nginx.html#轮询策略" class="sidebar-link">轮询策略</a></li><li class="sidebar-sub-header"><a href="/applied-tech/nginx/nginx.html#加权轮询-weight" class="sidebar-link">加权轮询 Weight</a></li><li class="sidebar-sub-header"><a href="/applied-tech/nginx/nginx.html#最少连接-least-connections" class="sidebar-link">最少连接 Least Connections</a></li><li class="sidebar-sub-header"><a href="/applied-tech/nginx/nginx.html#最短响应时间-least-time" class="sidebar-link">最短响应时间 Least Time</a></li><li class="sidebar-sub-header"><a href="/applied-tech/nginx/nginx.html#基于-ip-哈希" class="sidebar-link">基于 IP 哈希</a></li><li class="sidebar-sub-header"><a href="/applied-tech/nginx/nginx.html#基于-url-哈希" class="sidebar-link">基于 URL 哈希</a></li><li class="sidebar-sub-header"><a href="/applied-tech/nginx/nginx.html#公平策略-fair" class="sidebar-link">公平策略 Fair</a></li></ul></li><li class="sidebar-sub-header"><a href="/applied-tech/nginx/nginx.html#配置文件" class="sidebar-link">配置文件</a></li><li class="sidebar-sub-header"><a href="/applied-tech/nginx/nginx.html#讨论区" class="sidebar-link">讨论区</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="nginx"><a href="#nginx" class="header-anchor">#</a> Nginx</h1> <h2 id="参考文档"><a href="#参考文档" class="header-anchor">#</a> 参考文档</h2> <h2 id="请求流程"><a href="#请求流程" class="header-anchor">#</a> 请求流程</h2> <p>请求进来先按照 listen 监听的端口进行 server 块的匹配，如果有多个 server 块监听了相同的端口，那么就会进一步使用 server_name 进行匹配（使用请求头 header 中的 Host 值，Host 值通常是当前访问的域名），如果匹配不到对应的 server 块的话，就会按照从上到下的顺序取第一个 server 块，除非有某个 server 块中配置了 <code>default_server</code>。</p> <details class="custom-block details"><summary>点击查看详情</summary> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code>user nginx<span class="token punctuation">;</span>
+worker_processes auto<span class="token punctuation">;</span>
+error_log /var/log/nginx/error.log warn<span class="token punctuation">;</span>
+pid /var/run/nginx.pid<span class="token punctuation">;</span>
+ 
+events <span class="token punctuation">{</span>
+    worker_connections <span class="token number">1024</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+http <span class="token punctuation">{</span>
+    include /etc/nginx/mime.types<span class="token punctuation">;</span>
+    default_type application/octet-stream<span class="token punctuation">;</span>
+    
+    log_format main <span class="token string">'$remote_addr - $remote_user [$time_local] &quot;$request&quot; '</span>
+                    <span class="token string">'$status $body_bytes_sent &quot;$http_referer&quot; '</span>
+                    <span class="token string">'&quot;$http_user_agent&quot; &quot;$http_x_forwarded_for&quot;'</span><span class="token punctuation">;</span>
+    
+    access_log /var/log/nginx/access.log main<span class="token punctuation">;</span>
+    
+    sendfile on<span class="token punctuation">;</span>
+    keepalive_timeout <span class="token number">65</span><span class="token punctuation">;</span>
+    <span class="token function">gzip</span> on<span class="token punctuation">;</span>
+    
+    <span class="token comment"># 虚拟主机配置</span>
+    server <span class="token punctuation">{</span>
+        listen <span class="token number">80</span><span class="token punctuation">;</span>
+        server_name example.com<span class="token punctuation">;</span>
+        
+        root /var/www/html<span class="token punctuation">;</span>
+        index index.html index.htm<span class="token punctuation">;</span>
+        
+        location / <span class="token punctuation">{</span>
+            try_files <span class="token variable">$uri</span> <span class="token variable">$uri</span>/ <span class="token operator">=</span><span class="token number">404</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        
+        <span class="token comment"># PHP处理</span>
+        location ~ <span class="token punctuation">\</span>.php$ <span class="token punctuation">{</span>
+            fastcgi_pass unix:/var/run/php/php7.4-fpm.sock<span class="token punctuation">;</span>
+            fastcgi_index index.php<span class="token punctuation">;</span>
+            fastcgi_param SCRIPT_FILENAME <span class="token variable">$document_root</span><span class="token variable">$fastcgi_script_name</span><span class="token punctuation">;</span>
+            include fastcgi_params<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        
+        <span class="token comment"># 静态文件缓存</span>
+        location ~* <span class="token punctuation">\</span>.<span class="token punctuation">(</span>jpg<span class="token operator">|</span>jpeg<span class="token operator">|</span>png<span class="token operator">|</span>gif<span class="token operator">|</span>ico<span class="token operator">|</span>css<span class="token operator">|</span>js<span class="token punctuation">)</span>$ <span class="token punctuation">{</span>
+            expires 30d<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br></div></div></details> <h2 id="常用命令"><a href="#常用命令" class="header-anchor">#</a> 常用命令</h2> <h3 id="启动"><a href="#启动" class="header-anchor">#</a> 启动</h3> <ul><li><code>nginx</code>，默认启动，配置都使用默认。</li> <li><code>nginx -c nginx.conf</code>，指定配置文件启动。</li> <li><code>nginx -p /home/nginx -c nginx.conf</code>，指定运行目录、配置文件启动。</li></ul> <h3 id="关闭"><a href="#关闭" class="header-anchor">#</a> 关闭</h3> <ul><li><code>nginx -s stop</code>，快速关闭。</li> <li><code>nginx -s quit</code>，优雅关闭。</li> <li><code>nginx -s quit</code>，优雅关闭。</li></ul> <h3 id="重新加载"><a href="#重新加载" class="header-anchor">#</a> 重新加载</h3> <ul><li><code>nginx -s reload</code>，重新加载。</li> <li><code>nginx -p /home/nginx -c nginx.conf -s reload</code>，指定运行目录和配置文件重新加载。</li></ul> <h3 id="其他"><a href="#其他" class="header-anchor">#</a> 其他</h3> <ul><li><code>nginx -t</code>，测试配置文件正确性。</li> <li><code>nginx -T</code>，测试配置文件正确性并输出。</li></ul> <h2 id="日志"><a href="#日志" class="header-anchor">#</a> 日志</h2> <ul><li><code>/nginx/logs</code></li> <li><code>/var/log/nginx</code></li></ul> <h2 id="负载均衡策略"><a href="#负载均衡策略" class="header-anchor">#</a> 负载均衡策略</h2> <p>7大负载均衡的常用策略：</p> <ol><li>轮询 <code>Round Robin</code>（默认）</li> <li>加权轮询 <code>Weight Round Robin</code></li> <li>最少连接 <code>Least Connections</code></li> <li>最短响应时间 <code>Least Time</code></li> <li><code>ip_hash</code></li> <li><code>url_hash</code></li> <li>公平策略 <code>fair</code></li></ol> <h3 id="轮询策略"><a href="#轮询策略" class="header-anchor">#</a> 轮询策略</h3> <p>轮询是最常见的负载均衡策略。请求按照顺序依次分配给后端服务器，每个请求都<strong>按照列表中服务器的顺序进行分发</strong>。当请求达到服务器列表的末尾时，重新开始从第一个服务器分发。如后端服务器down掉，能自动剔除。</p> <p>轮询适用于后端服务器性能相近、无需特别考虑请求的处理时间等情况。</p> <p>轮询也可以理解为是一个特殊的加权策略，不过服务器组中的各个服务器的权重都是1。</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code>upstream my_backend <span class="token punctuation">{</span>
+	server backend1.example.com<span class="token punctuation">;</span>
+	server backend2.example.com<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment"># 后面的均衡策略没有 server ，则说明和这里是一样的，不过多重复。</span>
+server <span class="token punctuation">{</span>
+	listen <span class="token number">80</span><span class="token punctuation">;</span>
+	server_name myloadbalancer.example.com<span class="token punctuation">;</span>
+
+	location / <span class="token punctuation">{</span>
+		proxy_pass http://my_backend<span class="token punctuation">;</span>
+		proxy_set_header Host <span class="token variable">$host</span><span class="token punctuation">;</span>
+		proxy_set_header X-Real-IP <span class="token variable">$remote_addr</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h3 id="加权轮询-weight"><a href="#加权轮询-weight" class="header-anchor">#</a> 加权轮询 Weight</h3> <p>加权轮询在轮询的基础上引入权重 weight 因素，即给每个服务器分配一个权重值，用于调节每台服务器处理请求的比例，<strong>权重高的服务器将获得更多的请求</strong>。</p> <p>这种策略适用于服务器性能不均衡的情况，通过调整权重可以实现更灵活的负载均衡。</p> <p>weight 代表权重，默认为1，weight 和访问比率成正比，权重越高被分配的客户端也就越多。</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code>upstream my_backend <span class="token punctuation">{</span>
+    server backend1.example.com <span class="token assign-left variable">weight</span><span class="token operator">=</span><span class="token number">3</span><span class="token punctuation">;</span>
+    server backend2.example.com <span class="token assign-left variable">weight</span><span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">;</span>
+    server backend3.example.com <span class="token assign-left variable">weight</span><span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="最少连接-least-connections"><a href="#最少连接-least-connections" class="header-anchor">#</a> 最少连接 Least Connections</h3> <p>最少连接策略 <code>Least Connections</code> 将<strong>请求分配给当前连接数最少的服务器</strong>，以保持服务器的负载均衡。</p> <p>这种策略可以避免出现某些服务器连接数过载的情况，从而提高系统的整体性能。</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code>upstream my_backend <span class="token punctuation">{</span>
+    least_conn<span class="token punctuation">;</span>
+    server backend1.example.com<span class="token punctuation">;</span>
+    server backend2.example.com<span class="token punctuation">;</span>
+    server backend3.example.com<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="最短响应时间-least-time"><a href="#最短响应时间-least-time" class="header-anchor">#</a> 最短响应时间 Least Time</h3> <p>最短响应时间策略 <code>Least Time</code> 将<strong>请求分配给具有最短平均响应时间的服务器</strong>。通过实时监测服务器的响应时间，负载均衡器可以动态调整请求的分发，以确保向用户提供更快的响应和更好的体验。</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code>upstream my_backend <span class="token punctuation">{</span>
+    least_time header_response <span class="token function">time</span><span class="token punctuation">;</span>
+    server backend1.example.com<span class="token punctuation">;</span>
+    server backend2.example.com<span class="token punctuation">;</span>
+    server backend3.example.com<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="基于-ip-哈希"><a href="#基于-ip-哈希" class="header-anchor">#</a> 基于 IP 哈希</h3> <p>IP 哈希策略根据请求的源 IP 地址计算哈希值，然后将请求分发到特定的服务器。</p> <p><strong>相同 IP 地址的请求始终被分发到相同的服务器</strong>，这有助于保持会话的一致性，适用于需要会话粘性的应用场景，可解决 session 的问题。</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code>upstream my_backend <span class="token punctuation">{</span>
+    ip_hash<span class="token punctuation">;</span>
+    server backend1.example.com<span class="token punctuation">;</span>
+    server backend2.example.com<span class="token punctuation">;</span>
+    server backend3.example.com<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="基于-url-哈希"><a href="#基于-url-哈希" class="header-anchor">#</a> 基于 URL 哈希</h3> <p>URL 哈希策略根据请求的 URL 计算哈希值，然后将请求分发到特定的服务器。<strong>相同 URL 的请求始终被分发到相同的服务器</strong>，这对于缓存和特定资源的分发具有一定的优势。</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code>upstream my_backend <span class="token punctuation">{</span>
+    <span class="token builtin class-name">hash</span> <span class="token variable">$request_uri</span><span class="token punctuation">;</span>
+    server backend1.example.com<span class="token punctuation">;</span>
+    server backend2.example.com<span class="token punctuation">;</span>
+    server backend3.example.com<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="公平策略-fair"><a href="#公平策略-fair" class="header-anchor">#</a> 公平策略 Fair</h3> <p>公平策略 <code>fair</code> 会<strong>根据服务器的响应时间和负载情况动态调整请求的分发</strong>，以确保每个服务器获得相等的负载。</p> <p>这种策略可以避免某些服务器被过载或负载不均衡的情况。</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code>upstream my_backend <span class="token punctuation">{</span>
+    fair<span class="token punctuation">;</span>
+    server backend1.example.com<span class="token punctuation">;</span>
+    server backend2.example.com<span class="token punctuation">;</span>
+    server backend3.example.com<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h2 id="配置文件"><a href="#配置文件" class="header-anchor">#</a> 配置文件</h2> <p>要在 Nginx 中配置 HTTPS，需要一个 SSL 证书文件（通常是 <code>.pem</code> 格式）和一个私钥文件（<code>.key</code>）。确保替换 <code>your_domain.com</code>、<code>/path/to/your_certificate.pem</code> 和 <code>/path/to/your_private.key</code> 为你的域名和文件路径。
+这个配置块指示 Nginx 监听 443 端口上的 SSL 连接，并提供你的证书和私钥文件来处理加密。当配置了这些后，需要重启或重新加载 Nginx 以应用新的配置。</p> <details class="custom-block details"><summary>点击查看详细配置</summary> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># 这是Nginx的主配置文件，通常位于/etc/nginx/nginx.conf</span>
+<span class="token comment"># 配置文件由指令和上下文组成，上下文用大括号{}包围</span>
+
+<span class="token comment"># 核心配置部分</span>
+user nginx<span class="token punctuation">;</span>  <span class="token comment"># 指定运行Nginx的用户和用户组</span>
+worker_processes auto<span class="token punctuation">;</span>  <span class="token comment"># 工作进程数，auto表示自动检测CPU核心数</span>
+error_log /var/log/nginx/error.log warn<span class="token punctuation">;</span>  <span class="token comment"># 错误日志路径和级别</span>
+pid /var/run/nginx.pid<span class="token punctuation">;</span>  <span class="token comment"># 存储主进程ID的文件</span>
+
+<span class="token comment"># 工作进程配置</span>
+events <span class="token punctuation">{</span>
+    worker_connections <span class="token number">1024</span><span class="token punctuation">;</span>  <span class="token comment"># 每个工作进程的最大连接数</span>
+    multi_accept on<span class="token punctuation">;</span>  <span class="token comment"># 一次接受所有新连接，而不是逐个接受</span>
+    use epoll<span class="token punctuation">;</span>  <span class="token comment"># 使用epoll事件模型（Linux高效事件模型）</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment"># HTTP服务器配置</span>
+http <span class="token punctuation">{</span>
+    <span class="token comment"># 基本配置</span>
+    include /etc/nginx/mime.types<span class="token punctuation">;</span>  <span class="token comment"># 包含MIME类型定义文件</span>
+    default_type application/octet-stream<span class="token punctuation">;</span>  <span class="token comment"># 默认MIME类型</span>
+    
+    <span class="token comment"># 日志格式配置</span>
+    log_format main <span class="token string">'$remote_addr - $remote_user [$time_local] &quot;$request&quot; '</span>
+                    <span class="token string">'$status $body_bytes_sent &quot;$http_referer&quot; '</span>
+                    <span class="token string">'&quot;$http_user_agent&quot; &quot;$http_x_forwarded_for&quot;'</span><span class="token punctuation">;</span>
+    
+    access_log /var/log/nginx/access.log main<span class="token punctuation">;</span>  <span class="token comment"># 访问日志路径和格式</span>
+    
+    <span class="token comment"># 性能优化相关</span>
+    sendfile on<span class="token punctuation">;</span>  <span class="token comment"># 启用高效文件传输模式</span>
+    tcp_nopush on<span class="token punctuation">;</span>  <span class="token comment"># 仅在sendfile开启时有效，尽可能减少网络报文数量</span>
+    tcp_nodelay on<span class="token punctuation">;</span>  <span class="token comment"># 禁用Nagle算法，提高实时性</span>
+    keepalive_timeout <span class="token number">65</span><span class="token punctuation">;</span>  <span class="token comment"># 客户端连接保持活动的超时时间</span>
+    <span class="token function">gzip</span> on<span class="token punctuation">;</span>  <span class="token comment"># 启用gzip压缩</span>
+    gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript<span class="token punctuation">;</span>
+    
+    <span class="token comment"># 虚拟主机配置（服务器块）</span>
+    server <span class="token punctuation">{</span>
+        listen <span class="token number">80</span><span class="token punctuation">;</span>  <span class="token comment"># 监听80端口</span>
+        server_name example.com www.example.com<span class="token punctuation">;</span>  <span class="token comment"># 服务器名称（域名）</span>
+        
+        <span class="token comment"># 根目录和索引文件</span>
+        root /var/www/html<span class="token punctuation">;</span>  <span class="token comment"># 网站根目录</span>
+        index index.html index.htm index.php<span class="token punctuation">;</span>  <span class="token comment"># 默认索引文件</span>
+        
+        <span class="token comment"># 错误页面重定向</span>
+        error_page <span class="token number">404</span> /404.html<span class="token punctuation">;</span>  <span class="token comment"># 自定义404错误页面</span>
+        error_page <span class="token number">500</span> <span class="token number">502</span> <span class="token number">503</span> <span class="token number">504</span> /50x.html<span class="token punctuation">;</span>
+        
+        <span class="token comment"># 位置块（URL路由）</span>
+        location / <span class="token punctuation">{</span>
+            try_files <span class="token variable">$uri</span> <span class="token variable">$uri</span>/ <span class="token operator">=</span><span class="token number">404</span><span class="token punctuation">;</span>  <span class="token comment"># 尝试按顺序查找文件</span>
+        <span class="token punctuation">}</span>
+        
+        <span class="token comment"># PHP处理（需要安装PHP-FPM）</span>
+        location ~ <span class="token punctuation">\</span>.php$ <span class="token punctuation">{</span>
+            fastcgi_pass unix:/var/run/php/php7.4-fpm.sock<span class="token punctuation">;</span>
+            fastcgi_index index.php<span class="token punctuation">;</span>
+            fastcgi_param SCRIPT_FILENAME <span class="token variable">$document_root</span><span class="token variable">$fastcgi_script_name</span><span class="token punctuation">;</span>
+            include fastcgi_params<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        
+        <span class="token comment"># 静态文件缓存设置</span>
+        location ~* <span class="token punctuation">\</span>.<span class="token punctuation">(</span>jpg<span class="token operator">|</span>jpeg<span class="token operator">|</span>png<span class="token operator">|</span>gif<span class="token operator">|</span>ico<span class="token operator">|</span>css<span class="token operator">|</span>js<span class="token punctuation">)</span>$ <span class="token punctuation">{</span>
+            expires 30d<span class="token punctuation">;</span>  <span class="token comment"># 缓存30天</span>
+            add_header Cache-Control <span class="token string">&quot;public&quot;</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        
+        <span class="token comment"># 禁止访问隐藏文件</span>
+        location ~ /<span class="token punctuation">\</span>.ht <span class="token punctuation">{</span>
+            deny all<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token comment"># 另一个虚拟主机示例（HTTPS配置）</span>
+    server <span class="token punctuation">{</span>
+        listen <span class="token number">443</span> ssl<span class="token punctuation">;</span>  <span class="token comment"># 监听443端口并启用SSL</span>
+        server_name secure.example.com<span class="token punctuation">;</span>
+        
+        <span class="token comment"># SSL证书配置</span>
+        ssl_certificate /etc/nginx/ssl/example.com.crt<span class="token punctuation">;</span>
+        ssl_certificate_key /etc/nginx/ssl/example.com.key<span class="token punctuation">;</span>
+        
+        <span class="token comment"># SSL优化配置</span>
+        ssl_session_cache shared:SSL:10m<span class="token punctuation">;</span>
+        ssl_session_timeout 10m<span class="token punctuation">;</span>
+        ssl_protocols TLSv1.2 TLSv1.3<span class="token punctuation">;</span>
+        ssl_ciphers HIGH:<span class="token operator">!</span>aNULL:<span class="token operator">!</span>MD5<span class="token punctuation">;</span>
+        ssl_prefer_server_ciphers on<span class="token punctuation">;</span>
+        
+        <span class="token comment"># 其他配置与HTTP服务器类似</span>
+        root /var/www/secure<span class="token punctuation">;</span>
+        index index.html<span class="token punctuation">;</span>
+        
+        <span class="token comment"># 强制HTTPS重定向（通常放在HTTP上下文中更合适）</span>
+        <span class="token comment"># location / {</span>
+        <span class="token comment">#     return 301 https://$host$request_uri;</span>
+        <span class="token comment"># }</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token comment"># HTTP重定向到HTTPS的配置</span>
+    server <span class="token punctuation">{</span>
+        listen <span class="token number">80</span><span class="token punctuation">;</span>
+        server_name secure.example.com<span class="token punctuation">;</span>
+        <span class="token builtin class-name">return</span> <span class="token number">301</span> https://<span class="token variable">$host</span><span class="token variable">$request_uri</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment"># 邮件服务器代理配置（通常不需要可注释掉）</span>
+<span class="token comment"># mail {</span>
+<span class="token comment">#     ...</span>
+<span class="token comment"># }</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br></div></div><details class="custom-block details"><summary>点击查看详细配置</summary> <h2 id="讨论区"><a href="#讨论区" class="header-anchor">#</a> 讨论区</h2> <blockquote><p>由于评论过多会影响页面最下方的导航，故将评论区做默认折叠处理。</p></blockquote> <details class="custom-block details"><summary>点击查看评论区内容，渴望您的宝贵建议~</summary> <!----></details></details></details></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">4/29/2025, 3:12:23 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/applied-tech/nginx/" class="prev router-link-active">
+        Nginx 总览
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.5780eb53.js" defer></script><script src="/assets/js/2.e1f1d232.js" defer></script><script src="/assets/js/46.917a9a8a.js" defer></script>
+  </body>
+</html>

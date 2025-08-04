@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Linux 命令行基础 | Wow56 个人知识库</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/flaglogo.png">
+    <link rel="manifest" href="/flaglogo.png">
+    <link rel="apple-touch-icon" href="/flaglogo.png">
+    <meta name="description" content="Never stop learning">
+    
+    <link rel="preload" href="/assets/css/0.styles.b25eaea0.css" as="style"><link rel="preload" href="/assets/js/app.5780eb53.js" as="script"><link rel="preload" href="/assets/js/2.e1f1d232.js" as="script"><link rel="preload" href="/assets/js/66.971cb02f.js" as="script"><link rel="prefetch" href="/assets/js/10.921c058c.js"><link rel="prefetch" href="/assets/js/100.678efb16.js"><link rel="prefetch" href="/assets/js/101.6fd33b9c.js"><link rel="prefetch" href="/assets/js/102.dfa6e733.js"><link rel="prefetch" href="/assets/js/103.4b74461a.js"><link rel="prefetch" href="/assets/js/104.603354fe.js"><link rel="prefetch" href="/assets/js/105.9da719c4.js"><link rel="prefetch" href="/assets/js/106.6aa24318.js"><link rel="prefetch" href="/assets/js/107.5ea57319.js"><link rel="prefetch" href="/assets/js/108.37ded6f2.js"><link rel="prefetch" href="/assets/js/109.adc40804.js"><link rel="prefetch" href="/assets/js/11.00deed7e.js"><link rel="prefetch" href="/assets/js/110.f1791c33.js"><link rel="prefetch" href="/assets/js/111.bff2cea6.js"><link rel="prefetch" href="/assets/js/112.4eb7e8b1.js"><link rel="prefetch" href="/assets/js/113.4ca0e39f.js"><link rel="prefetch" href="/assets/js/114.03d070d7.js"><link rel="prefetch" href="/assets/js/115.a007d470.js"><link rel="prefetch" href="/assets/js/116.027c798b.js"><link rel="prefetch" href="/assets/js/117.6eaa95a7.js"><link rel="prefetch" href="/assets/js/118.3468f2af.js"><link rel="prefetch" href="/assets/js/119.94c060f2.js"><link rel="prefetch" href="/assets/js/12.e7e7feff.js"><link rel="prefetch" href="/assets/js/120.2639e06f.js"><link rel="prefetch" href="/assets/js/121.1ee7e578.js"><link rel="prefetch" href="/assets/js/122.d1f0654b.js"><link rel="prefetch" href="/assets/js/123.52d57be3.js"><link rel="prefetch" href="/assets/js/124.d515f509.js"><link rel="prefetch" href="/assets/js/125.c783db82.js"><link rel="prefetch" href="/assets/js/126.08d41fac.js"><link rel="prefetch" href="/assets/js/127.5ab5b3c5.js"><link rel="prefetch" href="/assets/js/13.c0e1c39d.js"><link rel="prefetch" href="/assets/js/14.4be8face.js"><link rel="prefetch" href="/assets/js/15.b235fe5f.js"><link rel="prefetch" href="/assets/js/16.a62bd2ec.js"><link rel="prefetch" href="/assets/js/17.d3fa5b5a.js"><link rel="prefetch" href="/assets/js/18.04056df6.js"><link rel="prefetch" href="/assets/js/19.e0daa831.js"><link rel="prefetch" href="/assets/js/20.aae5efb2.js"><link rel="prefetch" href="/assets/js/21.51bfd139.js"><link rel="prefetch" href="/assets/js/22.d92aecaf.js"><link rel="prefetch" href="/assets/js/23.fd2079a6.js"><link rel="prefetch" href="/assets/js/24.7cadaa30.js"><link rel="prefetch" href="/assets/js/25.38c9c1a4.js"><link rel="prefetch" href="/assets/js/26.1c8277a8.js"><link rel="prefetch" href="/assets/js/27.1e495f81.js"><link rel="prefetch" href="/assets/js/28.7ef5af76.js"><link rel="prefetch" href="/assets/js/29.9031cb92.js"><link rel="prefetch" href="/assets/js/3.93a08b3b.js"><link rel="prefetch" href="/assets/js/30.1b61bbf8.js"><link rel="prefetch" href="/assets/js/31.f8cbfd44.js"><link rel="prefetch" href="/assets/js/32.0632cb94.js"><link rel="prefetch" href="/assets/js/33.a46a0b3d.js"><link rel="prefetch" href="/assets/js/34.fba531e6.js"><link rel="prefetch" href="/assets/js/35.db1fd348.js"><link rel="prefetch" href="/assets/js/36.9e6108c6.js"><link rel="prefetch" href="/assets/js/37.35fca0f6.js"><link rel="prefetch" href="/assets/js/38.ac22df93.js"><link rel="prefetch" href="/assets/js/39.7cce2902.js"><link rel="prefetch" href="/assets/js/4.e30be376.js"><link rel="prefetch" href="/assets/js/40.3560e650.js"><link rel="prefetch" href="/assets/js/41.d4632345.js"><link rel="prefetch" href="/assets/js/42.adce46c5.js"><link rel="prefetch" href="/assets/js/43.d2ff2a7e.js"><link rel="prefetch" href="/assets/js/44.d3f6ac6e.js"><link rel="prefetch" href="/assets/js/45.1e3b049e.js"><link rel="prefetch" href="/assets/js/46.917a9a8a.js"><link rel="prefetch" href="/assets/js/47.5a73f25d.js"><link rel="prefetch" href="/assets/js/48.3b970b0a.js"><link rel="prefetch" href="/assets/js/49.dc6fd937.js"><link rel="prefetch" href="/assets/js/5.9411f932.js"><link rel="prefetch" href="/assets/js/50.109fdeb5.js"><link rel="prefetch" href="/assets/js/51.5ec4fc4b.js"><link rel="prefetch" href="/assets/js/52.0c03ff96.js"><link rel="prefetch" href="/assets/js/53.e91a6f48.js"><link rel="prefetch" href="/assets/js/54.7f886adb.js"><link rel="prefetch" href="/assets/js/55.2747b24f.js"><link rel="prefetch" href="/assets/js/56.a78db785.js"><link rel="prefetch" href="/assets/js/57.517d420c.js"><link rel="prefetch" href="/assets/js/58.0429f17c.js"><link rel="prefetch" href="/assets/js/59.9d68455f.js"><link rel="prefetch" href="/assets/js/6.3e126bb5.js"><link rel="prefetch" href="/assets/js/60.7cc000dc.js"><link rel="prefetch" href="/assets/js/61.8eaec827.js"><link rel="prefetch" href="/assets/js/62.9eb7a7b3.js"><link rel="prefetch" href="/assets/js/63.35e36177.js"><link rel="prefetch" href="/assets/js/64.6282d042.js"><link rel="prefetch" href="/assets/js/65.58ed4699.js"><link rel="prefetch" href="/assets/js/67.0a93b287.js"><link rel="prefetch" href="/assets/js/68.a7b05e3b.js"><link rel="prefetch" href="/assets/js/69.6572830f.js"><link rel="prefetch" href="/assets/js/7.de70efc4.js"><link rel="prefetch" href="/assets/js/70.168da9d9.js"><link rel="prefetch" href="/assets/js/71.d57d693b.js"><link rel="prefetch" href="/assets/js/72.91fa5cd3.js"><link rel="prefetch" href="/assets/js/73.7de2d2b8.js"><link rel="prefetch" href="/assets/js/74.acd298e4.js"><link rel="prefetch" href="/assets/js/75.62e67874.js"><link rel="prefetch" href="/assets/js/76.f2b96539.js"><link rel="prefetch" href="/assets/js/77.4255efc8.js"><link rel="prefetch" href="/assets/js/78.114300ba.js"><link rel="prefetch" href="/assets/js/79.d14a2756.js"><link rel="prefetch" href="/assets/js/8.1ec756ec.js"><link rel="prefetch" href="/assets/js/80.3fd73e00.js"><link rel="prefetch" href="/assets/js/81.71ebdbf4.js"><link rel="prefetch" href="/assets/js/82.0a5b5bb1.js"><link rel="prefetch" href="/assets/js/83.a23907a9.js"><link rel="prefetch" href="/assets/js/84.8c2bc996.js"><link rel="prefetch" href="/assets/js/85.ed1b9552.js"><link rel="prefetch" href="/assets/js/86.49d44a86.js"><link rel="prefetch" href="/assets/js/87.33153d90.js"><link rel="prefetch" href="/assets/js/88.a021dc21.js"><link rel="prefetch" href="/assets/js/89.b80b10c6.js"><link rel="prefetch" href="/assets/js/9.24d5e519.js"><link rel="prefetch" href="/assets/js/90.a059a06c.js"><link rel="prefetch" href="/assets/js/91.0c2e07a8.js"><link rel="prefetch" href="/assets/js/92.0460267f.js"><link rel="prefetch" href="/assets/js/93.630cc9b9.js"><link rel="prefetch" href="/assets/js/94.64e96711.js"><link rel="prefetch" href="/assets/js/95.cc7ee0e1.js"><link rel="prefetch" href="/assets/js/96.43f96f85.js"><link rel="prefetch" href="/assets/js/97.73dc1af0.js"><link rel="prefetch" href="/assets/js/98.10b4ffee.js"><link rel="prefetch" href="/assets/js/99.e6bfc1cd.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b25eaea0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/flaglogo.png" alt="Wow56 个人知识库" class="logo"> <span class="site-name can-hide">Wow56 个人知识库</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/base/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="语言/语法" class="dropdown-title"><span class="title">语言/语法</span> <span class="arrow down"></span></button> <button type="button" aria-label="语言/语法" class="mobile-dropdown-title"><span class="title">语言/语法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lang/java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/lang/go/" class="nav-link">
+  Go
+</a></li><li class="dropdown-item"><!----> <a href="/lang/php/" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/lang/js/" class="nav-link">
+  Java Script
+</a></li><li class="dropdown-item"><!----> <a href="/lang/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/lang/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/lang/regex/" class="nav-link">
+  Regex
+</a></li><li class="dropdown-item"><!----> <a href="/lang/script/" class="nav-link">
+  脚本 Script
+</a></li><li class="dropdown-item"><!----> <a href="/lang/markdown/" class="nav-link">
+  Markdown
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架/类库" class="dropdown-title"><span class="title">框架/类库</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架/类库" class="mobile-dropdown-title"><span class="title">框架/类库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          应用程序
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/spring/" class="nav-link">
+  Spring 生态
+</a></li><li class="dropdown-subitem"><a href="/framework/vue/" class="nav-link">
+  Vue
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/gis/" class="nav-link">
+  Web GIS
+</a></li><li class="dropdown-subitem"><a href="/framework/echarts/" class="nav-link">
+  ECahrts
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          关系型
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/mysql/" class="nav-link">
+  MySQL
+</a></li></ul></li><li class="dropdown-item"><h4>
+          非关系型
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/mongodb/" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-subitem"><a href="/db/redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/db/es/" class="nav-link">
+  Elasticsearch
+</a></li></ul></li><li class="dropdown-item"><h4>
+          持久层框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/mybatis/" class="nav-link">
+  MyBatis
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="应用技术" class="dropdown-title"><span class="title">应用技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="应用技术" class="mobile-dropdown-title"><span class="title">应用技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/applied-tech/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/svn/" class="nav-link">
+  SVN
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/maven/" class="nav-link">
+  Maven
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/nginx/" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/mq/" class="nav-link">
+  MQ
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/k8s/" class="nav-link">
+  Kubernetes
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/cas/" class="nav-link">
+  CAS
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/workflow/" class="nav-link">
+  Workflow
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机素养" class="dropdown-title"><span class="title">计算机素养</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机素养" class="mobile-dropdown-title"><span class="title">计算机素养</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/computer-literacy/linux/" class="nav-link router-link-active">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/computer-literacy/network/" class="nav-link">
+  网络
+</a></li><li class="dropdown-item"><!----> <a href="/computer-literacy/security/" class="nav-link">
+  安全
+</a></li><li class="dropdown-item"><!----> <a href="/computer-literacy/data-structure/" class="nav-link">
+  数据结构
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发常识" class="dropdown-title"><span class="title">开发常识</span> <span class="arrow down"></span></button> <button type="button" aria-label="开发常识" class="mobile-dropdown-title"><span class="title">开发常识</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/common-sense/common/common_sense.html" class="nav-link">
+  常识
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/ide-settings/" class="nav-link">
+  IDE 开发环境配置
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/log/" class="nav-link">
+  Log
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/test/" class="nav-link">
+  Test
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/swagger/" class="nav-link">
+  Swagger
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分享" class="dropdown-title"><span class="title">分享</span> <span class="arrow down"></span></button> <button type="button" aria-label="分享" class="mobile-dropdown-title"><span class="title">分享</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/share/faq/" class="nav-link">
+  FAQ
+</a></li><li class="dropdown-item"><!----> <a href="/share/recommend/" class="nav-link">
+  推荐
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="阅读" class="dropdown-title"><span class="title">阅读</span> <span class="arrow down"></span></button> <button type="button" aria-label="阅读" class="mobile-dropdown-title"><span class="title">阅读</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/read/effective_java.html" class="nav-link">
+  Effective Java
+</a></li><li class="dropdown-item"><!----> <a href="/read/clean_code.html" class="nav-link">
+  代码整洁之道
+</a></li><li class="dropdown-item"><!----> <a href="/read/coding_style.html" class="nav-link">
+  Coding Style
+</a></li><li class="dropdown-item"><!----> <a href="/read/gx.html" class="nav-link">
+  高项笔记
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/wow56/wow56.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/base/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="语言/语法" class="dropdown-title"><span class="title">语言/语法</span> <span class="arrow down"></span></button> <button type="button" aria-label="语言/语法" class="mobile-dropdown-title"><span class="title">语言/语法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lang/java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/lang/go/" class="nav-link">
+  Go
+</a></li><li class="dropdown-item"><!----> <a href="/lang/php/" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/lang/js/" class="nav-link">
+  Java Script
+</a></li><li class="dropdown-item"><!----> <a href="/lang/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/lang/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/lang/regex/" class="nav-link">
+  Regex
+</a></li><li class="dropdown-item"><!----> <a href="/lang/script/" class="nav-link">
+  脚本 Script
+</a></li><li class="dropdown-item"><!----> <a href="/lang/markdown/" class="nav-link">
+  Markdown
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架/类库" class="dropdown-title"><span class="title">框架/类库</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架/类库" class="mobile-dropdown-title"><span class="title">框架/类库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          应用程序
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/spring/" class="nav-link">
+  Spring 生态
+</a></li><li class="dropdown-subitem"><a href="/framework/vue/" class="nav-link">
+  Vue
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/gis/" class="nav-link">
+  Web GIS
+</a></li><li class="dropdown-subitem"><a href="/framework/echarts/" class="nav-link">
+  ECahrts
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          关系型
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/mysql/" class="nav-link">
+  MySQL
+</a></li></ul></li><li class="dropdown-item"><h4>
+          非关系型
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/mongodb/" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-subitem"><a href="/db/redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/db/es/" class="nav-link">
+  Elasticsearch
+</a></li></ul></li><li class="dropdown-item"><h4>
+          持久层框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/mybatis/" class="nav-link">
+  MyBatis
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="应用技术" class="dropdown-title"><span class="title">应用技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="应用技术" class="mobile-dropdown-title"><span class="title">应用技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/applied-tech/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/svn/" class="nav-link">
+  SVN
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/maven/" class="nav-link">
+  Maven
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/nginx/" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/mq/" class="nav-link">
+  MQ
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/k8s/" class="nav-link">
+  Kubernetes
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/cas/" class="nav-link">
+  CAS
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/workflow/" class="nav-link">
+  Workflow
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机素养" class="dropdown-title"><span class="title">计算机素养</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机素养" class="mobile-dropdown-title"><span class="title">计算机素养</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/computer-literacy/linux/" class="nav-link router-link-active">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/computer-literacy/network/" class="nav-link">
+  网络
+</a></li><li class="dropdown-item"><!----> <a href="/computer-literacy/security/" class="nav-link">
+  安全
+</a></li><li class="dropdown-item"><!----> <a href="/computer-literacy/data-structure/" class="nav-link">
+  数据结构
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发常识" class="dropdown-title"><span class="title">开发常识</span> <span class="arrow down"></span></button> <button type="button" aria-label="开发常识" class="mobile-dropdown-title"><span class="title">开发常识</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/common-sense/common/common_sense.html" class="nav-link">
+  常识
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/ide-settings/" class="nav-link">
+  IDE 开发环境配置
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/log/" class="nav-link">
+  Log
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/test/" class="nav-link">
+  Test
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/swagger/" class="nav-link">
+  Swagger
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分享" class="dropdown-title"><span class="title">分享</span> <span class="arrow down"></span></button> <button type="button" aria-label="分享" class="mobile-dropdown-title"><span class="title">分享</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/share/faq/" class="nav-link">
+  FAQ
+</a></li><li class="dropdown-item"><!----> <a href="/share/recommend/" class="nav-link">
+  推荐
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="阅读" class="dropdown-title"><span class="title">阅读</span> <span class="arrow down"></span></button> <button type="button" aria-label="阅读" class="mobile-dropdown-title"><span class="title">阅读</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/read/effective_java.html" class="nav-link">
+  Effective Java
+</a></li><li class="dropdown-item"><!----> <a href="/read/clean_code.html" class="nav-link">
+  代码整洁之道
+</a></li><li class="dropdown-item"><!----> <a href="/read/coding_style.html" class="nav-link">
+  Coding Style
+</a></li><li class="dropdown-item"><!----> <a href="/read/gx.html" class="nav-link">
+  高项笔记
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/wow56/wow56.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/computer-literacy/linux/" aria-current="page" class="sidebar-link">Linux 总览</a></li><li><a href="/computer-literacy/linux/linux_command_base.html" aria-current="page" class="active sidebar-link">Linux 命令行基础</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/computer-literacy/linux/linux_command_base.html#参考文档" class="sidebar-link">参考文档</a></li><li class="sidebar-sub-header"><a href="/computer-literacy/linux/linux_command_base.html#零碎" class="sidebar-link">零碎</a></li><li class="sidebar-sub-header"><a href="/computer-literacy/linux/linux_command_base.html#shell-简介" class="sidebar-link">shell 简介</a></li><li class="sidebar-sub-header"><a href="/computer-literacy/linux/linux_command_base.html#什么是命令" class="sidebar-link">什么是命令？</a></li><li class="sidebar-sub-header"><a href="/computer-literacy/linux/linux_command_base.html#基础命令" class="sidebar-link">基础命令</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/computer-literacy/linux/linux_command_base.html#系统命令" class="sidebar-link">系统命令</a></li><li class="sidebar-sub-header"><a href="/computer-literacy/linux/linux_command_base.html#文件管理" class="sidebar-link">文件管理</a></li><li class="sidebar-sub-header"><a href="/computer-literacy/linux/linux_command_base.html#关于命令的命令" class="sidebar-link">关于命令的命令</a></li></ul></li><li class="sidebar-sub-header"><a href="/computer-literacy/linux/linux_command_base.html#vim-命令集" class="sidebar-link">VIM 命令集</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/computer-literacy/linux/linux_command_base.html#移动光标" class="sidebar-link">移动光标</a></li><li class="sidebar-sub-header"><a href="/computer-literacy/linux/linux_command_base.html#操作文本" class="sidebar-link">操作文本</a></li><li class="sidebar-sub-header"><a href="/computer-literacy/linux/linux_command_base.html#查找" class="sidebar-link">查找</a></li><li class="sidebar-sub-header"><a href="/computer-literacy/linux/linux_command_base.html#打开多个文件" class="sidebar-link">打开多个文件</a></li><li class="sidebar-sub-header"><a href="/computer-literacy/linux/linux_command_base.html#跨文件操作" class="sidebar-link">跨文件操作</a></li><li class="sidebar-sub-header"><a href="/computer-literacy/linux/linux_command_base.html#zz" class="sidebar-link">ZZ</a></li></ul></li><li class="sidebar-sub-header"><a href="/computer-literacy/linux/linux_command_base.html#快捷键-组合键" class="sidebar-link">快捷键/组合键</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/computer-literacy/linux/linux_command_base.html#移动光标-2" class="sidebar-link">移动光标</a></li><li class="sidebar-sub-header"><a href="/computer-literacy/linux/linux_command_base.html#修改文本" class="sidebar-link">修改文本</a></li><li class="sidebar-sub-header"><a href="/computer-literacy/linux/linux_command_base.html#复制粘贴" class="sidebar-link">复制粘贴</a></li><li class="sidebar-sub-header"><a href="/computer-literacy/linux/linux_command_base.html#自动补全命令" class="sidebar-link">自动补全命令</a></li><li class="sidebar-sub-header"><a href="/computer-literacy/linux/linux_command_base.html#历史命令" class="sidebar-link">历史命令</a></li><li class="sidebar-sub-header"><a href="/computer-literacy/linux/linux_command_base.html#历史展开命令" class="sidebar-link">历史展开命令</a></li></ul></li><li class="sidebar-sub-header"><a href="/computer-literacy/linux/linux_command_base.html#通配符" class="sidebar-link">通配符</a></li><li class="sidebar-sub-header"><a href="/computer-literacy/linux/linux_command_base.html#转义字符" class="sidebar-link">转义字符</a></li><li class="sidebar-sub-header"><a href="/computer-literacy/linux/linux_command_base.html#链接" class="sidebar-link">链接</a></li><li class="sidebar-sub-header"><a href="/computer-literacy/linux/linux_command_base.html#重定向" class="sidebar-link">重定向</a></li><li class="sidebar-sub-header"><a href="/computer-literacy/linux/linux_command_base.html#字符展开" class="sidebar-link">字符展开</a></li><li class="sidebar-sub-header"><a href="/computer-literacy/linux/linux_command_base.html#软件包管理" class="sidebar-link">软件包管理</a></li><li class="sidebar-sub-header"><a href="/computer-literacy/linux/linux_command_base.html#讨论区" class="sidebar-link">讨论区</a></li></ul></li><li><a href="/computer-literacy/linux/linux_command.html" class="sidebar-link">Linux 命令行常用</a></li><li><a href="/computer-literacy/linux/using_linux.html" class="sidebar-link">Linux 系统的使用</a></li><li><a href="/computer-literacy/linux/os_related.html" class="sidebar-link">操作系统相关</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="linux-命令行基础"><a href="#linux-命令行基础" class="header-anchor">#</a> Linux 命令行基础</h1> <h2 id="参考文档"><a href="#参考文档" class="header-anchor">#</a> 参考文档</h2> <ul><li><a href="http://billie66.github.io/TLCL/book/index.html" target="_blank" rel="noopener noreferrer">Linux 命令行 Book<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h2 id="零碎"><a href="#零碎" class="header-anchor">#</a> 零碎</h2> <ul><li>区分大小写</li> <li>一切皆文件</li> <li>图形化界面只是Linux的一个软件而已，而不是操作系统。</li> <li>当用户以普通用户的身份操控系统时，家目录是唯一允许用户写入文件的地方。</li> <li>多个命令可以同时执行，多个命令之间用分号隔开</li></ul> <h2 id="shell-简介"><a href="#shell-简介" class="header-anchor">#</a> shell 简介</h2> <ul><li>shell 就是一个程序，它接受从键盘输入的命令， 然后把命令传递给操作系统去执行。</li> <li>使用图形用户界面时，一个和 shell 交互的叫做终端仿真器的程序，即 <code>terminal</code>。</li> <li>shell提示符
+<ul><li><code>[me@linuxbox ~]</code></li> <li>结构是 <code>用户名@主机名 + 当前工作目录最后以 $ 结尾</code></li> <li>如果结尾是 <code>#</code>，说明当前终端会话拥有超级管理员权限。</li></ul></li> <li>在终端内不使用 <code>Ctrl+C</code> 复制，<code>Ctrl+V</code> 也一样，这两个组合早于 <code>Windows</code> 的定义，在 Linux 中，他们有着不同的含义。即使使用了它们，也不起作用。</li> <li>复制粘贴
+<ul><li>按下鼠标左键选中要复制的部分，当选中的同时，这些部分就已经被放到剪贴板了。</li> <li>粘贴的话按下鼠标中键（鼠标滚轮）会粘贴到光标的位置。</li></ul></li> <li>虚拟终端
+<ul><li>即使终端仿真器没有运行，在后台仍然有几个终端会话运行着。它们叫做虚拟终端 或者是虚拟控制台。</li> <li>在大多数 Linux 发行版中，这些终端会话都可以通过按下 <code>Ctrl-Alt-F1</code> 到 <code>Ctrl-Alt-F6</code> 访问。当一个会话被访问的时候， 它会显示登录提示框，我们需要输入用户名和密码。要从一个虚拟控制台转换到另一个， 按下 <code>Alt 和 F1-F6(中的一个)</code>。返回图形桌面，按下 <code>Alt-F7</code>。</li></ul></li></ul> <h2 id="什么是命令"><a href="#什么是命令" class="header-anchor">#</a> 什么是命令？</h2> <ul><li>是一个可执行程序，就像我们所看到的位于目录 <code>/usr/bin</code> 中的文件一样。
+<ul><li>这一类程序可以是用诸如 C 和 C++ 语言写成的程序编译的二进制文件，也可以是由诸如shell，perl，python，ruby等等脚本语言写成的程序 。</li></ul></li> <li>是一个内建于 shell 自身的命令。
+<ul><li>bash 支持若干命令，内部叫做 shell 内部命令 (builtins)。</li> <li>例如，cd 命令，就是一个 shell 内部命令。</li></ul></li> <li>是一个 shell 函数。
+<ul><li>这些是小规模的 shell 脚本，它们混合到环境变量中。</li></ul></li> <li>是一个命令别名。
+<ul><li>我们可以定义自己的命令，建立在其它命令之上。</li></ul></li></ul> <h2 id="基础命令"><a href="#基础命令" class="header-anchor">#</a> 基础命令</h2> <h3 id="系统命令"><a href="#系统命令" class="header-anchor">#</a> 系统命令</h3> <h4 id="date"><a href="#date" class="header-anchor">#</a> date</h4> <p>显示当前系统时间和日期</p> <ul><li>例如 <code>Tue 29 Jun 2021 09:45:21 AM CST</code></li> <li>星期 日 月 年 时间 上午下午</li> <li>CST
+<ul><li>GMT(Greenwich Mean Time) 代表格林尼治标准时间。</li> <li>而 CST 却同时可以代表如下 4 个不同的时区：
+<ul><li>Central Standard Time (USA) UT-6:00</li> <li>Central Standard Time (Australia) UT+9:30</li> <li>China Standard Time UT+8:00</li> <li>Cuba Standard Time UT-4:00</li></ul></li> <li>CST 可以同时表示美国、澳大利亚、中国、古巴四个国家的标准时间。</li> <li>为了避免错误，还是不要使用 CST 时间，而尽量采用 GMT 时间。</li></ul></li></ul> <h4 id="cal"><a href="#cal" class="header-anchor">#</a> cal</h4> <p>calendar，默认显示当前月的日历</p> <h4 id="df"><a href="#df" class="header-anchor">#</a> df</h4> <p>Disk Free，剩余空间</p> <h4 id="free"><a href="#free" class="header-anchor">#</a> free</h4> <p>剩余内存</p> <ul><li><code>free -h</code> 以可读的方式显示</li> <li><code>free -g</code> 以 G 为单位显示</li> <li><code>free -m</code> 以 M 为单位显示</li></ul> <h4 id="pwd"><a href="#pwd" class="header-anchor">#</a> pwd</h4> <p>print working directory，打印当前工作目录。</p> <h4 id="clear"><a href="#clear" class="header-anchor">#</a> clear</h4> <p>清空屏幕</p> <h4 id="history"><a href="#history" class="header-anchor">#</a> history</h4> <p>显示历史列表内容</p> <ul><li><code>!23</code> 表示为显示历史列表中的第 23 行。
+<ul><li>执行完之后，可以直接回车以执行这条命令。</li></ul></li> <li><code>history -c</code> 清除所有的命令历史</li></ul> <h4 id="exit"><a href="#exit" class="header-anchor">#</a> exit</h4> <p>结束会话</p> <h3 id="文件管理"><a href="#文件管理" class="header-anchor">#</a> 文件管理</h3> <h4 id="file"><a href="#file" class="header-anchor">#</a> file</h4> <p><code>file filename</code>，确定文件类型。</p> <h4 id="ls"><a href="#ls" class="header-anchor">#</a> ls</h4> <p>列出当前目录的内容，list。</p> <ul><li>得到更多细节
+<ul><li>使用 ls 命令的“-l”选项，则结果以长模式输出。</li></ul></li> <li>可以指定目录</li> <li>可以列出多个目录的内容</li> <li>以 “.” 字符开头的文件名是隐藏文件。这仅表示，ls 命令不能列出它们，用 <code>ls -a</code> 命令就可以了。</li></ul> <h4 id="cd"><a href="#cd" class="header-anchor">#</a> cd</h4> <p>Change Directory，更改当前工作目录。</p> <ul><li><code>cd -</code> 默认是到用户的家目录，即 <code>/home/</code> 用户名。
+<ul><li>符号 <code>.</code> 指的是工作目录，<code>..</code> 指的是工作目录的父目录。</li></ul></li> <li>可以省略 <code>./</code>，它是隐含的。</li> <li>如果不指定一个文件的路径，那它被默认为在当前工作目录下。</li></ul> <h4 id="less"><a href="#less" class="header-anchor">#</a> less</h4> <p>可以滚动查看文档，开启以后按 q 键退出。</p> <h4 id="mkdir"><a href="#mkdir" class="header-anchor">#</a> mkdir</h4> <p>创建目录</p> <ul><li>可以同时创建多个
+<ul><li><code>mkdir dir1 dir2</code></li></ul></li> <li>多级创建
+<ul><li><code>mkdir -p</code></li></ul></li></ul> <h4 id="cp"><a href="#cp" class="header-anchor">#</a> cp</h4> <p>copy，复制文件或者目录。</p> <ul><li>复制一个，cp 文件名/目录名（从哪里） 文件名/目录名（到哪里）</li> <li>复制多个，cp 文件名/目录名（从哪里） 目录名（到哪里）</li> <li>选项和参数：
+<ul><li><code>-a</code>，<code>--archive</code> <ul><li>复制文件和目录，以及它们的属性，包括拥有者和所有权。</li> <li>通常，副本具有用户所操作文件的默认属性。</li></ul></li> <li><code>-i</code>，<code>--interactive</code> <ul><li>在重写已存在文件之前，提示用户确认。</li> <li>如果这个选项不指定， cp 命令会默认重写文件。</li></ul></li> <li><code>-r</code>，<code>--recursive</code> <ul><li>递归地复制目录及目录中的内容。</li> <li>当复制目录时， 需要这个选项（或者 <code>-a</code> 选项）。</li></ul></li> <li><code>-u</code>，<code>--update</code> <ul><li>当把文件从一个目录复制到另一个目录时，仅复制目标目录中不存在的文件，或者是文件内容新于目标目录中已经存在的文件。</li></ul></li> <li><code>-v</code>，<code>--verbose</code> <ul><li>显示翔实的命令操作信息。</li></ul></li></ul></li> <li>示例：
+<ul><li><code>cp file1 file2</code> <ul><li>复制文件 file1 内容到文件 file2。</li> <li>如果 file2 已经存在，file2 的内容会被 file1 的内容重写。</li> <li>如果 file2 不存在，则会创建 file2。</li></ul></li> <li><code>cp -i file1 file2</code> <ul><li>这条命令和上面的命令一样，除了如果文件 file2 存在的话，在文件 file2 被重写之前，会提示用户确认信息。</li></ul></li> <li><code>cp file1 file2 dir1</code> <ul><li>复制文件 file1 和文件 file2 到目录 dir1。</li> <li>目录 dir1 必须存在。</li></ul></li> <li><code>cp dir1/ dir2</code> <ul><li>使用一个通配符，在目录 dir1 中的所有文件都被复制到目录 dir2 中。</li> <li>dir2 必须已经存在。</li></ul></li> <li><code>cp -r dir1 dir2</code> <ul><li>复制目录 dir1 中的内容到目录 dir2。</li> <li>如果目录 dir2 不存在，创建目录 dir2，操作完成后，目录 dir2 中的内容和 dir1 中的一样。</li> <li>如果目录 dir2 存在，则目录 dir1 (和目录中的内容)将会被复制到 dir2 中。</li></ul></li></ul></li></ul> <h4 id="mv"><a href="#mv" class="header-anchor">#</a> mv</h4> <p>move，移动和重命名文件。</p> <ul><li>如果两个文件在同一个目录下，那就是改名；</li> <li>参数选项：
+<ul><li><code>-i</code>，<code>--interactive</code> <ul><li>在重写一个已经存在的文件之前，提示用户确认信息。</li> <li>如果不指定这个选项，mv 命令会默认重写文件内容。</li></ul></li> <li><code>-u</code>，<code>--update</code> <ul><li>当把文件从一个目录移动另一个目录时，只是移动不存在的文件， 或者文件内容新于目标目录相对应文件的内容。</li></ul></li> <li><code>-v</code>，<code>--verbose</code> <ul><li>当操作 mv 命令时，显示翔实的操作信息。</li></ul></li></ul></li> <li>示例：
+<ul><li><code>mv file1 file2</code> <ul><li>移动 file1 到 file2。</li> <li>如果 file2 存在，它的内容会被 file1 的内容重写。</li> <li>如果 file2 不存在，则创建 file2。</li> <li>这两种情况下，file1 都不再存在。</li></ul></li> <li><code>mv -i file1 file2</code> <ul><li>除了如果 file2 存在的话，在 file2 被重写之前，用户会得到 提示信息外，这个和上面的选项一样。</li></ul></li> <li><code>mv file1 file2 dir1</code> <ul><li>移动 file1 和 file2 到目录 dir1 中。</li> <li>dir1 必须已经存在。</li></ul></li> <li><code>mv dir1 dir2</code> <ul><li>如果目录 dir2 不存在，创建目录 dir2，并且移动目录 dir1 的内容到 目录 dir2 中，同时删除目录 dir1。</li> <li>如果目录 dir2 存在，移动目录 dir1（及它的内容）到目录 dir2。</li></ul></li></ul></li></ul> <h4 id="rm"><a href="#rm" class="header-anchor">#</a> rm</h4> <p>remove，删除文件或目录。</p> <ul><li>选项参数：
+<ul><li><code>-i</code>，<code>--interactive</code> <ul><li>在删除已存在的文件前，提示用户确认信息。</li> <li>如果不指定这个选项，rm 会默默地删除文件</li></ul></li> <li><code>-r</code>，<code>--recursive</code> <ul><li>递归地删除文件，这意味着，如果要删除一个目录，而此目录又包含子目录，那么子目录也会被删除。</li> <li>要删除一个目录，必须指定这个选项。</li></ul></li> <li><code>-f</code>，<code>--force</code> <ul><li>忽视不存在的文件，不显示提示信息。</li> <li>这选项覆盖了<code>--interactive</code>选项。</li></ul></li> <li><code>-v</code>，<code>--verbose</code> <ul><li>在执行 rm 命令时，显示翔实的操作信息。</li></ul></li></ul></li> <li>示例：
+<ul><li><code>rm file1</code> <ul><li>默默地删除文件</li></ul></li> <li><code>rm -i file1</code> <ul><li>除了在删除文件之前，提示用户确认信息之外，和上面的命令作用一样。</li></ul></li> <li><code>rm -r file1 dir1</code> <ul><li>删除文件 file1， 目录 dir1，及 dir1 中的内容。</li></ul></li> <li><code>rm -rf file1 dir1</code> <ul><li>同上，除了如果文件 file1，或目录 dir1 不存在的话，rm 仍会继续执行。</li></ul></li></ul></li></ul> <h4 id="ln"><a href="#ln" class="header-anchor">#</a> ln</h4> <p>link，创建链接，硬/软</p> <p>硬链接：<code>ln file link</code></p> <p>软链接：<code>ln -s item link</code></p> <p>注意：创建软链接的时候，一定要使用绝对路径！！！</p> <h4 id="cat"><a href="#cat" class="header-anchor">#</a> cat</h4> <p>catenate，连接文件。</p> <p>输入 cat 以后，并没有任何反应，但是它会从标准输入读入数据，又因为标准输入默认情况下连接到键盘，所以它正在等待我们从键盘上输入数据。</p> <h4 id="管道"><a href="#管道" class="header-anchor">#</a> <code>|</code> 管道</h4> <p>管道，管道是将前一个命令的输出作为后一个命令的输入。</p> <ul><li>格式： <code>command1 | command2</code></li> <li>过滤器
+<ul><li>多个命令放在一起组成的管道线。</li></ul></li></ul> <h4 id="uniq"><a href="#uniq" class="header-anchor">#</a> uniq</h4> <p>忽略重复行。</p> <h4 id="wc"><a href="#wc" class="header-anchor">#</a> wc</h4> <p>Word Count，打印行数、字数、字节数。</p> <ul><li><code>-l</code> 只显示行号</li></ul> <h4 id="grep"><a href="#grep" class="header-anchor">#</a> grep</h4> <p>打印匹配行</p> <ul><li><code>-i</code> <ul><li>使得 grep 在执行搜索时忽略大小写（通常，搜索是大小写 敏感的）</li></ul></li> <li><code>-v</code> <ul><li>选项会告诉 grep 只打印不匹配的行。</li></ul></li></ul> <h4 id="head-tail"><a href="#head-tail" class="header-anchor">#</a> head/tail</h4> <p>打印开头结尾部分。</p> <h4 id="sort-排序并输出"><a href="#sort-排序并输出" class="header-anchor">#</a> sort - 排序并输出</h4> <ul><li><code>ls -lt</code> <ul><li>按照时间降序</li></ul></li> <li><code>ls -ltr</code> <ul><li>按照时间升序</li></ul></li></ul> <h4 id="tee"><a href="#tee" class="header-anchor">#</a> tee</h4> <p>将输出正常显示的同时写入到文件。</p> <ul><li>如 <code>echo aaa | tee file</code> <ul><li>在显示 &quot;aaa&quot; 的同时，将 &quot;aaa&quot; 写入到文件 file</li></ul></li></ul> <h3 id="关于命令的命令"><a href="#关于命令的命令" class="header-anchor">#</a> 关于命令的命令</h3> <ul><li><code>type</code> <ul><li>显示命令类型</li></ul></li> <li><code>where</code> <ul><li>显示所有的可执行程序的位置</li></ul></li> <li><code>which</code> <ul><li>显示一个可执行程序的位置（通过 PATH 查找），即你用到的那个</li></ul></li> <li><code>help</code> <ul><li>帮助文档</li></ul></li> <li><code>--help</code> <ul><li>用户信息</li></ul></li> <li><code>man</code> <ul><li>程序手册页</li></ul></li> <li><code>apropos</code> <ul><li>相当于 <code>man -k</code> 命令，用来通过关键字查找定位手册页的名字和描述，显示适当的命令。</li></ul></li> <li><code>whatis</code> <ul><li>显示非常简洁的命令说明</li></ul></li> <li><code>info</code> <ul><li>显示程序info条目</li></ul></li> <li><code>alias</code> <ul><li>别名</li> <li>格式为 <code>alias name='string'</code></li> <li>因为多个命令可以同时执行，那么可以将这多个命令合并在一起，并起一个别名
+<ul><li>例如：将一个命令的组合重新命名为 foo，
+<ul><li><code>alias foo='cd /usr; ls; cd -'</code></li></ul></li></ul></li></ul></li> <li><code>unalias</code> <ul><li>删除别名</li> <li>例如：
+<ul><li><code>unalias foo</code></li></ul></li></ul></li></ul> <h2 id="vim-命令集"><a href="#vim-命令集" class="header-anchor">#</a> VIM 命令集</h2> <ul><li>在命令之前加上一个数字，可以指定命令执行的次数。
+<ul><li>例如：
+<ul><li>命令 <code>5j</code> 将光标下移 5 行。</li></ul></li></ul></li></ul> <h3 id="移动光标"><a href="#移动光标" class="header-anchor">#</a> 移动光标</h3> <ul><li><code>l or 右箭头</code> - 向右移动一个字符</li> <li><code>h or 左箭头</code> - 向左移动一个字符</li> <li><code>j or 下箭头</code> - 向下移动一行</li> <li><code>k or 上箭头</code> - 向上移动一行</li> <li><code>0 (零按键)</code> - 移动到当前行的行首。</li> <li><code>^</code> - 移动到当前行的第一个非空字符。</li> <li><code>$</code> - 移动到当前行的末尾。</li> <li><code>w</code> - 移动到下一个单词或标点符号的开头。</li> <li><code>W</code> - 移动到下一个单词的开头，忽略标点符号。</li> <li><code>b</code> - 移动到上一个单词或标点符号的开头。</li> <li><code>B</code> - 移动到上一个单词的开头，忽略标点符号。</li> <li><code>Ctrl-f or Page Down</code> - 向下翻一页</li> <li><code>Ctrl-b or Page Up</code> - 向上翻一页</li> <li><code>numberG</code> - 移动到第 number 行。例如，1G 移动到文件的第一行。</li> <li><code>G</code> - 移动到文件末尾。</li></ul> <h3 id="操作文本"><a href="#操作文本" class="header-anchor">#</a> 操作文本</h3> <ul><li><code>A</code> - 光标移动到行尾</li> <li><code>o</code> - 当前行的下方打开一行。</li> <li><code>O</code> - 当前行的上方打开一行。</li> <li><code>u</code> - 按键，撤销我们的修改。</li> <li><code>x</code> - 删除当前字符</li> <li><code>3x</code> - 删除当前字符及其后的两个字符。</li> <li><code>dd</code> - 删除当前行。</li> <li><code>5dd</code> - 删除当前行及随后的四行文本。</li> <li><code>dW</code> - 删除从光标位置开始到下一个单词的开头。</li> <li><code>d$</code> - 删除从光标位置开始到当前行的行尾。</li> <li><code>d0</code> - 删除从光标位置开始到当前行的行首。</li> <li><code>d^</code> - 删除从光标位置开始到文本行的第一个非空字符。</li> <li><code>dG</code> - 删除从当前行到文件的末尾。</li> <li><code>d20G</code> - 删除从当前行到文件的第20行。</li> <li><code>yy</code> - 复制当前行。</li> <li><code>5yy</code> - 复制当前行及随后的四行文本。</li> <li><code>yW</code> - 复制从当前光标位置到下一个单词的开头。</li> <li><code>y$</code> - 复制从当前光标位置到当前行的末尾。</li> <li><code>y0</code> - 复制从当前光标位置到行首。</li> <li><code>y^</code> - 复制从当前光标位置到文本行的第一个非空字符。</li> <li><code>yG</code> - 复制从当前行到文件末尾。</li> <li><code>y20G</code> - 复制从当前行到文件的第20行。</li> <li><code>p</code> - 粘贴当前行之下</li> <li><code>P</code> - 粘贴到当前行之前</li> <li><code>J</code> - 将下一行提到改行末尾</li></ul> <h3 id="查找"><a href="#查找" class="header-anchor">#</a> 查找</h3> <ul><li>查找一行
+<ul><li>f 命令能搜索一特定行，在当前行中检索，并将光标移动到下一个匹配的字符上。</li> <li>例如，命令 fa 会把光标定位到同一行中下一个出现的”a”字符上。</li> <li>在进行了一次行内搜索后，输入分号能重复这次搜索。</li></ul></li> <li>整个文件中查找，按下 <code>/</code>，在屏幕最下面会出现一个 <code>/</code>，接着输入你要搜索的单词或者内容，按 <code>n</code> 重复之前的搜索。</li> <li>vi 使用 ex 命令来执行查找和替代操作（vi 中叫做“替换”）。
+<ul><li>将整个文件中的单词 Line 更改为 line
+<ul><li>输入以下命令 <code>：:%s/Line/line/g</code>，
+<ul><li><code>：</code>是命令模式</li> <li><code>%</code> 是表指定要操作的行数
+<ul><li><code>%</code> 是一个快捷方式，表示从第一行到最后一行。</li> <li>另外，操作范围也可以用 1，5 来代替（因为我们的文件只有5行文本），或者用 1，$ 来代替，意思是 “从第一行到文件的最后一行。”</li> <li>如果省略了文本行的范围，那么操作只对当前行生效。</li></ul></li> <li><code>s</code> 是指定操作。
+<ul><li>在这种情况下是，替换（查找与替代）。</li></ul></li></ul></li></ul></li></ul></li> <li>我们也可以指定一个需要用户确认的替换命令。通过添加一个 <code>c</code> 字符到这个命令的末尾，来完成这个替换命令。
+<ul><li><code>y</code>，执行替换操作</li> <li><code>n</code>，跳过这个匹配的实例</li> <li><code>a</code>，对这个及随后所有匹配的字符串执行替换操作。</li> <li><code>q or esc</code>，退出替换操作。</li> <li><code>l</code>执行这次替换并退出。
+<ul><li><code>l</code> 是 last 的简写。</li></ul></li> <li><code>Ctrl-e</code>，<code>Ctrl-y</code> <ul><li>分别是向下滚动和向上滚动。</li> <li>用于查看建议替换的上下文。</li></ul></li></ul></li></ul> <h3 id="打开多个文件"><a href="#打开多个文件" class="header-anchor">#</a> 打开多个文件</h3> <ul><li><code>vi file1 file2</code>，打开多个文件
+<ul><li>首先显示第一个文件，按 <code>n</code> 切换到下一个文件，按 <code>N</code> 切换到上一个文件。</li> <li>查看正在编辑的文件列表，使用 <code>:buffers</code> 命令。
+<ul><li>切换文件 <code>buffer 2</code>（列表的序号）</li></ul></li> <li>打开另一个文件并编辑
+<ul><li>例如 <code>vi foo.txt</code> 打开了一个文件</li> <li>这时 <code>:e ls-output.txt</code> 加入第二个文件。</li> <li>**注意：**当文件由 <code>：e</code> 命令加载，你将无法用 <code>:n</code> 或 <code>:N</code> 命令来切换文件。这时要使用 <code>:buffer</code> 命令加缓冲区号码，来切换文件。</li></ul></li></ul></li></ul> <h3 id="跨文件操作"><a href="#跨文件操作" class="header-anchor">#</a> 跨文件操作</h3> <ul><li>跨文件复制黏贴
+<ul><li>例如从一个文件到第二个文件的流程 <code>：:buffer 1</code>，把光标移到第一行，并且输入 <code>yy</code> 来复制这一行。</li> <li>切换到第二个 <code>:buffer 2</code>，移动光标到粘贴位置，输入 <code>p</code> 命令粘贴。</li></ul></li> <li>插入整个文件到另一个文件
+<ul><li><code>vi ls-output.txt</code></li> <li>打开一个文件
+<ul><li><code>:r foo.txt</code></li> <li>这个 <code>:r</code> 命令（是 read 的简称）把指定的文件插入到光标位置之前。</li></ul></li></ul></li></ul> <h3 id="zz"><a href="#zz" class="header-anchor">#</a> ZZ</h3> <p>退出并保存，相当于 <code>:wq</code></p> <h2 id="快捷键-组合键"><a href="#快捷键-组合键" class="header-anchor">#</a> 快捷键/组合键</h2> <h3 id="移动光标-2"><a href="#移动光标-2" class="header-anchor">#</a> 移动光标</h3> <ul><li><code>Ctrl-a</code> - 移动光标到行首。</li> <li><code>Ctrl-e</code> - 移动光标到行尾。</li> <li><code>Ctrl-f</code> - 光标前移一个字符；和右箭头作用一样。</li> <li><code>Ctrl-b</code> - 光标后移一个字符；和左箭头作用一样。</li> <li><code>Alt-f</code> - 光标前移一个字。</li> <li><code>Alt-b</code> - 光标后移一个字。</li> <li><code>Ctrl-l</code> 清空屏幕，移动光标到左上角。
+<ul><li><code>clear</code> 命令完成同样的工作。</li></ul></li></ul> <h3 id="修改文本"><a href="#修改文本" class="header-anchor">#</a> 修改文本</h3> <ul><li><code>Ctrl-d</code> - 删除光标位置的字符。</li> <li><code>Ctrl-t</code> - 光标位置的字符和光标前面的字符互换位置。</li> <li><code>Alt-t</code> - 光标位置的字和其前面的字互换位置。</li> <li><code>Alt-l</code> - 把从光标位置到字尾的字符转换成小写字母。</li> <li><code>Alt-u</code> - 把从光标位置到字尾的字符转换成大写字母。</li></ul> <h3 id="复制粘贴"><a href="#复制粘贴" class="header-anchor">#</a> 复制粘贴</h3> <ul><li><code>Ctrl-k</code> - 剪切从光标位置到行尾的文本。</li> <li><code>Ctrl-u</code> - 剪切从光标位置到行首的文本。</li> <li><code>Alt-d</code> - 剪切从光标位置到词尾的文本。</li> <li><code>Alt-Backspace</code> - 剪切从光标位置到词头的文本。如果光标在一个单词的开头，剪切前一个单词。</li> <li><code>Ctrl-y</code> - 把剪切环中的文本粘贴到光标位置。</li></ul> <h3 id="自动补全命令"><a href="#自动补全命令" class="header-anchor">#</a> 自动补全命令</h3> <ul><li><code>Alt-?</code> 显示可能的自动补全列表。
+<ul><li>在大多数系统中，你也可以完成这个通过按 两次 tab 键，这会更容易些。</li></ul></li> <li><code>Alt-*</code> 插入所有可能的自动补全。
+<ul><li>当你想要使用多个可能的匹配项时，这个很有帮助。</li></ul></li></ul> <h3 id="历史命令"><a href="#历史命令" class="header-anchor">#</a> 历史命令</h3> <ul><li><code>Ctrl-p</code> 移动到上一个历史条目。类似于上箭头按键。</li> <li><code>Ctrl-n</code> 移动到下一个历史条目。类似于下箭头按键。</li> <li><code>Alt-&lt;</code> 移动到历史列表开头。</li> <li><code>Alt-&gt;</code> 移动到历史列表结尾，即当前命令行。</li> <li><code>Ctrl-r</code> 反向增量搜索。从当前命令行开始，向上增量搜索。</li> <li><code>Alt-p</code> 反向搜索，非增量搜索。（输入要查找的字符串，按下 Enter 来执行搜索）。</li> <li><code>Alt-n</code> 向前搜索，非增量。</li> <li><code>Ctrl-o</code> 执行历史列表中的当前项，并移到下一个。如果你想要执行历史列表中一系列的命令，这很方便。</li></ul> <h3 id="历史展开命令"><a href="#历史展开命令" class="header-anchor">#</a> 历史展开命令</h3> <ul><li><code>!!</code> 重复最后一次执行的命令。
+<ul><li>可能按下上箭头按键和 enter 键更容易些。</li></ul></li> <li><code>!number</code> 重复历史列表中第 number 行的命令。</li> <li><code>!string</code> 重复最近历史列表中，以这个字符串开头的命令。</li> <li><code>!?string</code> 重复最近历史列表中，包含这个字符串的命令。</li></ul> <h2 id="通配符"><a href="#通配符" class="header-anchor">#</a> 通配符</h2> <ul><li><code>-</code> 可以表示任意字符，包括 0 个或 1 个。</li> <li><code>?</code> 可以表示任意一个字符</li> <li><code>[characters]</code> 匹配任意一个属于字符集中的字符</li> <li><code>[!characters]</code> 匹配任意一个不是字符集中的字符</li> <li><code>[[:class:]]</code> 匹配任意一个属于指定字符类中的字符</li> <li><code>[:alnum:]</code> 匹配任意一个字母或数字</li> <li><code>[:alpha:]</code> 匹配任意一个字母</li> <li><code>[:digit:]</code> 匹配任意一个数字</li> <li><code>[:lower:]</code> 匹配任意一个小写字母</li> <li><code>[:upper:]</code> 匹配任意一个大写字母</li></ul> <h2 id="转义字符"><a href="#转义字符" class="header-anchor">#</a> 转义字符</h2> <ul><li><code>\a</code> 响铃（”警告”－导致计算机嘟嘟响）</li> <li><code>\b</code> 退格符</li> <li><code>\n</code> 新的一行。在类 Unix 系统中，产生换行。</li> <li><code>\r</code> 回车符</li> <li><code>\t</code> 制表符</li></ul> <h2 id="链接"><a href="#链接" class="header-anchor">#</a> 链接</h2> <ul><li>符号链接 - 软链接
+<ul><li>类似于 Windows 的快捷方式，建立一个文件指向另一个文件。
+在命令后加 <code>--help</code> 选项可以查看该命令下的所有参数</li> <li>当删除链接指向的文件时，该链接不会被删除，但是不再指向任何东西，被称为坏链接。</li> <li>当删除链接，文件依然存在。</li> <li>如果往该链接中写入东西，那么该链接指向的文件也被写入。</li></ul></li> <li>硬链接
+<ul><li>一个硬链接不能关联它所在文件系统之外的文件。这是说一个链接不能关联与链接本身不在同一个磁盘分区上的文件。</li> <li>一个硬链接不能关联一个目录。</li></ul></li></ul> <h2 id="重定向"><a href="#重定向" class="header-anchor">#</a> 重定向</h2> <ul><li>标准输出重定向
+<ul><li>使用 <code>&gt;</code> 重定向符后接文件名将标准输出重定向到除屏幕以外的另一个文件。</li> <li>例如 <code>ls -l /usr/bin &gt; ls-output.txt</code></li> <li>技巧清空一个文件内容（或者创建一个新的空文件）
+<ul><li><code>&gt; ls-output.txt</code></li> <li>因为，当我们使用 <code>&gt;</code> 重定向符来重定向输出结果时，目标文件总是从开头被重写。</li> <li>简单地使用重定向符，没有命令在它之前，这会清空一个已存在文件的内容或是创建一个新的空文件。</li></ul></li> <li><code>&gt;</code> 和 <code>&gt;&gt;</code> 的区别
+<ul><li><code>&gt;</code> 表示以覆盖方式重定向提示信息，也就是说如果目的地原来有内容，将把原来的内容清除掉，用新内容填充；</li> <li><code>&gt;&gt;</code> 表示以追加的方式重定向提示信息，也就是说，如果目的地原来有内容，原有的内容将保持不变，在原有内容之后追加新内容。</li></ul></li></ul></li> <li>标准错误重定向
+<ul><li>标准错误重定向没有专用的重定向操作符，参考其文件描述符。</li> <li>文件流的前三个称作：
+<ul><li>标准输入</li> <li>输出</li> <li>错误</li></ul></li> <li>shell 内部分别将其称为文件描述符：
+<ul><li>0</li> <li>1</li> <li>2</li></ul></li> <li>用 <code>2&gt;</code> 来进行重定向到标准错误</li></ul></li> <li>标准输出和错误到同一个文件
+<ul><li><code>ls -l /bin/usr &gt; ls-output.txt 2&gt;&amp;1</code></li> <li>还可以 <code>ls -l /bin/usr &amp;&gt; ls-output.txt</code> 使用 <code>&amp;&gt;</code> 符号进行操作。</li></ul></li> <li>处理不需要的文件
+<ul><li>重定向到 <code>/dev/null</code>，这个文件是系统设备，叫做位存储桶，它可以接受输入，并且对输入不做任何处理。</li></ul></li></ul> <h2 id="字符展开"><a href="#字符展开" class="header-anchor">#</a> 字符展开</h2> <ul><li>字符展开
+<ul><li>[me@linuxbox ~]$ echo *</li> <li>Desktop Documents ls-output.txt Music Pictures Public Templates Videos</li></ul></li> <li>路径名展开</li> <li>波浪符展开</li> <li>算数表达式展开</li> <li>花括号展开</li> <li>参数展开
+<ul><li>要查看有效的变量列表，可以试试这个：printenv | less</li></ul></li></ul> <h2 id="软件包管理"><a href="#软件包管理" class="header-anchor">#</a> 软件包管理</h2> <ul><li>包管理系统
+<ul><li>Debian Style (.deb)Debian， Ubuntu， Xandros， Linspire</li> <li>Red Hat Style (.rpm)Fedora， CentOS， Red Hat Enterprise Linux， OpenSUSE， Mandriva， PCLinuxOS</li></ul></li> <li><code>.tar</code></li></ul> <h2 id="讨论区"><a href="#讨论区" class="header-anchor">#</a> 讨论区</h2> <blockquote><p>由于评论过多会影响页面最下方的导航，故将评论区做默认折叠处理。</p></blockquote> <details class="custom-block details"><summary>点击查看评论区内容，渴望您的宝贵建议~</summary> <!----></details></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">10/11/2022, 10:59:16 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/computer-literacy/linux/" class="prev router-link-active">
+        Linux 总览
+      </a></span> <span class="next"><a href="/computer-literacy/linux/linux_command.html">
+        Linux 命令行常用
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.5780eb53.js" defer></script><script src="/assets/js/2.e1f1d232.js" defer></script><script src="/assets/js/66.971cb02f.js" defer></script>
+  </body>
+</html>

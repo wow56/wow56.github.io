@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Java 多线程 | Wow56 个人知识库</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/flaglogo.png">
+    <link rel="manifest" href="/flaglogo.png">
+    <link rel="apple-touch-icon" href="/flaglogo.png">
+    <meta name="description" content="Never stop learning">
+    
+    <link rel="preload" href="/assets/css/0.styles.b25eaea0.css" as="style"><link rel="preload" href="/assets/js/app.5780eb53.js" as="script"><link rel="preload" href="/assets/js/2.e1f1d232.js" as="script"><link rel="preload" href="/assets/js/13.c0e1c39d.js" as="script"><link rel="prefetch" href="/assets/js/10.921c058c.js"><link rel="prefetch" href="/assets/js/100.678efb16.js"><link rel="prefetch" href="/assets/js/101.6fd33b9c.js"><link rel="prefetch" href="/assets/js/102.dfa6e733.js"><link rel="prefetch" href="/assets/js/103.4b74461a.js"><link rel="prefetch" href="/assets/js/104.603354fe.js"><link rel="prefetch" href="/assets/js/105.9da719c4.js"><link rel="prefetch" href="/assets/js/106.6aa24318.js"><link rel="prefetch" href="/assets/js/107.5ea57319.js"><link rel="prefetch" href="/assets/js/108.37ded6f2.js"><link rel="prefetch" href="/assets/js/109.adc40804.js"><link rel="prefetch" href="/assets/js/11.00deed7e.js"><link rel="prefetch" href="/assets/js/110.f1791c33.js"><link rel="prefetch" href="/assets/js/111.bff2cea6.js"><link rel="prefetch" href="/assets/js/112.4eb7e8b1.js"><link rel="prefetch" href="/assets/js/113.4ca0e39f.js"><link rel="prefetch" href="/assets/js/114.03d070d7.js"><link rel="prefetch" href="/assets/js/115.a007d470.js"><link rel="prefetch" href="/assets/js/116.027c798b.js"><link rel="prefetch" href="/assets/js/117.6eaa95a7.js"><link rel="prefetch" href="/assets/js/118.3468f2af.js"><link rel="prefetch" href="/assets/js/119.94c060f2.js"><link rel="prefetch" href="/assets/js/12.e7e7feff.js"><link rel="prefetch" href="/assets/js/120.2639e06f.js"><link rel="prefetch" href="/assets/js/121.1ee7e578.js"><link rel="prefetch" href="/assets/js/122.d1f0654b.js"><link rel="prefetch" href="/assets/js/123.52d57be3.js"><link rel="prefetch" href="/assets/js/124.d515f509.js"><link rel="prefetch" href="/assets/js/125.c783db82.js"><link rel="prefetch" href="/assets/js/126.08d41fac.js"><link rel="prefetch" href="/assets/js/127.5ab5b3c5.js"><link rel="prefetch" href="/assets/js/14.4be8face.js"><link rel="prefetch" href="/assets/js/15.b235fe5f.js"><link rel="prefetch" href="/assets/js/16.a62bd2ec.js"><link rel="prefetch" href="/assets/js/17.d3fa5b5a.js"><link rel="prefetch" href="/assets/js/18.04056df6.js"><link rel="prefetch" href="/assets/js/19.e0daa831.js"><link rel="prefetch" href="/assets/js/20.aae5efb2.js"><link rel="prefetch" href="/assets/js/21.51bfd139.js"><link rel="prefetch" href="/assets/js/22.d92aecaf.js"><link rel="prefetch" href="/assets/js/23.fd2079a6.js"><link rel="prefetch" href="/assets/js/24.7cadaa30.js"><link rel="prefetch" href="/assets/js/25.38c9c1a4.js"><link rel="prefetch" href="/assets/js/26.1c8277a8.js"><link rel="prefetch" href="/assets/js/27.1e495f81.js"><link rel="prefetch" href="/assets/js/28.7ef5af76.js"><link rel="prefetch" href="/assets/js/29.9031cb92.js"><link rel="prefetch" href="/assets/js/3.93a08b3b.js"><link rel="prefetch" href="/assets/js/30.1b61bbf8.js"><link rel="prefetch" href="/assets/js/31.f8cbfd44.js"><link rel="prefetch" href="/assets/js/32.0632cb94.js"><link rel="prefetch" href="/assets/js/33.a46a0b3d.js"><link rel="prefetch" href="/assets/js/34.fba531e6.js"><link rel="prefetch" href="/assets/js/35.db1fd348.js"><link rel="prefetch" href="/assets/js/36.9e6108c6.js"><link rel="prefetch" href="/assets/js/37.35fca0f6.js"><link rel="prefetch" href="/assets/js/38.ac22df93.js"><link rel="prefetch" href="/assets/js/39.7cce2902.js"><link rel="prefetch" href="/assets/js/4.e30be376.js"><link rel="prefetch" href="/assets/js/40.3560e650.js"><link rel="prefetch" href="/assets/js/41.d4632345.js"><link rel="prefetch" href="/assets/js/42.adce46c5.js"><link rel="prefetch" href="/assets/js/43.d2ff2a7e.js"><link rel="prefetch" href="/assets/js/44.d3f6ac6e.js"><link rel="prefetch" href="/assets/js/45.1e3b049e.js"><link rel="prefetch" href="/assets/js/46.917a9a8a.js"><link rel="prefetch" href="/assets/js/47.5a73f25d.js"><link rel="prefetch" href="/assets/js/48.3b970b0a.js"><link rel="prefetch" href="/assets/js/49.dc6fd937.js"><link rel="prefetch" href="/assets/js/5.9411f932.js"><link rel="prefetch" href="/assets/js/50.109fdeb5.js"><link rel="prefetch" href="/assets/js/51.5ec4fc4b.js"><link rel="prefetch" href="/assets/js/52.0c03ff96.js"><link rel="prefetch" href="/assets/js/53.e91a6f48.js"><link rel="prefetch" href="/assets/js/54.7f886adb.js"><link rel="prefetch" href="/assets/js/55.2747b24f.js"><link rel="prefetch" href="/assets/js/56.a78db785.js"><link rel="prefetch" href="/assets/js/57.517d420c.js"><link rel="prefetch" href="/assets/js/58.0429f17c.js"><link rel="prefetch" href="/assets/js/59.9d68455f.js"><link rel="prefetch" href="/assets/js/6.3e126bb5.js"><link rel="prefetch" href="/assets/js/60.7cc000dc.js"><link rel="prefetch" href="/assets/js/61.8eaec827.js"><link rel="prefetch" href="/assets/js/62.9eb7a7b3.js"><link rel="prefetch" href="/assets/js/63.35e36177.js"><link rel="prefetch" href="/assets/js/64.6282d042.js"><link rel="prefetch" href="/assets/js/65.58ed4699.js"><link rel="prefetch" href="/assets/js/66.971cb02f.js"><link rel="prefetch" href="/assets/js/67.0a93b287.js"><link rel="prefetch" href="/assets/js/68.a7b05e3b.js"><link rel="prefetch" href="/assets/js/69.6572830f.js"><link rel="prefetch" href="/assets/js/7.de70efc4.js"><link rel="prefetch" href="/assets/js/70.168da9d9.js"><link rel="prefetch" href="/assets/js/71.d57d693b.js"><link rel="prefetch" href="/assets/js/72.91fa5cd3.js"><link rel="prefetch" href="/assets/js/73.7de2d2b8.js"><link rel="prefetch" href="/assets/js/74.acd298e4.js"><link rel="prefetch" href="/assets/js/75.62e67874.js"><link rel="prefetch" href="/assets/js/76.f2b96539.js"><link rel="prefetch" href="/assets/js/77.4255efc8.js"><link rel="prefetch" href="/assets/js/78.114300ba.js"><link rel="prefetch" href="/assets/js/79.d14a2756.js"><link rel="prefetch" href="/assets/js/8.1ec756ec.js"><link rel="prefetch" href="/assets/js/80.3fd73e00.js"><link rel="prefetch" href="/assets/js/81.71ebdbf4.js"><link rel="prefetch" href="/assets/js/82.0a5b5bb1.js"><link rel="prefetch" href="/assets/js/83.a23907a9.js"><link rel="prefetch" href="/assets/js/84.8c2bc996.js"><link rel="prefetch" href="/assets/js/85.ed1b9552.js"><link rel="prefetch" href="/assets/js/86.49d44a86.js"><link rel="prefetch" href="/assets/js/87.33153d90.js"><link rel="prefetch" href="/assets/js/88.a021dc21.js"><link rel="prefetch" href="/assets/js/89.b80b10c6.js"><link rel="prefetch" href="/assets/js/9.24d5e519.js"><link rel="prefetch" href="/assets/js/90.a059a06c.js"><link rel="prefetch" href="/assets/js/91.0c2e07a8.js"><link rel="prefetch" href="/assets/js/92.0460267f.js"><link rel="prefetch" href="/assets/js/93.630cc9b9.js"><link rel="prefetch" href="/assets/js/94.64e96711.js"><link rel="prefetch" href="/assets/js/95.cc7ee0e1.js"><link rel="prefetch" href="/assets/js/96.43f96f85.js"><link rel="prefetch" href="/assets/js/97.73dc1af0.js"><link rel="prefetch" href="/assets/js/98.10b4ffee.js"><link rel="prefetch" href="/assets/js/99.e6bfc1cd.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b25eaea0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/flaglogo.png" alt="Wow56 个人知识库" class="logo"> <span class="site-name can-hide">Wow56 个人知识库</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/base/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="语言/语法" class="dropdown-title"><span class="title">语言/语法</span> <span class="arrow down"></span></button> <button type="button" aria-label="语言/语法" class="mobile-dropdown-title"><span class="title">语言/语法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lang/java/" class="nav-link router-link-active">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/lang/go/" class="nav-link">
+  Go
+</a></li><li class="dropdown-item"><!----> <a href="/lang/php/" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/lang/js/" class="nav-link">
+  Java Script
+</a></li><li class="dropdown-item"><!----> <a href="/lang/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/lang/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/lang/regex/" class="nav-link">
+  Regex
+</a></li><li class="dropdown-item"><!----> <a href="/lang/script/" class="nav-link">
+  脚本 Script
+</a></li><li class="dropdown-item"><!----> <a href="/lang/markdown/" class="nav-link">
+  Markdown
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架/类库" class="dropdown-title"><span class="title">框架/类库</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架/类库" class="mobile-dropdown-title"><span class="title">框架/类库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          应用程序
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/spring/" class="nav-link">
+  Spring 生态
+</a></li><li class="dropdown-subitem"><a href="/framework/vue/" class="nav-link">
+  Vue
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/gis/" class="nav-link">
+  Web GIS
+</a></li><li class="dropdown-subitem"><a href="/framework/echarts/" class="nav-link">
+  ECahrts
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          关系型
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/mysql/" class="nav-link">
+  MySQL
+</a></li></ul></li><li class="dropdown-item"><h4>
+          非关系型
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/mongodb/" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-subitem"><a href="/db/redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/db/es/" class="nav-link">
+  Elasticsearch
+</a></li></ul></li><li class="dropdown-item"><h4>
+          持久层框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/mybatis/" class="nav-link">
+  MyBatis
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="应用技术" class="dropdown-title"><span class="title">应用技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="应用技术" class="mobile-dropdown-title"><span class="title">应用技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/applied-tech/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/svn/" class="nav-link">
+  SVN
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/maven/" class="nav-link">
+  Maven
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/nginx/" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/mq/" class="nav-link">
+  MQ
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/k8s/" class="nav-link">
+  Kubernetes
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/cas/" class="nav-link">
+  CAS
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/workflow/" class="nav-link">
+  Workflow
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机素养" class="dropdown-title"><span class="title">计算机素养</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机素养" class="mobile-dropdown-title"><span class="title">计算机素养</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/computer-literacy/linux/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/computer-literacy/network/" class="nav-link">
+  网络
+</a></li><li class="dropdown-item"><!----> <a href="/computer-literacy/security/" class="nav-link">
+  安全
+</a></li><li class="dropdown-item"><!----> <a href="/computer-literacy/data-structure/" class="nav-link">
+  数据结构
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发常识" class="dropdown-title"><span class="title">开发常识</span> <span class="arrow down"></span></button> <button type="button" aria-label="开发常识" class="mobile-dropdown-title"><span class="title">开发常识</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/common-sense/common/common_sense.html" class="nav-link">
+  常识
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/ide-settings/" class="nav-link">
+  IDE 开发环境配置
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/log/" class="nav-link">
+  Log
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/test/" class="nav-link">
+  Test
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/swagger/" class="nav-link">
+  Swagger
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分享" class="dropdown-title"><span class="title">分享</span> <span class="arrow down"></span></button> <button type="button" aria-label="分享" class="mobile-dropdown-title"><span class="title">分享</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/share/faq/" class="nav-link">
+  FAQ
+</a></li><li class="dropdown-item"><!----> <a href="/share/recommend/" class="nav-link">
+  推荐
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="阅读" class="dropdown-title"><span class="title">阅读</span> <span class="arrow down"></span></button> <button type="button" aria-label="阅读" class="mobile-dropdown-title"><span class="title">阅读</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/read/effective_java.html" class="nav-link">
+  Effective Java
+</a></li><li class="dropdown-item"><!----> <a href="/read/clean_code.html" class="nav-link">
+  代码整洁之道
+</a></li><li class="dropdown-item"><!----> <a href="/read/coding_style.html" class="nav-link">
+  Coding Style
+</a></li><li class="dropdown-item"><!----> <a href="/read/gx.html" class="nav-link">
+  高项笔记
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/wow56/wow56.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/base/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="语言/语法" class="dropdown-title"><span class="title">语言/语法</span> <span class="arrow down"></span></button> <button type="button" aria-label="语言/语法" class="mobile-dropdown-title"><span class="title">语言/语法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lang/java/" class="nav-link router-link-active">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/lang/go/" class="nav-link">
+  Go
+</a></li><li class="dropdown-item"><!----> <a href="/lang/php/" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/lang/js/" class="nav-link">
+  Java Script
+</a></li><li class="dropdown-item"><!----> <a href="/lang/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/lang/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/lang/regex/" class="nav-link">
+  Regex
+</a></li><li class="dropdown-item"><!----> <a href="/lang/script/" class="nav-link">
+  脚本 Script
+</a></li><li class="dropdown-item"><!----> <a href="/lang/markdown/" class="nav-link">
+  Markdown
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架/类库" class="dropdown-title"><span class="title">框架/类库</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架/类库" class="mobile-dropdown-title"><span class="title">框架/类库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          应用程序
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/spring/" class="nav-link">
+  Spring 生态
+</a></li><li class="dropdown-subitem"><a href="/framework/vue/" class="nav-link">
+  Vue
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/gis/" class="nav-link">
+  Web GIS
+</a></li><li class="dropdown-subitem"><a href="/framework/echarts/" class="nav-link">
+  ECahrts
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          关系型
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/mysql/" class="nav-link">
+  MySQL
+</a></li></ul></li><li class="dropdown-item"><h4>
+          非关系型
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/mongodb/" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-subitem"><a href="/db/redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/db/es/" class="nav-link">
+  Elasticsearch
+</a></li></ul></li><li class="dropdown-item"><h4>
+          持久层框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/mybatis/" class="nav-link">
+  MyBatis
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="应用技术" class="dropdown-title"><span class="title">应用技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="应用技术" class="mobile-dropdown-title"><span class="title">应用技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/applied-tech/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/svn/" class="nav-link">
+  SVN
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/maven/" class="nav-link">
+  Maven
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/nginx/" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/mq/" class="nav-link">
+  MQ
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/k8s/" class="nav-link">
+  Kubernetes
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/cas/" class="nav-link">
+  CAS
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/workflow/" class="nav-link">
+  Workflow
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机素养" class="dropdown-title"><span class="title">计算机素养</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机素养" class="mobile-dropdown-title"><span class="title">计算机素养</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/computer-literacy/linux/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/computer-literacy/network/" class="nav-link">
+  网络
+</a></li><li class="dropdown-item"><!----> <a href="/computer-literacy/security/" class="nav-link">
+  安全
+</a></li><li class="dropdown-item"><!----> <a href="/computer-literacy/data-structure/" class="nav-link">
+  数据结构
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发常识" class="dropdown-title"><span class="title">开发常识</span> <span class="arrow down"></span></button> <button type="button" aria-label="开发常识" class="mobile-dropdown-title"><span class="title">开发常识</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/common-sense/common/common_sense.html" class="nav-link">
+  常识
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/ide-settings/" class="nav-link">
+  IDE 开发环境配置
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/log/" class="nav-link">
+  Log
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/test/" class="nav-link">
+  Test
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/swagger/" class="nav-link">
+  Swagger
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分享" class="dropdown-title"><span class="title">分享</span> <span class="arrow down"></span></button> <button type="button" aria-label="分享" class="mobile-dropdown-title"><span class="title">分享</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/share/faq/" class="nav-link">
+  FAQ
+</a></li><li class="dropdown-item"><!----> <a href="/share/recommend/" class="nav-link">
+  推荐
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="阅读" class="dropdown-title"><span class="title">阅读</span> <span class="arrow down"></span></button> <button type="button" aria-label="阅读" class="mobile-dropdown-title"><span class="title">阅读</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/read/effective_java.html" class="nav-link">
+  Effective Java
+</a></li><li class="dropdown-item"><!----> <a href="/read/clean_code.html" class="nav-link">
+  代码整洁之道
+</a></li><li class="dropdown-item"><!----> <a href="/read/coding_style.html" class="nav-link">
+  Coding Style
+</a></li><li class="dropdown-item"><!----> <a href="/read/gx.html" class="nav-link">
+  高项笔记
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/wow56/wow56.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/lang/java/" aria-current="page" class="sidebar-link">Java 总览</a></li><li><a href="/lang/java/java.html" class="sidebar-link">Java 基础</a></li><li><a href="/lang/java/java_multithread.html" aria-current="page" class="active sidebar-link">Java 多线程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/lang/java/java_multithread.html#参考文档" class="sidebar-link">参考文档</a></li><li class="sidebar-sub-header"><a href="/lang/java/java_multithread.html#多线程" class="sidebar-link">多线程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/lang/java/java_multithread.html#多进程和多线程" class="sidebar-link">多进程和多线程</a></li><li class="sidebar-sub-header"><a href="/lang/java/java_multithread.html#创建多线程" class="sidebar-link">创建多线程</a></li><li class="sidebar-sub-header"><a href="/lang/java/java_multithread.html#线程常用方法" class="sidebar-link">线程常用方法</a></li><li class="sidebar-sub-header"><a href="/lang/java/java_multithread.html#线程优先级" class="sidebar-link">线程优先级</a></li><li class="sidebar-sub-header"><a href="/lang/java/java_multithread.html#线程状态" class="sidebar-link">线程状态</a></li><li class="sidebar-sub-header"><a href="/lang/java/java_multithread.html#中断线程" class="sidebar-link">中断线程</a></li><li class="sidebar-sub-header"><a href="/lang/java/java_multithread.html#守护线程" class="sidebar-link">守护线程</a></li><li class="sidebar-sub-header"><a href="/lang/java/java_multithread.html#线程同步" class="sidebar-link">线程同步</a></li><li class="sidebar-sub-header"><a href="/lang/java/java_multithread.html#死锁" class="sidebar-link">死锁</a></li><li class="sidebar-sub-header"><a href="/lang/java/java_multithread.html#wait-和-notify" class="sidebar-link">wait 和 notify</a></li><li class="sidebar-sub-header"><a href="/lang/java/java_multithread.html#线程池" class="sidebar-link">线程池</a></li><li class="sidebar-sub-header"><a href="/lang/java/java_multithread.html#threadlocal" class="sidebar-link">ThreadLocal</a></li></ul></li><li class="sidebar-sub-header"><a href="/lang/java/java_multithread.html#讨论区" class="sidebar-link">讨论区</a></li></ul></li><li><a href="/lang/java/java_8_feature.html" class="sidebar-link">Java 8 Feature</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="java-多线程"><a href="#java-多线程" class="header-anchor">#</a> Java 多线程</h1> <h2 id="参考文档"><a href="#参考文档" class="header-anchor">#</a> 参考文档</h2> <h2 id="多线程"><a href="#多线程" class="header-anchor">#</a> 多线程</h2> <h3 id="多进程和多线程"><a href="#多进程和多线程" class="header-anchor">#</a> 多进程和多线程</h3> <p>多进程缺点：</p> <ul><li>创建进程比创建线程开销大，尤其是在 Windows 系统上；</li> <li>进程间通信比线程间通信要慢，因为线程间通信就是读写同一个变量，速度很快。</li></ul> <p>多线程优点：</p> <ul><li>多进程稳定性比多线程高
+<ul><li>多进程的情况下，一个进程崩溃不会影响其他进程。</li> <li>多线程的情况下，任何一个线程崩溃会直接导致整个进程崩溃。</li></ul></li></ul> <h3 id="创建多线程"><a href="#创建多线程" class="header-anchor">#</a> 创建多线程</h3> <blockquote><p>Java 创建多线程主要有 2 类，第一类是没有返回值的，也是最常见的方式。还有一种是有返回值的创建方式。</p></blockquote> <p>没有返回值的有 2 种方法：</p> <ol><li>继承 <code>Tread</code> 类，然后覆写 <code>run</code> 方法，最后使用 <code>start</code> 方法执行。</li> <li>实现 <code>Runable</code> 接口，然后使用 <code>start</code> 方法进行执行。</li></ol> <p>建议使用第二种方法，因为类的继承为单继承，第 2 种可以避免不能继承其他的类。</p> <p>示例：</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token comment">// 第一种,继承 Tread 类</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Thread</span> t <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">MyThread</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        t<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 启动新线程</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">MyThread</span> <span class="token keyword">extends</span> <span class="token class-name">Thread</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;start new thread!&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token comment">// 第二种,实现 Runable 接口</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Thread</span> t <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Thread</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">MyRunnable</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        t<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 启动新线程</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">MyRunnable</span> <span class="token keyword">implements</span> <span class="token class-name">Runnable</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;start new thread!&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>需要返回值的创建方式：通过创建 <code>Callable</code> 接口和 <code>Future</code> 接口的方式来创建线程。</p> <p>从上面两个例子我们可以看到，<code>Runable</code> 的方式执行的代码逻辑是没有返回值的，这样我们不能获取多线程方法的返回值。如果我们想要获取多线程执行结果就需要使用 <code>Callable</code> 结合 <code>Future</code> 的方式实现。</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token comment">// Callable 和 Runable 是没有区别的，只是一个有返回值，一个不支持返回值</span>
+
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">ExecutionException</span><span class="token punctuation">,</span> <span class="token class-name">InterruptedException</span> <span class="token punctuation">{</span>
+
+    <span class="token comment">// myCallable 是要执行的任务</span>
+    <span class="token class-name">MyCallable</span> myCallable <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">MyCallable</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// futureTask 是用来管理多线程运行的结果的</span>
+    <span class="token class-name">FutureTask</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Integer</span><span class="token punctuation">&gt;</span></span> futureTask <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">FutureTask</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span>myCallable<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">Thread</span> t1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Thread</span><span class="token punctuation">(</span>futureTask<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    t1<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>futureTask<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">class</span> <span class="token class-name">MyCallable</span> <span class="token keyword">implements</span> <span class="token class-name">Callable</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Integer</span><span class="token punctuation">&gt;</span></span> <span class="token punctuation">{</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token class-name">Integer</span> <span class="token function">call</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token number">1</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><h3 id="线程常用方法"><a href="#线程常用方法" class="header-anchor">#</a> 线程常用方法</h3> <ul><li><code>setDeamon</code></li> <li><code>yield</code></li> <li><code>join</code></li></ul> <h3 id="线程优先级"><a href="#线程优先级" class="header-anchor">#</a> 线程优先级</h3> <ul><li><code>Thread.setPriority(int n)</code>，1 ~ 10, 默认值 5，1 为最低。</li> <li>优先级高的只意味着更频繁的 CPU 调度，而不是说优先级高的就要比优先级低的早执行。</li></ul> <h3 id="线程状态"><a href="#线程状态" class="header-anchor">#</a> 线程状态</h3> <blockquote><p>下图中，运行状态不属于 Java 定义的线程状态中的一种。运行状态表示已经在 CPU 中运行，这时候的状态并不是 Java 本身关注的。</p></blockquote> <p><img src="/assets/img/thread-status.9dc96c5f.jpg" alt="线程状态"></p> <p>在 Java 程序中，一个线程对象只能调用一次 <code>start()</code> 方法启动新线程，并在新线程中执行 <code>run()</code> 方法。一旦 <code>run()</code> 方法执行完毕，线程就结束了。因此，Java 线程的状态有以下几种：</p> <ul><li><code>New</code>，新创建的线程，尚未执行；</li> <li><code>Runnable</code>，运行中的线程，正在抢占 CPU 中，然后去执行 <code>run()</code> 方法的 Java 代码；</li> <li><code>Blocked</code>，运行中的线程，因为某些操作被阻塞而挂起；</li> <li><code>Waiting</code>，运行中的线程，因为某些操作在等待中；</li> <li><code>Timed Waiting</code>，运行中的线程，因为执行 <code>sleep()</code> 方法正在计时等待；</li> <li><code>Terminated</code>，线程已终止，因为 <code>run()</code> 方法执行完毕。</li></ul> <p>线程终止的原因有：</p> <ul><li>线程正常终止：<code>run()</code> 方法执行到 <code>return</code> 语句返回；</li> <li>线程意外终止：<code>run()</code> 方法因为未捕获的异常导致线程终止；</li> <li>对某个线程的 <code>Thread</code> 实例调用 <code>stop()</code> 方法强制终止（强烈不推荐使用）。</li> <li><code>join()</code> 可以使得当前线程的方法优先执行。</li></ul> <h3 id="中断线程"><a href="#中断线程" class="header-anchor">#</a> 中断线程</h3> <ul><li>使用 <code>interrupt()</code> 中断线程，使用 <code>isInterrupted()</code> 检测是否中断;</li></ul> <p><code>volatile</code> 关键字的目的是告诉虚拟机：</p> <ul><li>每次访问变量时，总是获取主内存的最新值；</li> <li>每次修改变量后，立刻回写到主内存。</li></ul> <h3 id="守护线程"><a href="#守护线程" class="header-anchor">#</a> 守护线程</h3> <blockquote><p>直白讲就是，在线程 A 里创建一个守护线程 B，如果线程 A 结束了，无论线程 B 当前状态如何，B 都会结束。因为 B 是 A 的守护线程，当失去了被守护者 A 的时候，线程 B 也就没有存在的必要了。</p></blockquote> <p><code>Daemon Thread</code>，守护线程是指为其他线程服务的线程。在 JVM 中，所有非守护线程都执行完毕后，无论有没有守护线程，虚拟机都会自动退出。因此，JVM 退出时，不必关心守护线程是否已结束。</p> <p>创建方式: 在调用 <code>start()</code> 方法前，调用 <code>setDaemon(true)</code> 把该线程标记为守护线程。</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token class-name">Thread</span> t <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">MyThread</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+t<span class="token punctuation">.</span><span class="token function">setDaemon</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+t<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>注意：</p> <ul><li>在 Daemon 线程中产生的新线程也是 Daemon 的。</li> <li>守护线程不能持有任何需要关闭的资源，例如打开文件等，因为虚拟机退出时，守护线程没有任何机会来关闭文件，这会导致数据丢失。</li></ul> <h3 id="线程同步"><a href="#线程同步" class="header-anchor">#</a> 线程同步</h3> <p>加锁与解锁之间的代码块--临界区</p> <h4 id="加锁"><a href="#加锁" class="header-anchor">#</a> 加锁</h4> <p><code>synchronized</code> 锁是可重入锁；</p> <p>我们来概括一下如何使用 <code>synchronized</code>：</p> <ul><li>找出修改共享变量的线程代码块；</li> <li>选择一个共享实例作为锁；</li> <li>使用 <code>synchronized(lockObject) { ... }</code>。</li></ul> <p>不需要 <code>synchronized</code> 的操作
+JVM 规范定义了几种原子操作：</p> <ul><li>基本类型（<code>long</code> 和 <code>double</code> 除外）赋值，例如：<code>int n = m；</code></li> <li>引用类型赋值，例如：<code>List&lt;String&gt; list = anotherList</code>。</li></ul> <h3 id="死锁"><a href="#死锁" class="header-anchor">#</a> 死锁</h3> <p>如何避免死锁呢？</p> <ul><li>线程获取锁的顺序要一致。</li></ul> <h3 id="wait-和-notify"><a href="#wait-和-notify" class="header-anchor">#</a> wait 和 notify</h3> <ul><li><code>wait()</code> 方法必须在当前获取的锁对象上调用，这里获取的是 <code>this</code> 锁，因此调用 <code>this.wait()</code>。</li> <li><code>wait()</code> 方法调用时，会释放线程获得的锁，<code>wait()</code> 方法返回后，线程又会重新试图获得锁。</li> <li>如何让等待的线程被重新唤醒，然后从 <code>wait()</code> 方法返回？
+<ul><li>答案是在相同的锁对象上调用 <code>notify()</code> 方法。</li></ul></li></ul> <h3 id="线程池"><a href="#线程池" class="header-anchor">#</a> 线程池</h3> <p><code>ExecutorService</code> 接口表示线程池</p> <p>线程池的初始化</p> <p><code>ExecutorService</code> 只是接口，Java 标准库提供的几个常用实现类有：</p> <ul><li><code>FixedThreadPool</code>：线程数固定的线程池；</li> <li><code>CachedThreadPool</code>：线程数根据任务动态调整的线程池；</li> <li><code>SingleThreadExecutor</code>：仅单线程执行的线程池。</li></ul> <p>创建这些线程池的方法都被封装到 <code>Executors</code> 这个类中。</p> <p>线程池的使用</p> <ul><li>使用 <code>submit()</code> 方法提交任务，提交的任务是已经实现了 Runnable 接口的类。</li></ul> <p>线程池的关闭</p> <ul><li>使用 <code>shutdown()</code>方法关闭线程池
+<ul><li>它会等待正在执行的任务先完成，然后再关闭。</li></ul></li> <li><code>shutdownNow()</code> 会立刻停止正在执行的任务</li> <li><code>awaitTermination()</code> 则会等待指定的时间让线程池关闭。</li></ul> <p>示例：</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token class-name">ExecutorService</span> es <span class="token operator">=</span> <span class="token class-name">Executors</span><span class="token punctuation">.</span><span class="token function">newFixedThreadPool</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">7</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    es<span class="token punctuation">.</span><span class="token function">submit</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Task</span><span class="token punctuation">(</span><span class="token string">&quot;第&quot;</span> <span class="token operator">+</span> i <span class="token operator">+</span> <span class="token string">&quot;个任务&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+es<span class="token punctuation">.</span><span class="token function">shutdown</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token keyword">class</span> <span class="token class-name">Task</span> <span class="token keyword">implements</span> <span class="token class-name">Runnable</span> <span class="token punctuation">{</span>
+  <span class="token keyword">private</span> <span class="token class-name">String</span> name<span class="token punctuation">;</span>
+
+  <span class="token keyword">public</span> <span class="token class-name">Task</span><span class="token punctuation">(</span><span class="token class-name">String</span> name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token annotation punctuation">@Override</span>
+  <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;启动了&quot;</span> <span class="token operator">+</span> name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">try</span> <span class="token punctuation">{</span>
+      <span class="token class-name">Thread</span><span class="token punctuation">.</span><span class="token function">sleep</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">InterruptedException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;结束&quot;</span> <span class="token operator">+</span> name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h3 id="threadlocal"><a href="#threadlocal" class="header-anchor">#</a> ThreadLocal</h3> <p>ThreadLocal 类型变量实现变量为线程私有，原理是使用了 ThreadLocalMap。</p> <p>使用时，将 ThreadLocal 对象作为 Map 的 key，将要存储的值作为 value 存起来，这样每个线程访问的都是当前线程的值了，也就不再存在线程安全问题。</p> <p><img src="/assets/img/thread-local.46bcd94c.png" alt="ThreadLocal 原理"></p> <h4 id="java-四种引用"><a href="#java-四种引用" class="header-anchor">#</a> Java 四种引用</h4> <ul><li>强引用
+<ul><li>只要有指针指向了这个对象，那么这个对象永远都不会被回收。例如 <code>User user = new User();</code></li></ul></li> <li>软引用
+<ul><li>还有用处，JVM 会在内存溢出时清理这部分。例如：缓存</li></ul></li> <li>弱引用
+<ul><li>引用关系弱于软引用，不管内存是否够用，下次 GC 一定会回收</li></ul></li> <li>虚引用
+<ul><li>不会影响对象的回收，唯一作用是对象被回收时会受到一个系统通知</li></ul></li></ul> <h4 id="内存泄漏问题"><a href="#内存泄漏问题" class="header-anchor">#</a> 内存泄漏问题</h4> <p>首先说一个名词 OOM，即 Out Of Memory，内存泄露、内存溢出。</p> <p>ThreadLocal 中的 key 是弱引用，value 是强引用。key 是每个 Thread 中的 TreadLocal 对象本身（如果没有强引用指向它，它就会被 GC 回收）：</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token keyword">static</span> <span class="token keyword">class</span> <span class="token class-name">Entry</span> <span class="token keyword">extends</span> <span class="token class-name">WeakReference</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">ThreadLocal</span><span class="token punctuation">&lt;</span><span class="token operator">?</span><span class="token punctuation">&gt;</span><span class="token punctuation">&gt;</span></span> <span class="token punctuation">{</span>
+    <span class="token comment">/** The value associated with this ThreadLocal. */</span>
+    <span class="token class-name">Object</span> value<span class="token punctuation">;</span>
+
+    <span class="token class-name">Entry</span><span class="token punctuation">(</span><span class="token class-name">ThreadLocal</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token operator">?</span><span class="token punctuation">&gt;</span></span> k<span class="token punctuation">,</span> <span class="token class-name">Object</span> v<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 看这里的 super()，表示 key 是一个弱引用。</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span>k<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        value <span class="token operator">=</span> v<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>而 value 被 Entry 强引用不会被回收，具体应该是 <code>thread ref -&gt; thread -&gt; threadLocals -&gt; entry -&gt; value</code>，这时导致 value 成为了一个无法访问也不能被回收的对象，这就造成了内存泄露。</p> <p>如果当前线程很快结束的话，最终 value 也会被回收，但是由于线程频繁的创建和销毁会占用大量资源，所以一般会使用线程池，那么线程就可能会很长时间不被销毁，那么 value 也就一直不会被回收。</p> <h5 id="解决方法"><a href="#解决方法" class="header-anchor">#</a> 解决方法</h5> <ul><li>使用 static final，避免重复创建销毁 ThreadLocal 对象。</li> <li>使用 remove() 方法，手动清除 ThreadLocal 对象。</li></ul> <p>其实 ThreadLocal 对象的 <code>get() / set() / remove()</code> 方法的具体实现中，都做了进一步的处理，进一步的避免了 OOM 的情况。</p> <h4 id="示例"><a href="#示例" class="header-anchor">#</a> 示例</h4> <p><img src="/assets/img/threadlocal-example.08147671.png" alt="示例"></p> <p>ThreadLocal 可以理解为是一个可以操作 Thread 上的那个 map 的工具类而已，因为每个线程拿到的 map 都是当前线程私有的。不要去想那个线程变量（<code>REQUEST_ID</code>）就一个，它的确就一个，它的作用是指定要拿哪个值，通过它操作的值（值所在的 map）存在于 Thread 上，这个线程变量只是个媒介而已。</p> <h2 id="讨论区"><a href="#讨论区" class="header-anchor">#</a> 讨论区</h2> <blockquote><p>由于评论过多会影响页面最下方的导航，故将评论区做默认折叠处理。</p></blockquote> <details class="custom-block details"><summary>点击查看评论区内容，渴望您的宝贵建议~</summary> <!----></details></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">8/22/2023, 4:23:13 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/lang/java/java.html" class="prev">
+        Java 基础
+      </a></span> <span class="next"><a href="/lang/java/java_8_feature.html">
+        Java 8 Feature
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.5780eb53.js" defer></script><script src="/assets/js/2.e1f1d232.js" defer></script><script src="/assets/js/13.c0e1c39d.js" defer></script>
+  </body>
+</html>

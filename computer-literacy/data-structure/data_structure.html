@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>数据结构 | Wow56 个人知识库</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/flaglogo.png">
+    <link rel="manifest" href="/flaglogo.png">
+    <link rel="apple-touch-icon" href="/flaglogo.png">
+    <meta name="description" content="Never stop learning">
+    
+    <link rel="preload" href="/assets/css/0.styles.b25eaea0.css" as="style"><link rel="preload" href="/assets/js/app.5780eb53.js" as="script"><link rel="preload" href="/assets/js/2.e1f1d232.js" as="script"><link rel="preload" href="/assets/js/5.9411f932.js" as="script"><link rel="prefetch" href="/assets/js/10.921c058c.js"><link rel="prefetch" href="/assets/js/100.678efb16.js"><link rel="prefetch" href="/assets/js/101.6fd33b9c.js"><link rel="prefetch" href="/assets/js/102.dfa6e733.js"><link rel="prefetch" href="/assets/js/103.4b74461a.js"><link rel="prefetch" href="/assets/js/104.603354fe.js"><link rel="prefetch" href="/assets/js/105.9da719c4.js"><link rel="prefetch" href="/assets/js/106.6aa24318.js"><link rel="prefetch" href="/assets/js/107.5ea57319.js"><link rel="prefetch" href="/assets/js/108.37ded6f2.js"><link rel="prefetch" href="/assets/js/109.adc40804.js"><link rel="prefetch" href="/assets/js/11.00deed7e.js"><link rel="prefetch" href="/assets/js/110.f1791c33.js"><link rel="prefetch" href="/assets/js/111.bff2cea6.js"><link rel="prefetch" href="/assets/js/112.4eb7e8b1.js"><link rel="prefetch" href="/assets/js/113.4ca0e39f.js"><link rel="prefetch" href="/assets/js/114.03d070d7.js"><link rel="prefetch" href="/assets/js/115.a007d470.js"><link rel="prefetch" href="/assets/js/116.027c798b.js"><link rel="prefetch" href="/assets/js/117.6eaa95a7.js"><link rel="prefetch" href="/assets/js/118.3468f2af.js"><link rel="prefetch" href="/assets/js/119.94c060f2.js"><link rel="prefetch" href="/assets/js/12.e7e7feff.js"><link rel="prefetch" href="/assets/js/120.2639e06f.js"><link rel="prefetch" href="/assets/js/121.1ee7e578.js"><link rel="prefetch" href="/assets/js/122.d1f0654b.js"><link rel="prefetch" href="/assets/js/123.52d57be3.js"><link rel="prefetch" href="/assets/js/124.d515f509.js"><link rel="prefetch" href="/assets/js/125.c783db82.js"><link rel="prefetch" href="/assets/js/126.08d41fac.js"><link rel="prefetch" href="/assets/js/127.5ab5b3c5.js"><link rel="prefetch" href="/assets/js/13.c0e1c39d.js"><link rel="prefetch" href="/assets/js/14.4be8face.js"><link rel="prefetch" href="/assets/js/15.b235fe5f.js"><link rel="prefetch" href="/assets/js/16.a62bd2ec.js"><link rel="prefetch" href="/assets/js/17.d3fa5b5a.js"><link rel="prefetch" href="/assets/js/18.04056df6.js"><link rel="prefetch" href="/assets/js/19.e0daa831.js"><link rel="prefetch" href="/assets/js/20.aae5efb2.js"><link rel="prefetch" href="/assets/js/21.51bfd139.js"><link rel="prefetch" href="/assets/js/22.d92aecaf.js"><link rel="prefetch" href="/assets/js/23.fd2079a6.js"><link rel="prefetch" href="/assets/js/24.7cadaa30.js"><link rel="prefetch" href="/assets/js/25.38c9c1a4.js"><link rel="prefetch" href="/assets/js/26.1c8277a8.js"><link rel="prefetch" href="/assets/js/27.1e495f81.js"><link rel="prefetch" href="/assets/js/28.7ef5af76.js"><link rel="prefetch" href="/assets/js/29.9031cb92.js"><link rel="prefetch" href="/assets/js/3.93a08b3b.js"><link rel="prefetch" href="/assets/js/30.1b61bbf8.js"><link rel="prefetch" href="/assets/js/31.f8cbfd44.js"><link rel="prefetch" href="/assets/js/32.0632cb94.js"><link rel="prefetch" href="/assets/js/33.a46a0b3d.js"><link rel="prefetch" href="/assets/js/34.fba531e6.js"><link rel="prefetch" href="/assets/js/35.db1fd348.js"><link rel="prefetch" href="/assets/js/36.9e6108c6.js"><link rel="prefetch" href="/assets/js/37.35fca0f6.js"><link rel="prefetch" href="/assets/js/38.ac22df93.js"><link rel="prefetch" href="/assets/js/39.7cce2902.js"><link rel="prefetch" href="/assets/js/4.e30be376.js"><link rel="prefetch" href="/assets/js/40.3560e650.js"><link rel="prefetch" href="/assets/js/41.d4632345.js"><link rel="prefetch" href="/assets/js/42.adce46c5.js"><link rel="prefetch" href="/assets/js/43.d2ff2a7e.js"><link rel="prefetch" href="/assets/js/44.d3f6ac6e.js"><link rel="prefetch" href="/assets/js/45.1e3b049e.js"><link rel="prefetch" href="/assets/js/46.917a9a8a.js"><link rel="prefetch" href="/assets/js/47.5a73f25d.js"><link rel="prefetch" href="/assets/js/48.3b970b0a.js"><link rel="prefetch" href="/assets/js/49.dc6fd937.js"><link rel="prefetch" href="/assets/js/50.109fdeb5.js"><link rel="prefetch" href="/assets/js/51.5ec4fc4b.js"><link rel="prefetch" href="/assets/js/52.0c03ff96.js"><link rel="prefetch" href="/assets/js/53.e91a6f48.js"><link rel="prefetch" href="/assets/js/54.7f886adb.js"><link rel="prefetch" href="/assets/js/55.2747b24f.js"><link rel="prefetch" href="/assets/js/56.a78db785.js"><link rel="prefetch" href="/assets/js/57.517d420c.js"><link rel="prefetch" href="/assets/js/58.0429f17c.js"><link rel="prefetch" href="/assets/js/59.9d68455f.js"><link rel="prefetch" href="/assets/js/6.3e126bb5.js"><link rel="prefetch" href="/assets/js/60.7cc000dc.js"><link rel="prefetch" href="/assets/js/61.8eaec827.js"><link rel="prefetch" href="/assets/js/62.9eb7a7b3.js"><link rel="prefetch" href="/assets/js/63.35e36177.js"><link rel="prefetch" href="/assets/js/64.6282d042.js"><link rel="prefetch" href="/assets/js/65.58ed4699.js"><link rel="prefetch" href="/assets/js/66.971cb02f.js"><link rel="prefetch" href="/assets/js/67.0a93b287.js"><link rel="prefetch" href="/assets/js/68.a7b05e3b.js"><link rel="prefetch" href="/assets/js/69.6572830f.js"><link rel="prefetch" href="/assets/js/7.de70efc4.js"><link rel="prefetch" href="/assets/js/70.168da9d9.js"><link rel="prefetch" href="/assets/js/71.d57d693b.js"><link rel="prefetch" href="/assets/js/72.91fa5cd3.js"><link rel="prefetch" href="/assets/js/73.7de2d2b8.js"><link rel="prefetch" href="/assets/js/74.acd298e4.js"><link rel="prefetch" href="/assets/js/75.62e67874.js"><link rel="prefetch" href="/assets/js/76.f2b96539.js"><link rel="prefetch" href="/assets/js/77.4255efc8.js"><link rel="prefetch" href="/assets/js/78.114300ba.js"><link rel="prefetch" href="/assets/js/79.d14a2756.js"><link rel="prefetch" href="/assets/js/8.1ec756ec.js"><link rel="prefetch" href="/assets/js/80.3fd73e00.js"><link rel="prefetch" href="/assets/js/81.71ebdbf4.js"><link rel="prefetch" href="/assets/js/82.0a5b5bb1.js"><link rel="prefetch" href="/assets/js/83.a23907a9.js"><link rel="prefetch" href="/assets/js/84.8c2bc996.js"><link rel="prefetch" href="/assets/js/85.ed1b9552.js"><link rel="prefetch" href="/assets/js/86.49d44a86.js"><link rel="prefetch" href="/assets/js/87.33153d90.js"><link rel="prefetch" href="/assets/js/88.a021dc21.js"><link rel="prefetch" href="/assets/js/89.b80b10c6.js"><link rel="prefetch" href="/assets/js/9.24d5e519.js"><link rel="prefetch" href="/assets/js/90.a059a06c.js"><link rel="prefetch" href="/assets/js/91.0c2e07a8.js"><link rel="prefetch" href="/assets/js/92.0460267f.js"><link rel="prefetch" href="/assets/js/93.630cc9b9.js"><link rel="prefetch" href="/assets/js/94.64e96711.js"><link rel="prefetch" href="/assets/js/95.cc7ee0e1.js"><link rel="prefetch" href="/assets/js/96.43f96f85.js"><link rel="prefetch" href="/assets/js/97.73dc1af0.js"><link rel="prefetch" href="/assets/js/98.10b4ffee.js"><link rel="prefetch" href="/assets/js/99.e6bfc1cd.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b25eaea0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/flaglogo.png" alt="Wow56 个人知识库" class="logo"> <span class="site-name can-hide">Wow56 个人知识库</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/base/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="语言/语法" class="dropdown-title"><span class="title">语言/语法</span> <span class="arrow down"></span></button> <button type="button" aria-label="语言/语法" class="mobile-dropdown-title"><span class="title">语言/语法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lang/java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/lang/go/" class="nav-link">
+  Go
+</a></li><li class="dropdown-item"><!----> <a href="/lang/php/" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/lang/js/" class="nav-link">
+  Java Script
+</a></li><li class="dropdown-item"><!----> <a href="/lang/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/lang/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/lang/regex/" class="nav-link">
+  Regex
+</a></li><li class="dropdown-item"><!----> <a href="/lang/script/" class="nav-link">
+  脚本 Script
+</a></li><li class="dropdown-item"><!----> <a href="/lang/markdown/" class="nav-link">
+  Markdown
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架/类库" class="dropdown-title"><span class="title">框架/类库</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架/类库" class="mobile-dropdown-title"><span class="title">框架/类库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          应用程序
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/spring/" class="nav-link">
+  Spring 生态
+</a></li><li class="dropdown-subitem"><a href="/framework/vue/" class="nav-link">
+  Vue
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/gis/" class="nav-link">
+  Web GIS
+</a></li><li class="dropdown-subitem"><a href="/framework/echarts/" class="nav-link">
+  ECahrts
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          关系型
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/mysql/" class="nav-link">
+  MySQL
+</a></li></ul></li><li class="dropdown-item"><h4>
+          非关系型
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/mongodb/" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-subitem"><a href="/db/redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/db/es/" class="nav-link">
+  Elasticsearch
+</a></li></ul></li><li class="dropdown-item"><h4>
+          持久层框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/mybatis/" class="nav-link">
+  MyBatis
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="应用技术" class="dropdown-title"><span class="title">应用技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="应用技术" class="mobile-dropdown-title"><span class="title">应用技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/applied-tech/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/svn/" class="nav-link">
+  SVN
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/maven/" class="nav-link">
+  Maven
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/nginx/" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/mq/" class="nav-link">
+  MQ
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/k8s/" class="nav-link">
+  Kubernetes
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/cas/" class="nav-link">
+  CAS
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/workflow/" class="nav-link">
+  Workflow
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机素养" class="dropdown-title"><span class="title">计算机素养</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机素养" class="mobile-dropdown-title"><span class="title">计算机素养</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/computer-literacy/linux/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/computer-literacy/network/" class="nav-link">
+  网络
+</a></li><li class="dropdown-item"><!----> <a href="/computer-literacy/security/" class="nav-link">
+  安全
+</a></li><li class="dropdown-item"><!----> <a href="/computer-literacy/data-structure/" class="nav-link router-link-active">
+  数据结构
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发常识" class="dropdown-title"><span class="title">开发常识</span> <span class="arrow down"></span></button> <button type="button" aria-label="开发常识" class="mobile-dropdown-title"><span class="title">开发常识</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/common-sense/common/common_sense.html" class="nav-link">
+  常识
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/ide-settings/" class="nav-link">
+  IDE 开发环境配置
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/log/" class="nav-link">
+  Log
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/test/" class="nav-link">
+  Test
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/swagger/" class="nav-link">
+  Swagger
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分享" class="dropdown-title"><span class="title">分享</span> <span class="arrow down"></span></button> <button type="button" aria-label="分享" class="mobile-dropdown-title"><span class="title">分享</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/share/faq/" class="nav-link">
+  FAQ
+</a></li><li class="dropdown-item"><!----> <a href="/share/recommend/" class="nav-link">
+  推荐
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="阅读" class="dropdown-title"><span class="title">阅读</span> <span class="arrow down"></span></button> <button type="button" aria-label="阅读" class="mobile-dropdown-title"><span class="title">阅读</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/read/effective_java.html" class="nav-link">
+  Effective Java
+</a></li><li class="dropdown-item"><!----> <a href="/read/clean_code.html" class="nav-link">
+  代码整洁之道
+</a></li><li class="dropdown-item"><!----> <a href="/read/coding_style.html" class="nav-link">
+  Coding Style
+</a></li><li class="dropdown-item"><!----> <a href="/read/gx.html" class="nav-link">
+  高项笔记
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/wow56/wow56.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/base/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="语言/语法" class="dropdown-title"><span class="title">语言/语法</span> <span class="arrow down"></span></button> <button type="button" aria-label="语言/语法" class="mobile-dropdown-title"><span class="title">语言/语法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lang/java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/lang/go/" class="nav-link">
+  Go
+</a></li><li class="dropdown-item"><!----> <a href="/lang/php/" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/lang/js/" class="nav-link">
+  Java Script
+</a></li><li class="dropdown-item"><!----> <a href="/lang/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/lang/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/lang/regex/" class="nav-link">
+  Regex
+</a></li><li class="dropdown-item"><!----> <a href="/lang/script/" class="nav-link">
+  脚本 Script
+</a></li><li class="dropdown-item"><!----> <a href="/lang/markdown/" class="nav-link">
+  Markdown
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架/类库" class="dropdown-title"><span class="title">框架/类库</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架/类库" class="mobile-dropdown-title"><span class="title">框架/类库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          应用程序
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/spring/" class="nav-link">
+  Spring 生态
+</a></li><li class="dropdown-subitem"><a href="/framework/vue/" class="nav-link">
+  Vue
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/gis/" class="nav-link">
+  Web GIS
+</a></li><li class="dropdown-subitem"><a href="/framework/echarts/" class="nav-link">
+  ECahrts
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          关系型
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/mysql/" class="nav-link">
+  MySQL
+</a></li></ul></li><li class="dropdown-item"><h4>
+          非关系型
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/mongodb/" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-subitem"><a href="/db/redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/db/es/" class="nav-link">
+  Elasticsearch
+</a></li></ul></li><li class="dropdown-item"><h4>
+          持久层框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/mybatis/" class="nav-link">
+  MyBatis
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="应用技术" class="dropdown-title"><span class="title">应用技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="应用技术" class="mobile-dropdown-title"><span class="title">应用技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/applied-tech/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/svn/" class="nav-link">
+  SVN
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/maven/" class="nav-link">
+  Maven
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/nginx/" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/mq/" class="nav-link">
+  MQ
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/k8s/" class="nav-link">
+  Kubernetes
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/cas/" class="nav-link">
+  CAS
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/workflow/" class="nav-link">
+  Workflow
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机素养" class="dropdown-title"><span class="title">计算机素养</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机素养" class="mobile-dropdown-title"><span class="title">计算机素养</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/computer-literacy/linux/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/computer-literacy/network/" class="nav-link">
+  网络
+</a></li><li class="dropdown-item"><!----> <a href="/computer-literacy/security/" class="nav-link">
+  安全
+</a></li><li class="dropdown-item"><!----> <a href="/computer-literacy/data-structure/" class="nav-link router-link-active">
+  数据结构
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发常识" class="dropdown-title"><span class="title">开发常识</span> <span class="arrow down"></span></button> <button type="button" aria-label="开发常识" class="mobile-dropdown-title"><span class="title">开发常识</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/common-sense/common/common_sense.html" class="nav-link">
+  常识
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/ide-settings/" class="nav-link">
+  IDE 开发环境配置
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/log/" class="nav-link">
+  Log
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/test/" class="nav-link">
+  Test
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/swagger/" class="nav-link">
+  Swagger
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分享" class="dropdown-title"><span class="title">分享</span> <span class="arrow down"></span></button> <button type="button" aria-label="分享" class="mobile-dropdown-title"><span class="title">分享</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/share/faq/" class="nav-link">
+  FAQ
+</a></li><li class="dropdown-item"><!----> <a href="/share/recommend/" class="nav-link">
+  推荐
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="阅读" class="dropdown-title"><span class="title">阅读</span> <span class="arrow down"></span></button> <button type="button" aria-label="阅读" class="mobile-dropdown-title"><span class="title">阅读</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/read/effective_java.html" class="nav-link">
+  Effective Java
+</a></li><li class="dropdown-item"><!----> <a href="/read/clean_code.html" class="nav-link">
+  代码整洁之道
+</a></li><li class="dropdown-item"><!----> <a href="/read/coding_style.html" class="nav-link">
+  Coding Style
+</a></li><li class="dropdown-item"><!----> <a href="/read/gx.html" class="nav-link">
+  高项笔记
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/wow56/wow56.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/computer-literacy/data-structure/" aria-current="page" class="sidebar-link">数据结构 总览</a></li><li><a href="/computer-literacy/data-structure/data_structure.html" aria-current="page" class="active sidebar-link">数据结构</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/computer-literacy/data-structure/data_structure.html#参考文档" class="sidebar-link">参考文档</a></li><li class="sidebar-sub-header"><a href="/computer-literacy/data-structure/data_structure.html#树" class="sidebar-link">树</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/computer-literacy/data-structure/data_structure.html#二叉树" class="sidebar-link">二叉树</a></li><li class="sidebar-sub-header"><a href="/computer-literacy/data-structure/data_structure.html#红黑树" class="sidebar-link">红黑树</a></li><li class="sidebar-sub-header"><a href="/computer-literacy/data-structure/data_structure.html#b-tree" class="sidebar-link">B-Tree</a></li><li class="sidebar-sub-header"><a href="/computer-literacy/data-structure/data_structure.html#b-tree-2" class="sidebar-link">B+Tree</a></li></ul></li><li class="sidebar-sub-header"><a href="/computer-literacy/data-structure/data_structure.html#讨论区" class="sidebar-link">讨论区</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="数据结构"><a href="#数据结构" class="header-anchor">#</a> 数据结构</h1> <h2 id="参考文档"><a href="#参考文档" class="header-anchor">#</a> 参考文档</h2> <ul><li><a href="https://www.cs.usfca.edu/~galles/visualization/Algorithms.html" target="_blank" rel="noopener noreferrer">数据结构在线可视化工具<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h2 id="树"><a href="#树" class="header-anchor">#</a> 树</h2> <h3 id="二叉树"><a href="#二叉树" class="header-anchor">#</a> 二叉树</h3> <p><img src="/assets/img/binary-tree.07f8d42b.png" alt="Binary Tree"></p> <p>特点：</p> <ul><li>每个节点只能有 2 个子节点。</li> <li>左边小于右边。</li></ul> <p>缺点：</p> <ul><li><p>当数值连续插入时，树的结构退化成了链表，不再可以提高搜索效率。</p> <p><img src="/assets/img/binary-tree2.20167768.png" alt="Binary Tree 特殊"></p></li> <li><p>由于每个节点只有 2 个子节点，数据越大，树的深度较大。</p></li></ul> <h3 id="红黑树"><a href="#红黑树" class="header-anchor">#</a> 红黑树</h3> <p><img src="/assets/img/red-black-tree.f4d8595e.png" alt="Red/Black Tree"></p> <p>特点：</p> <ul><li>每个节点只能是黑色或红色。</li> <li>根节点必须是黑色。</li> <li>红色的节点，它的叶子节点只能是黑色。</li> <li>从任一节点到其叶子节点的所有路径中都包含数目相同的黑色节点。</li></ul> <p>缺点：</p> <ul><li><p>数据依次插入时候，仍然会偏置一边，导致树的高度非常高。</p> <p><img src="/assets/img/red-black-tree2.287e2bae.png" alt="Red/Black Tree 特殊"></p></li> <li><p>树的深度问题。</p></li></ul> <h3 id="b-tree"><a href="#b-tree" class="header-anchor">#</a> B-Tree</h3> <p>B 树，也叫做 B Tree 或 B-Tree，是一个多路平衡搜索树。</p> <ul><li><code>degree</code>（阶） 指的是子节点个数，也是指针数，并非 key（data） 的个数。</li> <li>树的某个节点的指针数等于 degree 之后，会生成分支结构，中间元素会上升，<code>1 2 &lt;- 3 -&gt; 4 5</code>。</li></ul> <p><img src="/assets/img/b-tree.bb280936.png" alt="B-Tree"></p> <p>特点：</p> <ul><li>一个节点可以有多个元素。</li> <li>叶子结点具有相同深度，叶子结点的指针为空。</li> <li>所有索引元素不重复。</li> <li>节点中的数据索引从左到右递增排列。</li></ul> <p>缺点：</p> <ul><li>范围查询依然效率很低。</li> <li>查询效率不稳定。
+<ul><li>例如图中，查询 20 只需要 1 次，而查询 3 则需要 3 次。</li></ul></li> <li>树的高度仍有下降空间。</li></ul> <h3 id="b-tree-2"><a href="#b-tree-2" class="header-anchor">#</a> B+Tree</h3> <p>B+ 树解决了 B 树的问题。</p> <p><img src="/assets/img/b+tree.a0a6a499.png" alt="B+Tree"></p> <p>特点：</p> <ul><li>非叶子节点不存储数据，只存放索引，可以放多个索引。</li> <li>数据全部存放在叶子节点，并包含所有的索引字段。
+<ul><li>数据裂变后，中值上升，但是会留存一份同样的值在叶子结点。
+<img src="data:image/png;base64,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" alt="p"></li></ul></li> <li>叶子节点用指针连接（单向链表），提高区间查询性能。</li></ul> <h2 id="讨论区"><a href="#讨论区" class="header-anchor">#</a> 讨论区</h2> <blockquote><p>由于评论过多会影响页面最下方的导航，故将评论区做默认折叠处理。</p></blockquote> <details class="custom-block details"><summary>点击查看评论区内容，渴望您的宝贵建议~</summary> <!----></details></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">7/14/2023, 2:37:30 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/computer-literacy/data-structure/" class="prev router-link-active">
+        数据结构 总览
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.5780eb53.js" defer></script><script src="/assets/js/2.e1f1d232.js" defer></script><script src="/assets/js/5.9411f932.js" defer></script>
+  </body>
+</html>

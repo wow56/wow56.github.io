@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>MongoDB 高级 | Wow56 个人知识库</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/flaglogo.png">
+    <link rel="manifest" href="/flaglogo.png">
+    <link rel="apple-touch-icon" href="/flaglogo.png">
+    <meta name="description" content="Never stop learning">
+    
+    <link rel="preload" href="/assets/css/0.styles.b25eaea0.css" as="style"><link rel="preload" href="/assets/js/app.5780eb53.js" as="script"><link rel="preload" href="/assets/js/2.e1f1d232.js" as="script"><link rel="preload" href="/assets/js/19.e0daa831.js" as="script"><link rel="prefetch" href="/assets/js/10.921c058c.js"><link rel="prefetch" href="/assets/js/100.678efb16.js"><link rel="prefetch" href="/assets/js/101.6fd33b9c.js"><link rel="prefetch" href="/assets/js/102.dfa6e733.js"><link rel="prefetch" href="/assets/js/103.4b74461a.js"><link rel="prefetch" href="/assets/js/104.603354fe.js"><link rel="prefetch" href="/assets/js/105.9da719c4.js"><link rel="prefetch" href="/assets/js/106.6aa24318.js"><link rel="prefetch" href="/assets/js/107.5ea57319.js"><link rel="prefetch" href="/assets/js/108.37ded6f2.js"><link rel="prefetch" href="/assets/js/109.adc40804.js"><link rel="prefetch" href="/assets/js/11.00deed7e.js"><link rel="prefetch" href="/assets/js/110.f1791c33.js"><link rel="prefetch" href="/assets/js/111.bff2cea6.js"><link rel="prefetch" href="/assets/js/112.4eb7e8b1.js"><link rel="prefetch" href="/assets/js/113.4ca0e39f.js"><link rel="prefetch" href="/assets/js/114.03d070d7.js"><link rel="prefetch" href="/assets/js/115.a007d470.js"><link rel="prefetch" href="/assets/js/116.027c798b.js"><link rel="prefetch" href="/assets/js/117.6eaa95a7.js"><link rel="prefetch" href="/assets/js/118.3468f2af.js"><link rel="prefetch" href="/assets/js/119.94c060f2.js"><link rel="prefetch" href="/assets/js/12.e7e7feff.js"><link rel="prefetch" href="/assets/js/120.2639e06f.js"><link rel="prefetch" href="/assets/js/121.1ee7e578.js"><link rel="prefetch" href="/assets/js/122.d1f0654b.js"><link rel="prefetch" href="/assets/js/123.52d57be3.js"><link rel="prefetch" href="/assets/js/124.d515f509.js"><link rel="prefetch" href="/assets/js/125.c783db82.js"><link rel="prefetch" href="/assets/js/126.08d41fac.js"><link rel="prefetch" href="/assets/js/127.5ab5b3c5.js"><link rel="prefetch" href="/assets/js/13.c0e1c39d.js"><link rel="prefetch" href="/assets/js/14.4be8face.js"><link rel="prefetch" href="/assets/js/15.b235fe5f.js"><link rel="prefetch" href="/assets/js/16.a62bd2ec.js"><link rel="prefetch" href="/assets/js/17.d3fa5b5a.js"><link rel="prefetch" href="/assets/js/18.04056df6.js"><link rel="prefetch" href="/assets/js/20.aae5efb2.js"><link rel="prefetch" href="/assets/js/21.51bfd139.js"><link rel="prefetch" href="/assets/js/22.d92aecaf.js"><link rel="prefetch" href="/assets/js/23.fd2079a6.js"><link rel="prefetch" href="/assets/js/24.7cadaa30.js"><link rel="prefetch" href="/assets/js/25.38c9c1a4.js"><link rel="prefetch" href="/assets/js/26.1c8277a8.js"><link rel="prefetch" href="/assets/js/27.1e495f81.js"><link rel="prefetch" href="/assets/js/28.7ef5af76.js"><link rel="prefetch" href="/assets/js/29.9031cb92.js"><link rel="prefetch" href="/assets/js/3.93a08b3b.js"><link rel="prefetch" href="/assets/js/30.1b61bbf8.js"><link rel="prefetch" href="/assets/js/31.f8cbfd44.js"><link rel="prefetch" href="/assets/js/32.0632cb94.js"><link rel="prefetch" href="/assets/js/33.a46a0b3d.js"><link rel="prefetch" href="/assets/js/34.fba531e6.js"><link rel="prefetch" href="/assets/js/35.db1fd348.js"><link rel="prefetch" href="/assets/js/36.9e6108c6.js"><link rel="prefetch" href="/assets/js/37.35fca0f6.js"><link rel="prefetch" href="/assets/js/38.ac22df93.js"><link rel="prefetch" href="/assets/js/39.7cce2902.js"><link rel="prefetch" href="/assets/js/4.e30be376.js"><link rel="prefetch" href="/assets/js/40.3560e650.js"><link rel="prefetch" href="/assets/js/41.d4632345.js"><link rel="prefetch" href="/assets/js/42.adce46c5.js"><link rel="prefetch" href="/assets/js/43.d2ff2a7e.js"><link rel="prefetch" href="/assets/js/44.d3f6ac6e.js"><link rel="prefetch" href="/assets/js/45.1e3b049e.js"><link rel="prefetch" href="/assets/js/46.917a9a8a.js"><link rel="prefetch" href="/assets/js/47.5a73f25d.js"><link rel="prefetch" href="/assets/js/48.3b970b0a.js"><link rel="prefetch" href="/assets/js/49.dc6fd937.js"><link rel="prefetch" href="/assets/js/5.9411f932.js"><link rel="prefetch" href="/assets/js/50.109fdeb5.js"><link rel="prefetch" href="/assets/js/51.5ec4fc4b.js"><link rel="prefetch" href="/assets/js/52.0c03ff96.js"><link rel="prefetch" href="/assets/js/53.e91a6f48.js"><link rel="prefetch" href="/assets/js/54.7f886adb.js"><link rel="prefetch" href="/assets/js/55.2747b24f.js"><link rel="prefetch" href="/assets/js/56.a78db785.js"><link rel="prefetch" href="/assets/js/57.517d420c.js"><link rel="prefetch" href="/assets/js/58.0429f17c.js"><link rel="prefetch" href="/assets/js/59.9d68455f.js"><link rel="prefetch" href="/assets/js/6.3e126bb5.js"><link rel="prefetch" href="/assets/js/60.7cc000dc.js"><link rel="prefetch" href="/assets/js/61.8eaec827.js"><link rel="prefetch" href="/assets/js/62.9eb7a7b3.js"><link rel="prefetch" href="/assets/js/63.35e36177.js"><link rel="prefetch" href="/assets/js/64.6282d042.js"><link rel="prefetch" href="/assets/js/65.58ed4699.js"><link rel="prefetch" href="/assets/js/66.971cb02f.js"><link rel="prefetch" href="/assets/js/67.0a93b287.js"><link rel="prefetch" href="/assets/js/68.a7b05e3b.js"><link rel="prefetch" href="/assets/js/69.6572830f.js"><link rel="prefetch" href="/assets/js/7.de70efc4.js"><link rel="prefetch" href="/assets/js/70.168da9d9.js"><link rel="prefetch" href="/assets/js/71.d57d693b.js"><link rel="prefetch" href="/assets/js/72.91fa5cd3.js"><link rel="prefetch" href="/assets/js/73.7de2d2b8.js"><link rel="prefetch" href="/assets/js/74.acd298e4.js"><link rel="prefetch" href="/assets/js/75.62e67874.js"><link rel="prefetch" href="/assets/js/76.f2b96539.js"><link rel="prefetch" href="/assets/js/77.4255efc8.js"><link rel="prefetch" href="/assets/js/78.114300ba.js"><link rel="prefetch" href="/assets/js/79.d14a2756.js"><link rel="prefetch" href="/assets/js/8.1ec756ec.js"><link rel="prefetch" href="/assets/js/80.3fd73e00.js"><link rel="prefetch" href="/assets/js/81.71ebdbf4.js"><link rel="prefetch" href="/assets/js/82.0a5b5bb1.js"><link rel="prefetch" href="/assets/js/83.a23907a9.js"><link rel="prefetch" href="/assets/js/84.8c2bc996.js"><link rel="prefetch" href="/assets/js/85.ed1b9552.js"><link rel="prefetch" href="/assets/js/86.49d44a86.js"><link rel="prefetch" href="/assets/js/87.33153d90.js"><link rel="prefetch" href="/assets/js/88.a021dc21.js"><link rel="prefetch" href="/assets/js/89.b80b10c6.js"><link rel="prefetch" href="/assets/js/9.24d5e519.js"><link rel="prefetch" href="/assets/js/90.a059a06c.js"><link rel="prefetch" href="/assets/js/91.0c2e07a8.js"><link rel="prefetch" href="/assets/js/92.0460267f.js"><link rel="prefetch" href="/assets/js/93.630cc9b9.js"><link rel="prefetch" href="/assets/js/94.64e96711.js"><link rel="prefetch" href="/assets/js/95.cc7ee0e1.js"><link rel="prefetch" href="/assets/js/96.43f96f85.js"><link rel="prefetch" href="/assets/js/97.73dc1af0.js"><link rel="prefetch" href="/assets/js/98.10b4ffee.js"><link rel="prefetch" href="/assets/js/99.e6bfc1cd.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b25eaea0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/flaglogo.png" alt="Wow56 个人知识库" class="logo"> <span class="site-name can-hide">Wow56 个人知识库</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/base/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="语言/语法" class="dropdown-title"><span class="title">语言/语法</span> <span class="arrow down"></span></button> <button type="button" aria-label="语言/语法" class="mobile-dropdown-title"><span class="title">语言/语法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lang/java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/lang/go/" class="nav-link">
+  Go
+</a></li><li class="dropdown-item"><!----> <a href="/lang/php/" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/lang/js/" class="nav-link">
+  Java Script
+</a></li><li class="dropdown-item"><!----> <a href="/lang/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/lang/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/lang/regex/" class="nav-link">
+  Regex
+</a></li><li class="dropdown-item"><!----> <a href="/lang/script/" class="nav-link">
+  脚本 Script
+</a></li><li class="dropdown-item"><!----> <a href="/lang/markdown/" class="nav-link">
+  Markdown
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架/类库" class="dropdown-title"><span class="title">框架/类库</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架/类库" class="mobile-dropdown-title"><span class="title">框架/类库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          应用程序
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/spring/" class="nav-link">
+  Spring 生态
+</a></li><li class="dropdown-subitem"><a href="/framework/vue/" class="nav-link">
+  Vue
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/gis/" class="nav-link">
+  Web GIS
+</a></li><li class="dropdown-subitem"><a href="/framework/echarts/" class="nav-link">
+  ECahrts
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          关系型
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/mysql/" class="nav-link">
+  MySQL
+</a></li></ul></li><li class="dropdown-item"><h4>
+          非关系型
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/mongodb/" class="nav-link router-link-active">
+  MongoDB
+</a></li><li class="dropdown-subitem"><a href="/db/redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/db/es/" class="nav-link">
+  Elasticsearch
+</a></li></ul></li><li class="dropdown-item"><h4>
+          持久层框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/mybatis/" class="nav-link">
+  MyBatis
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="应用技术" class="dropdown-title"><span class="title">应用技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="应用技术" class="mobile-dropdown-title"><span class="title">应用技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/applied-tech/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/svn/" class="nav-link">
+  SVN
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/maven/" class="nav-link">
+  Maven
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/nginx/" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/mq/" class="nav-link">
+  MQ
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/k8s/" class="nav-link">
+  Kubernetes
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/cas/" class="nav-link">
+  CAS
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/workflow/" class="nav-link">
+  Workflow
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机素养" class="dropdown-title"><span class="title">计算机素养</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机素养" class="mobile-dropdown-title"><span class="title">计算机素养</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/computer-literacy/linux/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/computer-literacy/network/" class="nav-link">
+  网络
+</a></li><li class="dropdown-item"><!----> <a href="/computer-literacy/security/" class="nav-link">
+  安全
+</a></li><li class="dropdown-item"><!----> <a href="/computer-literacy/data-structure/" class="nav-link">
+  数据结构
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发常识" class="dropdown-title"><span class="title">开发常识</span> <span class="arrow down"></span></button> <button type="button" aria-label="开发常识" class="mobile-dropdown-title"><span class="title">开发常识</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/common-sense/common/common_sense.html" class="nav-link">
+  常识
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/ide-settings/" class="nav-link">
+  IDE 开发环境配置
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/log/" class="nav-link">
+  Log
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/test/" class="nav-link">
+  Test
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/swagger/" class="nav-link">
+  Swagger
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分享" class="dropdown-title"><span class="title">分享</span> <span class="arrow down"></span></button> <button type="button" aria-label="分享" class="mobile-dropdown-title"><span class="title">分享</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/share/faq/" class="nav-link">
+  FAQ
+</a></li><li class="dropdown-item"><!----> <a href="/share/recommend/" class="nav-link">
+  推荐
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="阅读" class="dropdown-title"><span class="title">阅读</span> <span class="arrow down"></span></button> <button type="button" aria-label="阅读" class="mobile-dropdown-title"><span class="title">阅读</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/read/effective_java.html" class="nav-link">
+  Effective Java
+</a></li><li class="dropdown-item"><!----> <a href="/read/clean_code.html" class="nav-link">
+  代码整洁之道
+</a></li><li class="dropdown-item"><!----> <a href="/read/coding_style.html" class="nav-link">
+  Coding Style
+</a></li><li class="dropdown-item"><!----> <a href="/read/gx.html" class="nav-link">
+  高项笔记
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/wow56/wow56.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/base/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="语言/语法" class="dropdown-title"><span class="title">语言/语法</span> <span class="arrow down"></span></button> <button type="button" aria-label="语言/语法" class="mobile-dropdown-title"><span class="title">语言/语法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lang/java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/lang/go/" class="nav-link">
+  Go
+</a></li><li class="dropdown-item"><!----> <a href="/lang/php/" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/lang/js/" class="nav-link">
+  Java Script
+</a></li><li class="dropdown-item"><!----> <a href="/lang/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/lang/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/lang/regex/" class="nav-link">
+  Regex
+</a></li><li class="dropdown-item"><!----> <a href="/lang/script/" class="nav-link">
+  脚本 Script
+</a></li><li class="dropdown-item"><!----> <a href="/lang/markdown/" class="nav-link">
+  Markdown
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架/类库" class="dropdown-title"><span class="title">框架/类库</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架/类库" class="mobile-dropdown-title"><span class="title">框架/类库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          应用程序
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/spring/" class="nav-link">
+  Spring 生态
+</a></li><li class="dropdown-subitem"><a href="/framework/vue/" class="nav-link">
+  Vue
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/gis/" class="nav-link">
+  Web GIS
+</a></li><li class="dropdown-subitem"><a href="/framework/echarts/" class="nav-link">
+  ECahrts
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          关系型
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/mysql/" class="nav-link">
+  MySQL
+</a></li></ul></li><li class="dropdown-item"><h4>
+          非关系型
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/mongodb/" class="nav-link router-link-active">
+  MongoDB
+</a></li><li class="dropdown-subitem"><a href="/db/redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/db/es/" class="nav-link">
+  Elasticsearch
+</a></li></ul></li><li class="dropdown-item"><h4>
+          持久层框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/mybatis/" class="nav-link">
+  MyBatis
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="应用技术" class="dropdown-title"><span class="title">应用技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="应用技术" class="mobile-dropdown-title"><span class="title">应用技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/applied-tech/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/svn/" class="nav-link">
+  SVN
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/maven/" class="nav-link">
+  Maven
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/nginx/" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/mq/" class="nav-link">
+  MQ
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/k8s/" class="nav-link">
+  Kubernetes
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/cas/" class="nav-link">
+  CAS
+</a></li><li class="dropdown-item"><!----> <a href="/applied-tech/workflow/" class="nav-link">
+  Workflow
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机素养" class="dropdown-title"><span class="title">计算机素养</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机素养" class="mobile-dropdown-title"><span class="title">计算机素养</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/computer-literacy/linux/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/computer-literacy/network/" class="nav-link">
+  网络
+</a></li><li class="dropdown-item"><!----> <a href="/computer-literacy/security/" class="nav-link">
+  安全
+</a></li><li class="dropdown-item"><!----> <a href="/computer-literacy/data-structure/" class="nav-link">
+  数据结构
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发常识" class="dropdown-title"><span class="title">开发常识</span> <span class="arrow down"></span></button> <button type="button" aria-label="开发常识" class="mobile-dropdown-title"><span class="title">开发常识</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/common-sense/common/common_sense.html" class="nav-link">
+  常识
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/ide-settings/" class="nav-link">
+  IDE 开发环境配置
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/log/" class="nav-link">
+  Log
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/test/" class="nav-link">
+  Test
+</a></li><li class="dropdown-item"><!----> <a href="/common-sense/swagger/" class="nav-link">
+  Swagger
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分享" class="dropdown-title"><span class="title">分享</span> <span class="arrow down"></span></button> <button type="button" aria-label="分享" class="mobile-dropdown-title"><span class="title">分享</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/share/faq/" class="nav-link">
+  FAQ
+</a></li><li class="dropdown-item"><!----> <a href="/share/recommend/" class="nav-link">
+  推荐
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="阅读" class="dropdown-title"><span class="title">阅读</span> <span class="arrow down"></span></button> <button type="button" aria-label="阅读" class="mobile-dropdown-title"><span class="title">阅读</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/read/effective_java.html" class="nav-link">
+  Effective Java
+</a></li><li class="dropdown-item"><!----> <a href="/read/clean_code.html" class="nav-link">
+  代码整洁之道
+</a></li><li class="dropdown-item"><!----> <a href="/read/coding_style.html" class="nav-link">
+  Coding Style
+</a></li><li class="dropdown-item"><!----> <a href="/read/gx.html" class="nav-link">
+  高项笔记
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/wow56/wow56.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/db/mongodb/" aria-current="page" class="sidebar-link">MongoDB 目录</a></li><li><a href="/db/mongodb/mongodb.html" class="sidebar-link">MongoDB 基础</a></li><li><a href="/db/mongodb/mongodb_advanced.html" aria-current="page" class="active sidebar-link">MongoDB 高级</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/db/mongodb/mongodb_advanced.html#参考文档" class="sidebar-link">参考文档</a></li><li class="sidebar-sub-header"><a href="/db/mongodb/mongodb_advanced.html#聚合查询" class="sidebar-link">聚合查询</a></li><li class="sidebar-sub-header"><a href="/db/mongodb/mongodb_advanced.html#索引" class="sidebar-link">索引</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/db/mongodb/mongodb_advanced.html#最左前缀原则" class="sidebar-link">最左前缀原则</a></li></ul></li><li class="sidebar-sub-header"><a href="/db/mongodb/mongodb_advanced.html#查询分析" class="sidebar-link">查询分析</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/db/mongodb/mongodb_advanced.html#explain" class="sidebar-link">Explain</a></li><li class="sidebar-sub-header"><a href="/db/mongodb/mongodb_advanced.html#hint" class="sidebar-link">Hint</a></li></ul></li><li class="sidebar-sub-header"><a href="/db/mongodb/mongodb_advanced.html#mongo-profiler" class="sidebar-link">Mongo Profiler</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/db/mongodb/mongodb_advanced.html#配置分析器" class="sidebar-link">配置分析器</a></li><li class="sidebar-sub-header"><a href="/db/mongodb/mongodb_advanced.html#profiler-日志" class="sidebar-link">Profiler 日志</a></li><li class="sidebar-sub-header"><a href="/db/mongodb/mongodb_advanced.html#分析器开销" class="sidebar-link">分析器开销</a></li></ul></li><li class="sidebar-sub-header"><a href="/db/mongodb/mongodb_advanced.html#优化手段" class="sidebar-link">优化手段</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/db/mongodb/mongodb_advanced.html#sort-skip-limit" class="sidebar-link">sort&amp;skip&amp;limit</a></li><li class="sidebar-sub-header"><a href="/db/mongodb/mongodb_advanced.html#复合索引定义技巧" class="sidebar-link">复合索引定义技巧</a></li><li class="sidebar-sub-header"><a href="/db/mongodb/mongodb_advanced.html#索引对排序的影响" class="sidebar-link">索引对排序的影响</a></li></ul></li><li class="sidebar-sub-header"><a href="/db/mongodb/mongodb_advanced.html#脚本" class="sidebar-link">脚本</a></li><li class="sidebar-sub-header"><a href="/db/mongodb/mongodb_advanced.html#讨论区" class="sidebar-link">讨论区</a></li></ul></li><li><a href="/db/mongodb/mongodb_install.html" class="sidebar-link">MongoDB 安装配置</a></li><li><a href="/db/mongodb/using_mongodb_in_spring.html" class="sidebar-link">Using MongoDB in Spring</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="mongodb-高级"><a href="#mongodb-高级" class="header-anchor">#</a> MongoDB 高级</h1> <h2 id="参考文档"><a href="#参考文档" class="header-anchor">#</a> 参考文档</h2> <ul><li><a href="https://docs.mongodb.com/manual/" target="_blank" rel="noopener noreferrer">MongoDB<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://docs.mongoing.com/" target="_blank" rel="noopener noreferrer">MongoDB 中文文档<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://mongodb.net.cn/manual/reference/method/db.collection.insert/" target="_blank" rel="noopener noreferrer">MongoDB 中文手册<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h2 id="聚合查询"><a href="#聚合查询" class="header-anchor">#</a> 聚合查询</h2> <p><code>db.collection. aggregate(pipeline，options)</code></p> <ul><li><code>pipeline</code>，管道，array 类型，数据会按照管道定义顺序流动。</li> <li><code>options</code>，选项参数。</li></ul> <p>示例：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>db<span class="token punctuation">.</span>orders<span class="token punctuation">.</span><span class="token function">aggregate</span><span class="token punctuation">(</span>
+    <span class="token punctuation">[</span>
+        <span class="token comment">// 将数组中数据展开</span>
+        <span class="token punctuation">{</span> $unwind<span class="token operator">:</span> <span class="token string">&quot;$tags&quot;</span><span class="token punctuation">}</span>
+        <span class="token comment">// $match 指定 query 条件</span>
+        <span class="token punctuation">{</span> $match<span class="token operator">:</span> <span class="token punctuation">{</span> status<span class="token operator">:</span> <span class="token string">&quot;A&quot;</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token comment">// _id 指定按照哪个字段去分组</span>
+        <span class="token punctuation">{</span> $group<span class="token operator">:</span> <span class="token punctuation">{</span> _id<span class="token operator">:</span> <span class="token string">&quot;$cust_id&quot;</span><span class="token punctuation">,</span> total<span class="token operator">:</span> <span class="token punctuation">{</span> $sum<span class="token operator">:</span> <span class="token string">&quot;$amount&quot;</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token comment">// 多字段分组时需要设置一个别名</span>
+        <span class="token comment">// { $group: { _id: { &quot;custId&quot;: &quot;$cust_id&quot;, &quot;bId&quot;: &quot;$b_id&quot;}, total: { $sum: &quot;$amount&quot; } } },</span>
+        <span class="token punctuation">{</span> $sort<span class="token operator">:</span> <span class="token punctuation">{</span> total<span class="token operator">:</span> <span class="token operator">-</span><span class="token number">1</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+        explain<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token comment">// 使用外部排序执行大型排序操作</span>
+        allowDiskUse<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token comment">// 指定初始批量大小</span>
+        cursor<span class="token operator">:</span> <span class="token punctuation">{</span> batchSize<span class="token operator">:</span> <span class="token number">0</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token comment">// 指定索引</span>
+        hint<span class="token operator">:</span> <span class="token punctuation">{</span> qty<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> category<span class="token operator">:</span> <span class="token number">1</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><p><code>unwind</code> 作用是将一条记录，按照某个数组展开，变成多条文档（仅这个值有区别，其他的值都相同）。示例：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// 现有数据</span>
+<span class="token punctuation">{</span>
+    <span class="token string">&quot;_id&quot;</span> <span class="token operator">:</span> <span class="token function">ObjectId</span><span class="token punctuation">(</span><span class="token string">&quot;645390f5aa2b30b7a0dab260&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;name&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;Mario&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;age&quot;</span> <span class="token operator">:</span> <span class="token function">NumberInt</span><span class="token punctuation">(</span><span class="token number">18</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;tags&quot;</span> <span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">&quot;smart&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;intelligent&quot;</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// unwind</span>
+db<span class="token punctuation">.</span><span class="token function">getCollection</span><span class="token punctuation">(</span><span class="token string">&quot;member&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">aggregate</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+    <span class="token punctuation">{</span><span class="token string">&quot;$unwind&quot;</span><span class="token operator">:</span><span class="token string">&quot;$tags&quot;</span><span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token comment">// result</span>
+<span class="token punctuation">{</span>
+    <span class="token string">&quot;_id&quot;</span> <span class="token operator">:</span> <span class="token function">ObjectId</span><span class="token punctuation">(</span><span class="token string">&quot;645390f5aa2b30b7a0dab260&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;name&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;Mario&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;age&quot;</span> <span class="token operator">:</span> <span class="token function">NumberInt</span><span class="token punctuation">(</span><span class="token number">18</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;tags&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;smart&quot;</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">{</span>
+    <span class="token string">&quot;_id&quot;</span> <span class="token operator">:</span> <span class="token function">ObjectId</span><span class="token punctuation">(</span><span class="token string">&quot;645390f5aa2b30b7a0dab260&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;name&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;Mario&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;age&quot;</span> <span class="token operator">:</span> <span class="token function">NumberInt</span><span class="token punctuation">(</span><span class="token number">18</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;tags&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;intelligent&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><p>按时间（比如每个月）分组：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>db<span class="token punctuation">.</span><span class="token function">getCollection</span><span class="token punctuation">(</span><span class="token string">&quot;vodDailyPlayStats&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">aggregate</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+    <span class="token punctuation">{</span><span class="token string">&quot;$match&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>accountId<span class="token operator">:</span><span class="token function">ObjectId</span><span class="token punctuation">(</span><span class="token string">'xxx'</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token string">&quot;isDeleted&quot;</span><span class="token operator">:</span><span class="token boolean">false</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span><span class="token string">&quot;$group&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;_id&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span>
+            <span class="token string">&quot;$dateToString&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token string">&quot;format&quot;</span><span class="token operator">:</span> <span class="token string">&quot;%Y-%m&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;date&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token string">&quot;$add&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;$createdAt&quot;</span><span class="token punctuation">]</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;total&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>$sum<span class="token operator">:</span><span class="token string">&quot;$playTimes&quot;</span><span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h2 id="索引"><a href="#索引" class="header-anchor">#</a> 索引</h2> <blockquote><p>1 升序， -1 降序</p></blockquote> <p>创建索引 <code>db.collection.createIndex(&lt;key: type&gt;, &lt;options&gt;)</code>，type = 1 (升序) <code>|</code> -1 (降序)。</p> <p>示例：</p> <ul><li>创建普通索引：<code>db.collection.createIndex( { key: 1 } )</code></li> <li>后台创建：<code>db.collection.createIndex( { key: 1 }, {background: true} )</code> <ul><li>background 设为 true，指的是不要阻塞数据库的其他操作，保证数据库的可用性。</li></ul></li> <li>创建唯一索引：<code>db.collection.createIndex( { key: 1 }, { unique: true } )</code></li></ul> <p>创建出来的索引名称默认规则是：索引键和索引中每个键的方向(即 1 或 -1 )的连接，使用下划线作为分隔符，例如 <code>a_1_b_-1</code>。当然也手动指定索引的名字：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>db<span class="token punctuation">.</span>products<span class="token punctuation">.</span><span class="token function">createIndex</span><span class="token punctuation">(</span>
+    <span class="token punctuation">{</span> item<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> quantity<span class="token operator">:</span> <span class="token operator">-</span><span class="token number">1</span> <span class="token punctuation">}</span> <span class="token punctuation">,</span>
+    <span class="token punctuation">{</span> name<span class="token operator">:</span> <span class="token string">&quot;query for inventory&quot;</span> <span class="token punctuation">}</span>
+<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>使用 <code>db.collection.getIndexes()</code> 查看索引。</p> <h3 id="最左前缀原则"><a href="#最左前缀原则" class="header-anchor">#</a> 最左前缀原则</h3> <blockquote><p>最左前缀原则，或最左匹配原则，最左前缀匹配原则 指的是同一个东西。</p></blockquote> <p>数据库索引分为单键索引和复合索引，单键索引的命中无需多说。最左前缀原则是指在复合索引中的命中规则。</p> <p>假如有一个索引 <code>a_1_b_1_c_1</code>，当查询 a、a+b、a+b+c 都可以命中该索引，但是 b、b+c、c 就不能命中索引。</p> <p>另外，a+c 也会命中索引，它会从所有 a 相同的数据中查询等于 c 的数据。</p> <h2 id="查询分析"><a href="#查询分析" class="header-anchor">#</a> 查询分析</h2> <p>MongoDB 查询分析可以确保我们建议的索引是否有效，是查询语句性能分析的重要工具。</p> <p>MongoDB 查询分析常用函数有：<code>explain()</code> 和 <code>hint()</code>。</p> <h3 id="explain"><a href="#explain" class="header-anchor">#</a> Explain</h3> <blockquote><p>执行计划分析</p></blockquote> <p>在 MongoDB 中可以使用 <code>db.collection.explain()</code>、<code>cursort.explain()</code> 及 <code>explain</code> 命令，获取查询计划及查询计划统计信息。</p> <p>现版本 explain 有三种模式，分别是：queryPlanner（默认模式）、executionStats、allPlansExecution。</p> <ul><li><code>queryPlanner</code>，查询计划的选择器，首先进行查询分析，最终选择一个 winningPlan，是 explain 返回的默认层面。
+<ul><li><code>db.collection.find().explain()</code></li></ul></li> <li><code>executionStats</code>，为执行统计层面，返回 winningPlan 的统计结果
+<ul><li><code>db.collection.find().explain(&quot;executionStats&quot;)</code></li></ul></li> <li><code>allPlansExecution</code>，为返回所有执行计划的统计，包括 rejectedPlan。
+<ul><li><code>db.collection.find().explain(&quot;allPlansExecution&quot;)</code> or <code>db.collection.find().explain({})</code></li></ul></li></ul> <p>queryPlanner 是现版本 explain 的默认模式。这种模式并不会真正进行 query 语句查询，而是针对 query 语句进行执行计划分析并选出 winning plan。</p> <p>我们在查询优化的时候，只需要关注 queryPlanner，executionStats 即可，因为 queryPlanner 为我们选择出了 winningPlan，而 executionStats 为我们统计了 winningPlan 的所有关键数据。</p> <details class="custom-block details"><summary>点开查看结果释义</summary> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;queryPlanner&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span>
+        <span class="token property">&quot;plannerVersion&quot;</span><span class="token operator">:</span><span class="token number">1</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;namespace&quot;</span><span class="token operator">:</span><span class="token string">&quot;mongotest.users&quot;</span><span class="token punctuation">,</span> <span class="token comment">// db.table，该query所查询的表</span>
+        <span class="token property">&quot;indexFilterSet&quot;</span><span class="token operator">:</span><span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 针对该 query 是否有 indexfilter</span>
+        <span class="token property">&quot;parsedQuery&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span> <span class="token comment">// 查询条件(格式化后)</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span>
+                <span class="token property">&quot;$eq&quot;</span><span class="token operator">:</span><span class="token string">&quot;ghost&quot;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;winningPlan&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span> <span class="token comment">// 查询优化器针对该 query 所返回的 最优执行计划 的详细内容。</span>
+            <span class="token property">&quot;stage&quot;</span><span class="token operator">:</span><span class="token string">&quot;FETCH&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 最优执行计划的 stage，这里返回是 FETCH，可以理解为通过返回的 index 位置去检索具体的文档</span>
+            <span class="token property">&quot;inputStage&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span> <span class="token comment">// 用来描述子 stage，并且为其父 stage 提供文档和索引关键字</span>
+                <span class="token property">&quot;stage&quot;</span><span class="token operator">:</span><span class="token string">&quot;IXSCAN&quot;</span><span class="token punctuation">,</span> <span class="token comment">// stage的 child stage，此处是 IXSCAN，表示进行的是 index scanning。</span>
+                <span class="token property">&quot;keyPattern&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span> <span class="token comment">// 所扫描的 index 内容</span>
+                <span class="token property">&quot;name&quot;</span><span class="token operator">:</span><span class="token number">1.0</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;age&quot;</span><span class="token operator">:</span><span class="token number">1.0</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;indexName&quot;</span><span class="token operator">:</span><span class="token string">&quot;name_1_age_1&quot;</span><span class="token punctuation">,</span> <span class="token comment">// winning plan 所选用的 index。</span>
+                <span class="token property">&quot;isMultiKey&quot;</span><span class="token operator">:</span><span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 是否是 Multikey，此处返回是 false，如果索引建立在 array 上，此处将是 true。</span>
+                <span class="token property">&quot;multiKeyPaths&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span>
+                    <span class="token property">&quot;name&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span>
+                        
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;age&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span>
+                        
+                    <span class="token punctuation">]</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;isUnique&quot;</span><span class="token operator">:</span><span class="token boolean">false</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;isSparse&quot;</span><span class="token operator">:</span><span class="token boolean">false</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;isPartial&quot;</span><span class="token operator">:</span><span class="token boolean">false</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;indexVersion&quot;</span><span class="token operator">:</span><span class="token number">2</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;direction&quot;</span><span class="token operator">:</span><span class="token string">&quot;forward&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 此 query 的查询顺序，此处是 forward，如果用了 .sort({modify_time:-1}) 将显示 backward。</span>
+                <span class="token property">&quot;indexBounds&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span> <span class="token comment">// winningplan 所扫描的索引范围,如果没有制定范围就是 [MaxKey, MinKey]，这主要是直接定位到 mongodb 的 chunck 中去查找数据，加快数据读取。</span>
+                    <span class="token property">&quot;name&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span>
+                        <span class="token string">&quot;[\&quot;ghost\&quot;, \&quot;ghost\&quot;]&quot;</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;age&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span>
+                        <span class="token string">&quot;[MinKey, MaxKey]&quot;</span>
+                    <span class="token punctuation">]</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;rejectedPlans&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span> <span class="token comment">// 其他执行计划（非最优而被查询优化器 reject 的）的详细返回，其中具体信息与 winningPlan 的返回中意义相同，故不在此赘述。</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;serverInfo&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span>
+        <span class="token property">&quot;host&quot;</span><span class="token operator">:</span><span class="token string">&quot;kf-PC&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;port&quot;</span><span class="token operator">:</span><span class="token number">27017</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;version&quot;</span><span class="token operator">:</span><span class="token string">&quot;3.4.9&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;gitVersion&quot;</span><span class="token operator">:</span><span class="token string">&quot;876ebee8c7dd0e2d992f36a848ff4dc50ee6603e&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;ok&quot;</span><span class="token operator">:</span><span class="token number">1.0</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br></div></div></details> <p>常见 Stage 共有以下:</p> <ul><li><code>COLLSCAN</code>：全表扫描</li> <li><code>IXSCAN</code>：索引扫描</li> <li><code>FETCH</code>：根据索引去检索指定 document</li> <li><code>SHARD_MERGE</code>：各个分片返回数据进行 merge</li> <li><code>SORT</code>：表明在内存中进行了排序（与前期版本的 scanAndOrder:true 一致）</li> <li><code>SORT_MERGE</code>：表明在内存中进行了排序后再合并</li> <li><code>LIMIT</code>：使用 limit 限制返回数</li> <li><code>SKIP</code>：使用 skip 进行跳过</li> <li><code>IDHACK</code>：针对 _id 进行查询</li> <li><code>SHARDING_FILTER</code>：通过 mongos 对分片数据进行查询</li> <li><code>COUNT</code>：利用 db.coll.count() 之类进行 count 运算</li> <li><code>COUNTSCAN</code>：count 不使用用 Index 进行 count 时的 stage 返回</li> <li><code>COUNT_SCAN</code>：count 使用了 Index 进行 count 时的 stage 返回</li> <li><code>SUBPLA</code>：未使用到索引的 $or 查询的 stage 返回</li> <li><code>TEXT</code>：使用全文索引进行查询时候的 stage 返回</li></ul> <p>queryPlanner 图解：</p> <p><img src="/assets/img/query-planner.3d6d231d.png" alt="queryPlanner 释义"></p> <p>executionStats 图解：</p> <p><img src="/assets/img/execution-stats.90f242d9.png" alt="executionStats 释义"></p> <h3 id="hint"><a href="#hint" class="header-anchor">#</a> Hint</h3> <p>虽然 MongoDB 查询优化器一般工作的很不错，但是也可以使用 hint 来强制 MongoDB 使用一个指定的索引。</p> <p>示例：指定使用 name 和 age 索引字段来查询：</p> <ul><li><code>db.users.find({name:&quot;ghost&quot;}).hint({name:1,age:1})</code></li></ul> <p>可以使用 <code>explain()</code> 函数来分析以上查询：</p> <ul><li><code>db.users.find({name:&quot;ghost&quot;}).hint({name:1,age:1}).explain()</code></li></ul> <h2 id="mongo-profiler"><a href="#mongo-profiler" class="header-anchor">#</a> Mongo Profiler</h2> <blockquote><p>Mongo 分析器（Profiler）</p></blockquote> <p>Mongo Profiler 收集了针对正在运行的 Mongod 实例执行的数据库命令的详细信息（包括 CRUD 操作以及配置和管理命令），并将这些信息存放在 <code>system.profile</code> collection 中，默认情况下是关闭的，我们可以在数据库级别上或者是节点级别上配置。</p> <p>Profiling Levels 有以下 3 种：</p> <ul><li>0，关闭，不收集任何数据。<em>default</em></li> <li>1，收集耗时长（默认设置 &gt;100ms）的操作，或者根据 filter （count/find/insert/update...）收集。</li> <li>2，收集所有数据（所有数据库，所有操作）。</li></ul> <h3 id="配置分析器"><a href="#配置分析器" class="header-anchor">#</a> 配置分析器</h3> <p>profiler 有 2 个相关参数，<code>slowms</code> 和 <code>sampleRate</code>， 当通过 <code>profile</code> 命令或者 <code>db.setProfilingLevel()</code> 方法来设置时，那么就是单个数据库级别的配置。当通过配置文件来设置时，那么就是全局配置，对所有实例都生效。</p> <h4 id="配置-slowms"><a href="#配置-slowms" class="header-anchor">#</a> 配置 slowms</h4> <p>通过以下方式设置慢操作的阈值：</p> <ul><li>通过 profile 命令或者 <code>db.setProfilingLevel(int level)</code> 方法来设置。</li> <li>在启动 mongodb 时指定 <code>-slowms</code> 选项。</li> <li>在配置文件中设置 <code>slowOpThresholdMs</code> 的值。</li></ul> <p>比如设置阈值为 20 ms:</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// set，打开之后，会在对应 database 下创建 system.profile 集合</span>
+db<span class="token punctuation">.</span><span class="token function">setProfilingLevel</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> slowms<span class="token operator">:</span> <span class="token number">20</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token comment">// get</span>
+db<span class="token punctuation">.</span><span class="token function">getProfilingStatus</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h4 id="配置-samplerate"><a href="#配置-samplerate" class="header-anchor">#</a> 配置 sampleRate</h4> <blockquote><p>sampleRate，样本率，取样率，取值区间 0~1。</p></blockquote> <p>在事务量很大的清下，记录所有的慢操作可能会占用更多的资源，对系统影响也会更大，因此可以设置 sampleRate 参数，即只对所有慢操作按一定比率进行分析。 sampleRate 默认为 1，对所有慢操作进行分析，该参数的设置区间是：0~1，这里仅当 profile 级别为 1 时才有效。</p> <p>通过以下方式设置：</p> <ul><li>通过 profile 命令或者 <code>db.setProfilingLevel()</code> 方法进行设置。</li> <li>在启动实例时指定 <code>-slowOpSampleRate</code> 参数。</li> <li>在配置文件中指定 <code>slowOpSampleRate</code> 参数。</li></ul> <p>比如，设置只对所有慢操作的进行随机采样（35% 比例）进行分析：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// set，打开之后，会在对应 database 下创建 system.profile 集合</span>
+db<span class="token punctuation">.</span><span class="token function">setProfilingLevel</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> sampleRate<span class="token operator">:</span> <span class="token number">0.35</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token comment">// get</span>
+db<span class="token punctuation">.</span><span class="token function">getProfilingStatus</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h4 id="配置-filter"><a href="#配置-filter" class="header-anchor">#</a> 配置 Filter</h4> <blockquote><p>从MongoDB 4.4.2 开始，可以配置 Filter 来控制 profiled 的操作。</p></blockquote> <p>可以通过如下方法来配置 Filter：</p> <ul><li>通过 profile 命令或者 <code>db.setProfilingLevel()</code> 方法。</li> <li>在配置文件中设置 <code>filter</code>。</li></ul> <p>对于 mongod 实例，filter 会影响 diagnostic log 和 profiler（如果启用了）。</p> <p>对于 mongos 实例，filter 只影响 diagnostic log，因为 profiling 不支持 mongos 实例。</p> <p><strong>注意：</strong> 设置 filter 之后，<code>slowms</code> 和 <code>sampleRate</code> 选项将失效。</p> <p>比如，通过 filter 仅记录超过 2s 的 query 操作：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>db<span class="token punctuation">.</span><span class="token function">setProfilingLevel</span><span class="token punctuation">(</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> filter<span class="token operator">:</span> <span class="token punctuation">{</span> op<span class="token operator">:</span> <span class="token string">&quot;query&quot;</span><span class="token punctuation">,</span> millis<span class="token operator">:</span> <span class="token punctuation">{</span> $gt<span class="token operator">:</span> <span class="token number">2000</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span> <span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="profiler-日志"><a href="#profiler-日志" class="header-anchor">#</a> Profiler 日志</h3> <p>使用 <code>db.system.profile.find()</code> 查询，其实就是跟查询正常的数据库记录一样。</p> <h4 id="示例"><a href="#示例" class="header-anchor">#</a> 示例</h4> <ul><li><p>查找最近 10 条日志：</p> <ul><li><code>db.system.profile.find().limit(10).sort( { ts : -1 } ).pretty()</code>。</li></ul></li> <li><p>查看 command($cmd) 操作外的所有操作：</p> <ul><li><code>db.system.profile.find( { op: { $ne : 'command' } } ).pretty()</code>。</li></ul></li> <li><p>查看特定集合的操作：</p> <ul><li><code>db.system.profile.find( { ns : 'cndba.user' } ).pretty()</code>。</li></ul></li> <li><p>查看操作超过 5ms 的操作：<code>db.system.profile.find( { millis : { $gt : 5 } } ).pretty()</code>。</p></li> <li><p>查看特定时间范围的操作：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>db<span class="token punctuation">.</span>system<span class="token punctuation">.</span>profile<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    ts <span class="token operator">:</span> <span class="token punctuation">{</span>
+        $gt<span class="token operator">:</span> <span class="token keyword">new</span> <span class="token class-name">ISODate</span><span class="token punctuation">(</span><span class="token string">&quot;2012-12-09T03:00:00Z&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        $lt<span class="token operator">:</span> <span class="token keyword">new</span> <span class="token class-name">ISODate</span><span class="token punctuation">(</span><span class="token string">&quot;2012-12-09T03:40:00Z&quot;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">pretty</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div></li></ul> <h4 id="日志详解"><a href="#日志详解" class="header-anchor">#</a> 日志详解</h4> <p>具体可见官网 <a href="https://www.mongodb.com/docs/manual/reference/database-profiler/#database-profiler-output" target="_blank" rel="noopener noreferrer">Database Profiler Output<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。</p> <details class="custom-block details"><summary>查询操作样例</summary> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token comment">// 操作类型</span>
+    <span class="token comment">// command、insert、query、remove、update、count、distinct、group、mapReduce、geoNear、getMore</span>
+    <span class="token property">&quot;op&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;query&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">// namespace，&lt;db.collection&gt;,以点分隔</span>
+    <span class="token comment">// 这里指操作的是 test 数据库中的 report 集合</span>
+    <span class="token property">&quot;ns&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;test.report&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">// 操作命令的详细信息</span>
+    <span class="token property">&quot;command&quot;</span> <span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;find&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;report&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;filter&quot;</span> <span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">&quot;a&quot;</span> <span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">&quot;$lte&quot;</span> <span class="token operator">:</span> <span class="token number">500</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;lsid&quot;</span> <span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;id&quot;</span> <span class="token operator">:</span> UUID(<span class="token string">&quot;5ccd5b81-b023-41f3-8959-bf99ed696ce9&quot;</span>)
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;$db&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;test&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;cursorid&quot;</span> <span class="token operator">:</span> <span class="token number">33629063128</span><span class="token punctuation">,</span>
+    <span class="token comment">// 为执行操作，扫描的索引 key 的数量</span>
+    <span class="token property">&quot;keysExamined&quot;</span> <span class="token operator">:</span> <span class="token number">101</span><span class="token punctuation">,</span>
+    <span class="token comment">// 为执行操作，扫描的文档数量</span>
+    <span class="token property">&quot;docsExamined&quot;</span> <span class="token operator">:</span> <span class="token number">101</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;fromMultiPlanner&quot;</span> <span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">// 为了让别的操作完成而屈服（让出锁）的次数，一般发生在需要访问的数据尚未被完全读取到内存中，MongoDB 会优先完成在内存中的操作</span>
+    <span class="token comment">// 如果没有其他操作处于等锁(waitingForLock)的状态，则改操作不会交出锁(yield)。</span>
+    <span class="token property">&quot;numYield&quot;</span> <span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">// 返回数量</span>
+    <span class="token property">&quot;nreturned&quot;</span> <span class="token operator">:</span> <span class="token number">101</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;queryHash&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;811451DD&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;planCacheKey&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;759981BA&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">// 操作中锁信息（Type、Mode）</span>
+    <span class="token comment">// Type: Global、Database、Collection、Mutex、Metadata、oplog</span>
+    <span class="token comment">// Mode: R、W、r、w</span>
+    <span class="token property">&quot;locks&quot;</span> <span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;Global&quot;</span> <span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;acquireCount&quot;</span> <span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token comment">// 具体每种锁请求的次数</span>
+                <span class="token property">&quot;r&quot;</span> <span class="token operator">:</span> NumberLong(<span class="token number">3</span>)<span class="token punctuation">,</span>
+                <span class="token property">&quot;w&quot;</span> <span class="token operator">:</span> NumberLong(<span class="token number">3</span>)
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;Database&quot;</span> <span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;acquireCount&quot;</span> <span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">&quot;r&quot;</span> <span class="token operator">:</span> NumberLong(<span class="token number">3</span>) <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;acquireWaitCount&quot;</span> <span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">&quot;r&quot;</span> <span class="token operator">:</span> NumberLong(<span class="token number">1</span>) <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;timeAcquiringMicros&quot;</span> <span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">&quot;r&quot;</span> <span class="token operator">:</span> NumberLong(<span class="token number">69130694</span>) <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;Collection&quot;</span> <span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;acquireCount&quot;</span> <span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">&quot;r&quot;</span> <span class="token operator">:</span> NumberLong(<span class="token number">3</span>) <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;storage&quot;</span> <span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;data&quot;</span> <span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;bytesRead&quot;</span> <span class="token operator">:</span> NumberLong(<span class="token number">14736</span>)<span class="token punctuation">,</span>
+            <span class="token property">&quot;timeReadingMicros&quot;</span> <span class="token operator">:</span> NumberLong(<span class="token number">17</span>)
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;responseLength&quot;</span> <span class="token operator">:</span> <span class="token number">1305014</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;protocol&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;op_msg&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">// 操作开始到结束的时间，具体执行时间/ms</span>
+    <span class="token property">&quot;millis&quot;</span> <span class="token operator">:</span> <span class="token number">69132</span><span class="token punctuation">,</span>
+    <span class="token comment">// 执行计划</span>
+    <span class="token property">&quot;planSummary&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;IXSCAN { a: 1, _id: -1 }&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">// 执行计划的 stage</span>
+    <span class="token property">&quot;execStats&quot;</span> <span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;stage&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;FETCH&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;nReturned&quot;</span> <span class="token operator">:</span> <span class="token number">101</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;executionTimeMillisEstimate&quot;</span> <span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;works&quot;</span> <span class="token operator">:</span> <span class="token number">101</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;advanced&quot;</span> <span class="token operator">:</span> <span class="token number">101</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;needTime&quot;</span> <span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;needYield&quot;</span> <span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;saveState&quot;</span> <span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;restoreState&quot;</span> <span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;isEOF&quot;</span> <span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;docsExamined&quot;</span> <span class="token operator">:</span> <span class="token number">101</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;alreadyHasObj&quot;</span> <span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;inputStage&quot;</span> <span class="token operator">:</span> <span class="token punctuation">{</span>
+            ...
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 操作执行时间</span>
+    <span class="token property">&quot;ts&quot;</span> <span class="token operator">:</span> ISODate(<span class="token string">&quot;2019-01-14T16:57:33.450Z&quot;</span>)<span class="token punctuation">,</span>
+    <span class="token property">&quot;client&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;127.0.0.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;appName&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;MongoDB Shell&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;allUsers&quot;</span> <span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;user&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;someuser&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;db&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;admin&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;user&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;someuser@admin&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br></div></div></details> <h3 id="分析器开销"><a href="#分析器开销" class="header-anchor">#</a> 分析器开销</h3> <blockquote><p>启用 profiling 会对数据库的性能有一定的影响，特别是在配置 2 级，并且阈值为 1ms 的情况下。因为分析器使用 system.profile 来存储日志，所以对磁盘空间也有一定的消耗。因此在生产环境启用 profiling 之前需要考虑其对性能和安全性的影响。</p></blockquote> <p>system.profile 集合是固定大小集合（capped collection），默认大小为 1M。可以使用 <code>db.getCollection(&quot;system.profile&quot;).storageSize()</code> 查看。该大小集合可以存储大约几千条 profile documents。因为是固定大小集合，所以当达到限制时，会覆盖最早的 documents 数据。因此，如果需要更多的 pfofling data，我们可以修改 system.profile 集合的大小。</p> <p>修改步骤（以创建一个 4M 大小的 system.profile 为例）：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// 1. 禁用 profiling</span>
+db<span class="token punctuation">.</span><span class="token function">setProfilingLevel</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token comment">// 2. 删除 system.profile 集合</span>
+db<span class="token punctuation">.</span>system<span class="token punctuation">.</span>profile<span class="token punctuation">.</span><span class="token function">drop</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">// 3. 创建新的 system.profile 集合</span>
+db<span class="token punctuation">.</span><span class="token function">createCollection</span><span class="token punctuation">(</span> <span class="token string">&quot;system.profile&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> capped<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> size<span class="token operator">:</span><span class="token number">4000000</span> <span class="token punctuation">}</span> <span class="token punctuation">)</span>
+<span class="token comment">// 4. 启用 profiling</span>
+db<span class="token punctuation">.</span><span class="token function">setProfilingLevel</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="优化手段"><a href="#优化手段" class="header-anchor">#</a> 优化手段</h2> <h3 id="sort-skip-limit"><a href="#sort-skip-limit" class="header-anchor">#</a> sort&amp;skip&amp;limit</h3> <p>在查询中，无论 <code>find().limit().skip()</code>，还是 <code>find().skip().limit().sort()</code>，无论查询语句里哪个在前面，实际执行的时候的顺序永远是:</p> <p><code>sort -&gt; skip -&gt; limit</code></p> <p>如果想自定义这些操作的执行顺序，可以使用 <code>aggregate</code>，因为聚合的管道是按顺序执行的。</p> <h3 id="复合索引定义技巧"><a href="#复合索引定义技巧" class="header-anchor">#</a> 复合索引定义技巧</h3> <p>根据搜索条件来决定索引字段的顺序（ESR 原则）：</p> <ul><li>等于字段 <code>Equality</code></li> <li>排序字段 <code>Sort</code></li> <li>范围查询字段 <code>Range</code></li></ul> <h3 id="索引对排序的影响"><a href="#索引对排序的影响" class="header-anchor">#</a> 索引对排序的影响</h3> <p>索引也是一堆数据，索引是一些按照指定规则排序的数据, 最终也是被存储起来的, 也是占用磁盘空间的。所以，在创建索引的时候要指定一个存储顺序(<code>1</code> 升序，<code>-1</code> 降序)，告诉它是升序存储还是降序存储。</p> <p>在 MongoDB 中，排序操作，可以通过从索引中按照索引的顺序获取文档的方式，来保证结果的有序性。相比于<em>不用索引的排序</em>操作，用索引会有更好的性能。如果 MongoDB 的查询计划器(planner) 没法从索引中得到排序顺序，那么它就需要在内存中对结果排序。不用索引的排序操作，会在用了超过 32MB 内存时终止，也就是说 <em>MongoDB 只能支持 32MB 的非索引排序</em>。</p> <h4 id="单字段索引排序"><a href="#单字段索引排序" class="header-anchor">#</a> 单字段索引排序</h4> <p>假如存在一个单字段索引 <code>{name: 1}</code>，那么无论是 <code>xx.sort({name: 1})</code> 还是 <code>xx.sort({name: -1})</code> 都可以直接通过索引排序。</p> <h4 id="复合索引排序"><a href="#复合索引排序" class="header-anchor">#</a> 复合索引排序</h4> <p>对于复合索引排序，就要保证排序字段和索引字段的顺序完全相同或者相反。例如存在一个索引 <code>{name: 1, age: 1}</code>，那么 <code>xx.sort({name: 1, age: 1})</code> 和 <code>xx.sort({name: -1, age: -1})</code> 都会走索引排序，其他的则不会走索引。</p> <p>PS: 这个其实很容易理解，按照上述例子，<code>{name: 1, age: 1}</code> 索引中的数据已经先按照 name 升序，然后再按照 age 升序创建好了，你按照 <code>xx.sort({name: 1, age: 1})</code> 去排序，当然这部分数据直接就是复合要求的，不用再有单独的排序这一步，自然就是省时的。但是你按照 <code>xx.sort({name: 1, age: -1})</code> 这种顺序要求数据，索引的数据肯定不符合，也就自然需要重新排序，所以就多了重新排序这一步，也就是所说的没有走索引排序。</p> <p>需要注意的是，复合索引的排序也是遵循<a href="#%E6%9C%80%E5%B7%A6%E5%89%8D%E7%BC%80%E5%8E%9F%E5%88%99">最左前缀原则</a>的。即存在一个索引 <code>{name: 1, age: 1}</code>，使用 <code>xx.sort({name: 1})</code> 也是可以使用索引排序的，但是很明显 <code>xx.sort({age: 1})</code> 就不能使用索引排序了（<em>因为索引中的数据是先按照 name 排序的，只有 name 相同情况下才会又按照 age 排序，那么显然不符合只按照 age 排序的要求</em>）。</p> <h2 id="脚本"><a href="#脚本" class="header-anchor">#</a> 脚本</h2> <ul><li><code>{$gt: ''}</code> 可以有效排除掉文档中无 phone 字段、phone: null、phone: '' 这三种数据</li></ul> <h2 id="讨论区"><a href="#讨论区" class="header-anchor">#</a> 讨论区</h2> <blockquote><p>由于评论过多会影响页面最下方的导航，故将评论区做默认折叠处理。</p></blockquote> <details class="custom-block details"><summary>点击查看评论区内容，渴望您的宝贵建议~</summary> <!----></details></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">7/26/2023, 4:54:43 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/db/mongodb/mongodb.html" class="prev">
+        MongoDB 基础
+      </a></span> <span class="next"><a href="/db/mongodb/mongodb_install.html">
+        MongoDB 安装配置
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.5780eb53.js" defer></script><script src="/assets/js/2.e1f1d232.js" defer></script><script src="/assets/js/19.e0daa831.js" defer></script>
+  </body>
+</html>
